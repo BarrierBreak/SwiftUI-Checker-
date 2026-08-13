@@ -1,14 +1,11 @@
 import SwiftUI
 
-/// Partial tier: every control's NAME/visible text is still present, but
-/// the ROLE (accessibility trait) is simply omitted rather than set
-/// correctly. Result: VoiceOver can still read the text, but misreports or
-/// under-reports what kind of control it is — a button reads as static
-/// text, a link reads as static text, a filter chip never announces its
-/// selected state, radio rows never reveal which one is chosen, and the
-/// adjustable dial is completely unreachable by VoiceOver's adjust gesture
-/// even though a sighted user can drag it freely.
-struct AccessibleRolePartial: View {
+/// Demonstrates ACCESSIBLE ROLE (SwiftUI accessibility trait), as opposed to
+/// accessible NAME (AccessibleNamePass/Partial/Fail). Role tells VoiceOver
+/// WHAT KIND of control something is — button, link, header, selected,
+/// adjustable — independent of what it's called. Every custom (non-native)
+/// control here gets the correct trait for how it behaves.
+struct AccessibleRolePass: View {
 
     @State private var isWifiOnlyFilterOn = false
     @State private var selectedShippingOption = 0
@@ -20,7 +17,7 @@ struct AccessibleRolePartial: View {
         NavigationStack {
             Form {
 
-                // MARK: Custom button — role omitted
+                // MARK: Custom button (not a real SwiftUI Button)
                 Section {
                     Text("Refresh")
                         .padding(.vertical, 8)
@@ -29,31 +26,33 @@ struct AccessibleRolePartial: View {
                         .clipShape(Capsule())
                         .onTapGesture { /* refresh action */ }
                         .srcLine()
-                        // No .isButton — VoiceOver reads "Refresh" as plain
-                        // text, with no indication it's actionable.
+                        // Correct role: VoiceOver announces "Refresh, button"
+                        // and offers the standard activate gesture/hint.
+                        .accessibilityAddTraits(.isButton)
                 }
 
-                // MARK: Section header — role omitted
+                // MARK: Section header role
                 Section {
                     Text("Wi-Fi, Bluetooth, and other radios")
                 } header: {
                     Text("Connectivity")
-                        // No .isHeader — looks like a heading, isn't one
-                        // for VoiceOver's rotor.
+                        // Correct role: rotor-navigable as a heading.
+                        .accessibilityAddTraits(.isHeader)
                 }
 
-                // MARK: Custom link — role omitted
+                // MARK: Custom link (not SwiftUI's Link view)
                 Section {
                     Text("View documentation")
                         .foregroundStyle(.blue)
                         .underline()
                         .onTapGesture { /* open URL */ }
                         .srcLine()
-                        // No .isLink — VoiceOver has no idea this behaves
-                        // differently from any other line of text.
+                        // Correct role: VoiceOver announces "View documentation,
+                        // link" instead of misrepresenting it as a button.
+                        .accessibilityAddTraits(.isLink)
                 }
 
-                // MARK: Custom filter chip — role incomplete
+                // MARK: Custom filter chip / checkbox
                 Section {
                     HStack {
                         Image(systemName: isWifiOnlyFilterOn ? "checkmark.square.fill" : "square")
@@ -62,13 +61,14 @@ struct AccessibleRolePartial: View {
                     .onTapGesture { isWifiOnlyFilterOn.toggle() }
                     .accessibilityElement(children: .combine)
                         .srcLine()
-                    // .isButton is present, so VoiceOver knows it's
-                    // actionable — but .isSelected is never applied, so
-                    // toggling it on/off is invisible to VoiceOver users.
-                    .accessibilityAddTraits(.isButton)
+                    // Correct role: button trait so VoiceOver knows it's
+                    // actionable, PLUS .isSelected reflecting current state —
+                    // both the role AND the state are conveyed.
+                    .accessibilityAddTraits(isWifiOnlyFilterOn ? [.isButton, .isSelected] : .isButton)
+                    .accessibilityValue(isWifiOnlyFilterOn ? "On" : "Off")
                 }
 
-                // MARK: Custom radio-style rows — role incomplete
+                // MARK: Custom radio-style single-select rows
                 Section {
                     ForEach(shippingOptions.indices, id: \.self) { index in
                         let isSelected = selectedShippingOption == index
@@ -82,14 +82,14 @@ struct AccessibleRolePartial: View {
                         .onTapGesture { selectedShippingOption = index }
                         .accessibilityElement(children: .combine)
                             .srcLine()
-                        // Every row is a button, but none is ever marked
-                        // .isSelected — VoiceOver users can't tell which
-                        // shipping option is currently chosen.
-                        .accessibilityAddTraits(.isButton)
+                        // Correct role: each row is a button, and .isSelected
+                        // marks exactly one as the current choice — mirrors
+                        // how a native radio group would be perceived.
+                        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
                     }
                 }
 
-                // MARK: Custom adjustable dial — role omitted entirely
+                // MARK: Custom adjustable dial (hand-built, not a Slider)
                 Section {
                     ZStack {
                         Circle().stroke(Color.gray.opacity(0.3), lineWidth: 6)
@@ -108,29 +108,36 @@ struct AccessibleRolePartial: View {
                     .accessibilityLabel("Brightness")
                     .accessibilityValue("\(Int(brightness * 100)) percent")
                         .srcLine()
-                    // No .accessibilityAdjustableAction — VoiceOver focuses
-                    // this element and reads its value, but swiping up/down
-                    // does nothing. The drag gesture that sighted users rely
-                    // on is simply unreachable under VoiceOver.
+                    // Correct role: this modifier itself confers the
+                    // adjustable role — VoiceOver users swipe up/down to
+                    // change brightness instead of needing the drag gesture,
+                    // which they can't perform the same way sighted users do.
+                    .accessibilityAdjustableAction { direction in
+                        switch direction {
+                        case .increment: brightness = min(brightness + 0.1, 1)
+                        case .decrement: brightness = max(brightness - 0.1, 0)
+                        default: break
+                        }
+                    }
                 }
 
-                // MARK: Decorative icon — left at SwiftUI's default
+                // MARK: Decorative icon — correctly given NO role
                 Section {
                     Image(systemName: "sparkle")
-                        .onTapGesture { /* hidden easter egg */ }
+                        .onTapGesture { /* hidden easter egg, not core functionality */ }
                         .srcLine()
-                        // Not hidden — SwiftUI's Image is an accessibility
-                        // element by default with an implicit .isImage
-                        // trait, so VoiceOver announces "sparkle, image":
-                        // harmless, but noisy and unhelpful for a pure
-                        // decoration nobody needs to hear about.
+                        // Correct role: nothing essential here, so it's
+                        // removed from the accessibility tree entirely
+                        // instead of confusing VoiceOver users with a
+                        // decoration that appears interactive.
+                        .accessibilityHidden(true)
                 }
             }
-            .navigationTitle("Accessible Roles (Partial)")
+            .navigationTitle("Accessible Roles")
         }
     }
 }
 
 #Preview {
-    AccessibleRolePartial()
+    AccessibleRolePass()
 }

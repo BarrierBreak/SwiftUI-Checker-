@@ -20,6 +20,13 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+final public class AccessibilityTraitsWorkflow {
+  public init()
+  final public var matchedTechniqueRecords: [A11yInspect_Accessibility_Framework.AccessibilityTechniqueAnnotated]
+  final public func validateAllElements(in rootView: UIKit.UIView)
+  final public func printBBRecord(for techniqueID: Swift.String)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ColorContrastValidator : UIKit.UIView {
   @discardableResult
   @_Concurrency.MainActor @preconcurrency public func validateAllTextElements(in rootView: UIKit.UIView) -> [A11yInspect_Accessibility_Framework.AccessibilityTechniqueAnnotated]
@@ -28,8 +35,43 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public class ElementNameQualityWorkflow {
+  public init()
+  public var matchedTechniqueRecords: [A11yInspect_Accessibility_Framework.AccessibilityTechniqueAnnotated]
+  public func validateAllElements(in rootView: UIKit.UIView)
+  public func printBBRecord(for techniqueID: Swift.String, attribute: Swift.String)
+  @objc deinit
+}
+public class HeadingQualityWorkflow {
+  public init()
+  public var matchedTechniqueRecords: [A11yInspect_Accessibility_Framework.AccessibilityTechniqueAnnotated]
+  public func validateAllElements(in rootView: UIKit.UIView)
+  public func printBBRecord(for techniqueID: Swift.String, attribute: Swift.String)
+  @objc deinit
+}
+public class LabelInNameWorkflow {
+  public init()
+  public var matchedTechniqueRecords: [A11yInspect_Accessibility_Framework.AccessibilityTechniqueAnnotated]
+  public func validateAllElements(in rootView: UIKit.UIView)
+  public func printBBRecord(for techniqueID: Swift.String, attribute: Swift.String)
+  @objc deinit
+}
+public class SufficientElementDescriptionWorkFlow {
+  public init()
+  public var matchedTechniqueRecords: [A11yInspect_Accessibility_Framework.AccessibilityTechniqueAnnotated]
+  public func validateAllElements(in rootView: UIKit.UIView)
+  public func printBBRecord(for techniqueID: Swift.String, attributeOverride: Swift.String? = nil)
+  @objc deinit
+}
 public protocol A11yInspectDelegate : AnyObject {
   func accessibilityIssueDetected(_ message: Swift.String)
+}
+public class UIButtonAccessibilityWorkflow {
+  public init()
+  public var matchedTechniqueRecords: [A11yInspect_Accessibility_Framework.AccessibilityTechniqueAnnotated]
+  public func validateAllButtons(in rootView: UIKit.UIView)
+  public func printBBRecord(for techniqueID: Swift.String, attribute: Swift.String)
+  @objc deinit
 }
 public struct AccessibilityTechniqueRecord {
   public let techniqueID: Swift.String
@@ -158,6 +200,7 @@ public struct AccessibilityElementInfo {
   public let accessibilityValue: Swift.String?
   public let contrastRatio: CoreFoundation.CGFloat?
   public let contrastStatus: Swift.String
+  public var accessibilityIdentifier: Swift.String?
   weak public var view: UIKit.UIView?
   weak public var viewController: UIKit.UIViewController?
   public var swiftUIFrame: CoreFoundation.CGRect?
@@ -251,6 +294,7 @@ public class AccessibilityScanner {
   public static func isInsideSwiftUIHostingView(_ view: UIKit.UIView) -> Swift.Bool
   public static func isSwiftUIHostingView(_ view: UIKit.UIView) -> Swift.Bool
   public static func isInSwiftUIContext(_ view: UIKit.UIView) -> Swift.Bool
+  public static func invalidateSwiftUIElementCache()
   public static func findAllHostingViews(in rootView: UIKit.UIView) -> [UIKit.UIView]
   public static func collectSwiftUIElements(from hostingView: UIKit.UIView, maxElements: Swift.Int = 200) -> [A11yInspect_Accessibility_Framework.SwiftUIAccessibilityElement]
   public func fetchAccessibilityTraits(from rootView: UIKit.UIView) -> [A11yInspect_Accessibility_Framework.AccessibilityElementInfo]
@@ -265,6 +309,10 @@ public struct SwiftUIAccessibilityElement {
   public let frame: CoreFoundation.CGRect
   public var contentFrame: CoreFoundation.CGRect?
   public let hostingView: UIKit.UIView
+  public var identifier: Swift.String?
+  public var isToggleControl: Swift.Bool {
+    get
+  }
   public var isInteractive: Swift.Bool {
     get
   }
@@ -275,6 +323,9 @@ public struct SwiftUIAccessibilityElement {
     get
   }
   public var isStaticText: Swift.Bool {
+    get
+  }
+  public var isNameCheckable: Swift.Bool {
     get
   }
 }

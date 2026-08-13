@@ -1,12 +1,10 @@
 import SwiftUI
 
-/// Same controls as AccessibleNamePass, but with every
-/// `.accessibilityLabel` removed. Useful as a "before" comparison —
-/// several of these controls (icon-only Button, Menu, Link, ShareLink,
-/// NavigationLink, the custom star icon, the custom rating row) will now
-/// read poorly or ambiguously to VoiceOver since they have no text label
-/// to fall back on.
-struct AccessibleNamePartial: View {
+/// Demonstrates every common SwiftUI interactive element paired with an
+/// explicit accessible label (and, where useful, a hint/value) so VoiceOver
+/// announces something meaningful instead of falling back to a raw title
+/// or system default.
+struct AccessibleNamePass: View {
 
     // MARK: - State backing each control
 
@@ -38,14 +36,33 @@ struct AccessibleNamePartial: View {
                         Image(systemName: "trash")
                     }
                         .srcLine()
+                    
+//                    Button {
+//                        
+//                    } label: {
+//                        Image("zamir")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 200, height: 200)
+//                    }
+//                    
+//                    .buttonStyle(.plain)
+
+                    // Icon-only buttons MUST have a label — otherwise VoiceOver
+                    // just reads the SF Symbol's internal name.
+                   // .accessibilityLabel("Delete item")
+                   // .accessibilityHint("Removes this item from the list")
                 }
 
                 // MARK: Toggle
                 Section("Toggle") {
                     Toggle(isOn: $isEnabled) {
-                        Text("Enable notifications")
+                      Text("Enable notifications")
                     }
+                    .accessibilityLabel("Enable notifications")
                         .srcLine()
+                    // Toggle already reads its Text label, but being explicit
+                    // protects you if the label view ever becomes an icon.
                 }
 
                 // MARK: Slider
@@ -53,6 +70,8 @@ struct AccessibleNamePartial: View {
                     Slider(value: $volume, in: 0...1) {
                         Text("Volume")
                     }
+                    .accessibilityLabel("Volume")
+                    .accessibilityValue("\(Int(volume * 100)) percent")
                         .srcLine()
                 }
 
@@ -61,6 +80,8 @@ struct AccessibleNamePartial: View {
                     Stepper(value: $quantity, in: 1...10) {
                         Text("Quantity: \(quantity)")
                     }
+                   .accessibilityLabel("Quantity")
+                    .accessibilityValue("\(quantity)")
                         .srcLine()
                 }
 
@@ -72,6 +93,7 @@ struct AccessibleNamePartial: View {
                         }
                     }
                     .pickerStyle(.segmented)
+                    .accessibilityLabel("Favorite color")
                         .srcLine()
                 }
 
@@ -84,6 +106,7 @@ struct AccessibleNamePartial: View {
                     } label: {
                         Image(systemName: "ellipsis.circle")
                     }
+                    .accessibilityLabel("More actions")
                         .srcLine()
                 }
 
@@ -91,6 +114,8 @@ struct AccessibleNamePartial: View {
                 Section("Text Field") {
                     TextField("Username", text: $username)
                         .textContentType(.username)
+                        .accessibilityLabel("Username")
+                        .accessibilityHint("Enter your account username")
                         .srcLine()
                 }
 
@@ -98,6 +123,8 @@ struct AccessibleNamePartial: View {
                 Section("Secure Field") {
                     SecureField("Password", text: $password)
                         .textContentType(.password)
+                        .accessibilityLabel("Password")
+                        .accessibilityHint("Enter your account password, minimum 8 characters")
                         .srcLine()
                 }
 
@@ -105,6 +132,8 @@ struct AccessibleNamePartial: View {
                 Section("Text Editor") {
                     TextEditor(text: $notes)
                         .frame(minHeight: 100)
+                        .accessibilityLabel("Notes")
+                        .accessibilityHint("Enter any additional notes")
                         .srcLine()
                 }
 
@@ -115,12 +144,14 @@ struct AccessibleNamePartial: View {
                         selection: $birthDate,
                         displayedComponents: .date
                     )
+                    .accessibilityLabel("Date of birth")
                         .srcLine()
                 }
 
                 // MARK: ColorPicker
                 Section("Color Picker") {
                     ColorPicker("Favorite color", selection: $favoriteColor)
+                        .accessibilityLabel("Favorite color")
                         .srcLine()
                 }
 
@@ -129,6 +160,7 @@ struct AccessibleNamePartial: View {
                     Link(destination: URL(string: "https://www.apple.com/accessibility/")!) {
                         Image(systemName: "figure.roll")
                     }
+                    .accessibilityLabel("Open Apple Accessibility website")
                         .srcLine()
                 }
 
@@ -137,6 +169,7 @@ struct AccessibleNamePartial: View {
                     ShareLink(item: URL(string: "https://developer.apple.com")!) {
                         Image(systemName: "square.and.arrow.up")
                     }
+                    .accessibilityLabel("Share this page")
                         .srcLine()
                 }
 
@@ -148,6 +181,7 @@ struct AccessibleNamePartial: View {
                     } label: {
                         Image(systemName: "gearshape")
                     }
+                    .accessibilityLabel("Open settings")
                         .srcLine()
                 }
 
@@ -159,6 +193,11 @@ struct AccessibleNamePartial: View {
                         Image(systemName: isFavorite ? "star.fill" : "star")
                     }
                         .srcLine()
+                    // Value communicates current state; trait marks it as a button
+                    // that can also be selected/toggled, matching Toggle semantics.
+                    .accessibilityLabel("Mark as favorite")
+                    .accessibilityValue(isFavorite ? "On" : "Off")
+                    .accessibilityAddTraits(isFavorite ? [.isButton, .isSelected] : .isButton)
                 }
 
                 // MARK: Star rating built from a custom HStack of tappable images
@@ -169,6 +208,19 @@ struct AccessibleNamePartial: View {
                                 .onTapGesture {
                                     rating = star
                                 }
+                                .accessibilityAddTraits(.isButton)
+                        }
+                    }
+                    // Group the row into one element with an adjustable rating
+                    // instead of exposing five ambiguous "star" images.
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("Rating")
+                    .accessibilityValue("\(rating) out of 5 stars")
+                    .accessibilityAdjustableAction { direction in
+                        switch direction {
+                        case .increment: rating = min(rating + 1, 5)
+                        case .decrement: rating = max(rating - 1, 1)
+                        default: break
                         }
                     }
                 }
@@ -179,6 +231,7 @@ struct AccessibleNamePartial: View {
                         Text("I agree to the Terms of Service")
                     }
                     .toggleStyle(.switch)
+                    .accessibilityLabel("Agree to Terms of Service")
                         .srcLine()
                 }
 
@@ -189,6 +242,8 @@ struct AccessibleNamePartial: View {
                     } label: {
                         Text("Delete Account")
                     }
+                    .accessibilityLabel("Delete account")
+                    .accessibilityHint("Permanently deletes your account. This cannot be undone.")
                     .confirmationDialog(
                         "Delete your account?",
                         isPresented: $showDeleteConfirmation,
@@ -199,12 +254,22 @@ struct AccessibleNamePartial: View {
                     }
                         .srcLine()
                 }
+
+                // MARK: UIKit control — real UIButton with a proper accessible name.
+                // The framework's UIKit-only rules (button descriptiveness, label-in-name,
+                // button trait) never fire on SwiftUI's own Button, which exposes only a
+                // UIAccessibilityElement proxy — a real UIButton is needed to exercise them.
+                Section("UIKit Control") {
+                    UIKitButton(title: "Save Draft")
+                        .frame(height: 44)
+                        .srcLine()
+                }
             }
-            .navigationTitle("Plain Controls")
+            .navigationTitle("Accessible Controls")
         }
     }
 }
 
 #Preview {
-    AccessibleNamePartial()
+    AccessibleNamePass()
 }

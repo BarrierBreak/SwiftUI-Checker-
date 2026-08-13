@@ -34,6 +34,7 @@ struct AccessibleNameExtrasFail: View {
                         .alert("", isPresented: $showAlert) {
                             Button("OK") {}
                         }
+                            .srcLine()
                         // Blank alert title — VoiceOver announces the alert
                         // opened but gives no indication what it's asking.
                     }
@@ -48,6 +49,7 @@ struct AccessibleNameExtrasFail: View {
                         .sheet(isPresented: $showSheet) {
                             DetailSheetFail()
                         }
+                            .srcLine()
                     }
 
                     // MARK: Popover — icon-only trigger, empty content
@@ -60,6 +62,7 @@ struct AccessibleNameExtrasFail: View {
                         .popover(isPresented: $showPopover) {
                             Color.clear.frame(width: 200, height: 80)
                         }
+                            .srcLine()
                     }
 
                     // MARK: Images — both unhandled
@@ -76,6 +79,7 @@ struct AccessibleNameExtrasFail: View {
                     // MARK: Progress — no label/value
                     Section {
                         ProgressView(value: progress)
+                            .srcLine()
                     }
 
                     // MARK: Announcement — icon-only, no announcement, no label
@@ -85,6 +89,7 @@ struct AccessibleNameExtrasFail: View {
                         } label: {
                             Image(systemName: "checkmark")
                         }
+                            .srcLine()
                     }
                 }
             }

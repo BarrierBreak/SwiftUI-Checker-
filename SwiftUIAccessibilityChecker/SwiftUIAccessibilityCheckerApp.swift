@@ -12,6 +12,11 @@ struct SwiftUIAccessibilityCheckerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task {
+                    if CommandLine.arguments.contains("--a11y-scan") {
+                        await SwiftUIA11yScanRunner.shared.runAllScreens()
+                    }
+                }
         }
     }
 }
