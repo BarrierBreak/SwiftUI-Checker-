@@ -99,6 +99,22 @@ public final class SwiftUIDemoA11ySummaryReporter {
         return String(id.dropFirst(4))
     }
 
+
+    /// Detail text with the screen named by its own class, the way the UIKit report does it.
+    ///
+    /// Every SwiftUI screen is hosted in a UIHostingController, so that is the class the
+    /// framework sees and writes into the detail: "Screen: 'UIHostingController<AnyView>'"
+    /// on every row, for every screen. It is accurate and useless — it cannot tell one
+    /// screen from another. The UIKit report never has this problem because there the
+    /// hosting class IS the screen class. Substituting the real screen makes the two
+    /// reports say the same thing about the same finding.
+    private func detailText(_ attribute: String, screenClass: String) -> String {
+        guard !screenClass.isEmpty,
+              let range = attribute.range(of: "UIHostingController<[^']*>", options: .regularExpression)
+        else { return attribute }
+        return attribute.replacingCharacters(in: range, with: screenClass)
+    }
+
     private func elementName(_ info: AccessibilityElementInfo) -> String {
         let label = info.accessibilityLabel?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         return (label.isEmpty || label == "None") ? "no name" : label
@@ -172,10 +188,10 @@ public final class SwiftUIDemoA11ySummaryReporter {
 
         // Screen shown as "Name (ScreenClass)" so every issue carries the full class
         // of the screen it was found on, e.g. "Pass (AccessibleNamePass)".
-        let allWithScreen: [(screen: String, result: AccessibilityTechniqueAnnotated)] =
+        let allWithScreen: [(screen: String, screenClass: String, result: AccessibilityTechniqueAnnotated)] =
             scans.flatMap { scan in
                 let label = scan.screenClass.isEmpty ? scan.screenName : "\(scan.screenName) (\(scan.screenClass))"
-                return scan.results.map { (label, $0) }
+                return scan.results.map { (label, scan.screenClass, $0) }
             }
         let allResults = allWithScreen.map { $0.result }
         let locationsByID = scans.reduce(into: [String: String]()) { $0.merge($1.locations) { a, _ in a } }
@@ -274,7 +290,7 @@ public final class SwiftUIDemoA11ySummaryReporter {
                 out.append("       Class      : \(displayClass(r.elementInfo))")
                 let loc = elementLocation(r.elementInfo, captured: locationsByID[r.id])
                 out.append("       Element    : \(elementName(r.elementInfo))\(loc.isEmpty ? "" : " — \(loc)")")
-                out.append("       Detail     : \(r.record.attribute)")
+                out.append("       Detail     : \(detailText(r.record.attribute, screenClass: entry.screenClass))")
             }
         }
 
@@ -351,7 +367,7 @@ public final class SwiftUIDemoA11ySummaryReporter {
                     "screen": entry.screen,
                     "class": displayClass(entry.result.elementInfo),
                     "element": elementName(entry.result.elementInfo),
-                    "detail": entry.result.record.attribute
+                    "detail": detailText(entry.result.record.attribute, screenClass: entry.screenClass)
                 ]
             }
             jsonRules.append([
@@ -376,7 +392,7 @@ public final class SwiftUIDemoA11ySummaryReporter {
                     "status": entry.result.record.status,
                     "class": displayClass(entry.result.elementInfo),
                     "element": elementName(entry.result.elementInfo),
-                    "detail": entry.result.record.attribute
+                    "detail": detailText(entry.result.record.attribute, screenClass: entry.screenClass)
                 ]
             }
         let jsonObj: [String: Any] = [
@@ -457,6 +473,26 @@ private func allSwiftUIScreenEntries() -> [SwiftUIScreenEntry] {
         //   AccessibleNativeRolePass / Fail / Partial
         //   AccessibleRolePass / Fail / Partial
     ]
+}
+
+/// Screens to scan on this launch.
+///
+/// The UI test has one function per screen so a single screen can be run on its own
+/// (⌃⌘U on that function, or Test navigator → run just that row). Each function passes
+/// `--a11y-screen=<ClassName>`; without it every screen is scanned, which is what the
+/// all-screens function and a manual scheme launch do.
+private func requestedScreenEntries() -> [SwiftUIScreenEntry] {
+    let all = allSwiftUIScreenEntries()
+    guard let arg = CommandLine.arguments.first(where: { $0.hasPrefix("--a11y-screen=") }) else {
+        return all
+    }
+    let wanted = String(arg.dropFirst("--a11y-screen=".count))
+    let matches = all.filter { $0.className == wanted }
+    if matches.isEmpty {
+        print("[A11yDemo] ⚠️ --a11y-screen=\(wanted) matched no screen; scanning all instead.")
+        return all
+    }
+    return matches
 }
 
 // MARK: - Runner
@@ -763,6 +799,7 @@ public final class SwiftUIA11yScanRunner {
     /// tell them apart on screen, so keeping both only adds noise. FAIL and PASS rows are
     /// left untouched: repeats there are real and countable — three unnamed buttons should
     /// stay three findings even though all three print as "no name".
+
     private func collapsingRepeatedValidateRows(
         _ results: [AccessibilityTechniqueAnnotated]
     ) -> [AccessibilityTechniqueAnnotated] {
@@ -829,13 +866,28 @@ public final class SwiftUIA11yScanRunner {
     /// rather than in the reporter because `elementInfo.view` is weak — by the time the
     /// summary is written the screen has been torn down and the view is gone.
     private func capturedLocation(for item: AccessibilityTechniqueAnnotated, scrollView: UIScrollView?) -> String {
+        var own: String? = nil
         if let id = item.elementInfo.accessibilityIdentifier, id.hasPrefix("src:") {
-            return String(id.dropFirst(4))
+            own = String(id.dropFirst(4))
+        } else if let id = item.elementInfo.view?.accessibilityIdentifier, id.hasPrefix("src:") {
+            own = String(id.dropFirst(4))
         }
-        if let id = item.elementInfo.view?.accessibilityIdentifier, id.hasPrefix("src:") {
-            return String(id.dropFirst(4))
+        guard let own else { return "" }
+
+        // A control built inside a shared component reports that component's internals —
+        // the five rating stars all come from one loop in PlainRatingControl, which lives
+        // in the Partial view controller even when the Fail screen renders it. That line is
+        // accurate but useless here: it is not on the screen being scanned. Report the
+        // nearest enclosing tagged view instead — the property that placed the component
+        // on THIS screen, which is the line you would actually edit.
+        var ancestor = item.elementInfo.view?.superview
+        while let view = ancestor {
+            if let id = view.accessibilityIdentifier, id.hasPrefix("src:") {
+                return String(id.dropFirst(4))
+            }
+            ancestor = view.superview
         }
-        return ""
+        return own
     }
 
     /// Reports composite UIKit controls that neither scan path can otherwise see.
@@ -930,7 +982,7 @@ public final class SwiftUIA11yScanRunner {
         let reporter = SwiftUIDemoA11ySummaryReporter.shared
         reporter.reset()
 
-        for entry in allSwiftUIScreenEntries() {
+        for entry in requestedScreenEntries() {
             let hostingController = UIHostingController(rootView: entry.make())
             hostingController.view.frame = window.bounds
             window.rootViewController = hostingController
