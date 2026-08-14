@@ -835,7 +835,10 @@ public final class SwiftUIA11yScanRunner {
 
         // For role — Button
         // For role — Heading
-        "BB40040",              // Check if Provided headings should be marked as heading
+        // "BB40040" — heading role check, disabled at the user's request. SwiftUI gives
+        // every Section header the heading trait, so this asked for manual confirmation
+        // of ~55 section titles per run. Re-enable together with the emission in
+        // HeadingQualityWorkflow.validateSwiftUIHeadingRoles.
         "BB40041",              // Check whether the text should be a heading
 //        "BB41008",              // Headings not defined — disabled, see HeadingQualityWorkflow
 
@@ -907,10 +910,12 @@ public final class SwiftUIA11yScanRunner {
         var composites: [UIView] = []
         func walk(_ view: UIView) {
             if view.isHidden || view.alpha < 0.01 { return }
-            // Only controls that are themselves invisible to VoiceOver because their
-            // children carry the accessibility, and only ones the developer named.
+            // Controls that are themselves invisible to VoiceOver because their children
+            // carry the accessibility. Named or not: an unnamed one is the defect worth
+            // reporting, and requiring a label here is what kept the Fail screen's
+            // nameless DatePicker out of the report entirely.
             let isComposite = view is UIDatePicker || view is UIColorWell || view is UIPickerView
-            if isComposite, !view.isAccessibilityElement, view.accessibilityLabel?.isEmpty == false {
+            if isComposite, !view.isAccessibilityElement {
                 composites.append(view)
             }
             for sub in view.subviews { walk(sub) }
@@ -919,10 +924,26 @@ public final class SwiftUIA11yScanRunner {
         guard !composites.isEmpty else { return [] }
 
         var found: [AccessibilityTechniqueAnnotated] = []
+        var dbg = ""
+        defer {
+            if let d = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                let u = d.appendingPathComponent("a11y-dump.txt")
+                let prev = (try? String(contentsOf: u, encoding: .utf8)) ?? ""
+                try? (prev + dbg).write(to: u, atomically: true, encoding: .utf8)
+            }
+        }
         for control in composites {
+            dbg += "CTRL \(type(of: control)) label='\(control.accessibilityLabel ?? "<nil>")' value='\(control.accessibilityValue ?? "<nil>")'\n"
             let workflow = SufficientElementDescriptionWorkFlow()
             workflow.validateAllElements(in: control)
             found += workflow.matchedTechniqueRecords.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
+
+            // The name rules run here too, so a composite with no label at all is raised as
+            // a missing name rather than only as a manual-check row.
+            let nameWorkflow = ElementNameQualityWorkflow()
+            nameWorkflow.validateAllElements(in: control)
+            dbg += "  records=\(nameWorkflow.matchedTechniqueRecords.map { $0.record.techniqueID }) labelAtRule='\(control.accessibilityLabel ?? "<nil>")'\n"
+            found += nameWorkflow.matchedTechniqueRecords.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
         }
         return found
     }

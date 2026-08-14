@@ -172,7 +172,12 @@ struct AccessibleNameFail: View {
 
                 // MARK: ColorPicker
                 Section {
+                    // Deliberately unnamed. Collapsed into one element so the row reports
+                    // as nameless rather than inheriting the colour well's system-supplied
+                    // "Color", which made an unnamed control look as though it had a name.
                     ColorPicker("", selection: $favoriteColor)
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityAddTraits(.isButton)
                         .srcLine()
                 }
 

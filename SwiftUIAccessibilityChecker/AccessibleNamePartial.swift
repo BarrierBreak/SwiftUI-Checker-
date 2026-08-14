@@ -120,7 +120,16 @@ struct AccessibleNamePartial: View {
 
                 // MARK: ColorPicker
                 Section("Color Picker") {
+                    // ColorPicker builds its own element for the colour well and hard-codes
+                    // its label to "Color". A plain .accessibilityLabel is discarded — the
+                    // well still reads "Color", so VoiceOver never says which colour this
+                    // is for. Collapsing the row into one element replaces that well-owned
+                    // element with one the label can apply to; .isButton restores the role
+                    // that collapsing removes.
                     ColorPicker("Favorite color", selection: $favoriteColor)
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel("Favorite color")
+                        .accessibilityAddTraits(.isButton)
                         .srcLine()
                 }
 
