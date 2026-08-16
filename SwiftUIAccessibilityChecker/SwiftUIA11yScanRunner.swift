@@ -632,11 +632,15 @@ public final class SwiftUIA11yScanRunner {
     ) -> [AccessibilityTechniqueAnnotated] {
         var swiftUIRectsByRule: [String: [CGRect]] = [:]
         var swiftUINamesByRule: [String: Set<String>] = [:]
+        var swiftUILinesByRule: [String: Set<String>] = [:]
         for item in results {
             guard let cf = item.elementInfo.swiftUIContentFrame, cf != .zero else { continue }
             swiftUIRectsByRule[item.record.techniqueID, default: []].append(cf)
             let name = (item.elementInfo.accessibilityLabel ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
             swiftUINamesByRule[item.record.techniqueID, default: []].insert(name)
+            if let line = sourceLine(item.elementInfo) {
+                swiftUILinesByRule[item.record.techniqueID, default: []].insert(line)
+            }
         }
         guard !swiftUIRectsByRule.isEmpty else { return results }
 
@@ -649,6 +653,19 @@ public final class SwiftUIA11yScanRunner {
             // detected it — keep it. That is how the image-button and hint-instead-of-label
             // findings survive: the SwiftUI path cannot produce them at all.
             guard let candidates = swiftUIRectsByRule[ruleID] else { return true }
+
+            // Both paths tag the same control with the same source line, so a genuine
+            // backing-view duplicate always shares its line with the SwiftUI record it
+            // duplicates. A UIKit record whose line appears in no SwiftUI record for this
+            // rule is a different control that the SwiftUI path simply cannot see — the
+            // compact DatePicker, reached only through the composite-control sweep. It sits
+            // inside the same row region as a SwiftUI element flagged under the same rule,
+            // so the overlap test below discarded it as a duplicate and the screen lost the
+            // finding entirely.
+            if let line = sourceLine(item.elementInfo),
+               swiftUILinesByRule[ruleID]?.contains(line) != true {
+                return true
+            }
 
             if let view = item.elementInfo.view {
                 let frame = scrollView.map { $0.convert(view.bounds, from: view) } ?? view.frame
@@ -852,6 +869,7 @@ public final class SwiftUIA11yScanRunner {
         "BB30548",              // Missing accessible name for interactive control
         "BB30549",              // Incorrect method used to provide accessible name for interactive control
         "BB40124",              // Non-descriptive accessible name for interactive control
+        "BB40050",              // Inaccurate textual description provided for interactive controls
         "BB40051",              // Check if interactive control name is descriptive
         // Composite controls whose children are the accessibility elements — a compact
         // DatePicker is the case that matters here. SwiftUI builds their inner elements
@@ -924,16 +942,7 @@ public final class SwiftUIA11yScanRunner {
         guard !composites.isEmpty else { return [] }
 
         var found: [AccessibilityTechniqueAnnotated] = []
-        var dbg = ""
-        defer {
-            if let d = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-                let u = d.appendingPathComponent("a11y-dump.txt")
-                let prev = (try? String(contentsOf: u, encoding: .utf8)) ?? ""
-                try? (prev + dbg).write(to: u, atomically: true, encoding: .utf8)
-            }
-        }
         for control in composites {
-            dbg += "CTRL \(type(of: control)) label='\(control.accessibilityLabel ?? "<nil>")' value='\(control.accessibilityValue ?? "<nil>")'\n"
             let workflow = SufficientElementDescriptionWorkFlow()
             workflow.validateAllElements(in: control)
             found += workflow.matchedTechniqueRecords.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
@@ -942,8 +951,39 @@ public final class SwiftUIA11yScanRunner {
             // a missing name rather than only as a manual-check row.
             let nameWorkflow = ElementNameQualityWorkflow()
             nameWorkflow.validateAllElements(in: control)
-            dbg += "  records=\(nameWorkflow.matchedTechniqueRecords.map { $0.record.techniqueID }) labelAtRule='\(control.accessibilityLabel ?? "<nil>")'\n"
             found += nameWorkflow.matchedTechniqueRecords.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
+        }
+        return found
+    }
+
+
+    /// Findings for tab bar items, which no traversal can reach.
+    ///
+    /// A SwiftUI `TabView` is bridged to a real UIKit `UITabBar`, so its items never enter
+    /// the SwiftUI accessibility tree; and UIKit vends each item as a private
+    /// `_UITabButton`, which every workflow's collector skips along with its whole subtree.
+    /// The tabs therefore appeared in no rule at all — on the Extras screens the Settings
+    /// tab announces "gearshape", the raw SF Symbol name, and nothing reported it.
+    ///
+    /// Each item is handed to the workflow's single-element entry point instead, which
+    /// applies the same interactive-control name rules without walking the hierarchy.
+    private func findingsForTabBarItems(in root: UIView) -> [AccessibilityTechniqueAnnotated] {
+        var items: [UIView] = []
+        func walk(_ view: UIView) {
+            if view.isHidden || view.alpha < 0.01 { return }
+            if String(describing: type(of: view)).contains("TabButton"), view.isAccessibilityElement {
+                items.append(view)
+            }
+            for sub in view.subviews { walk(sub) }
+        }
+        walk(root)
+        guard !items.isEmpty else { return [] }
+
+        var found: [AccessibilityTechniqueAnnotated] = []
+        for item in items {
+            let workflow = SufficientElementDescriptionWorkFlow()
+            workflow.validate(element: item)
+            found += workflow.matchedTechniqueRecords.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
         }
         return found
     }
@@ -979,6 +1019,7 @@ public final class SwiftUIA11yScanRunner {
 
         return combined.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
             + findingsForUnreachableCompositeControls(in: view)
+            + findingsForTabBarItems(in: view)
     }
 
     /// Swaps the key window's root view controller through every example screen
