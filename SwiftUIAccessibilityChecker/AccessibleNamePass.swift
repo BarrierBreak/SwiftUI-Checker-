@@ -93,7 +93,9 @@ struct AccessibleNamePass: View {
                         }
                     }
                     .pickerStyle(.segmented)
-                    .accessibilityLabel("Favorite color")
+                    // Distinct from the ColorPicker below, which is also
+                    // "Favorite color" — two controls with one name is its own defect.
+                    .accessibilityLabel("Preset color")
                         .srcLine()
                 }
 

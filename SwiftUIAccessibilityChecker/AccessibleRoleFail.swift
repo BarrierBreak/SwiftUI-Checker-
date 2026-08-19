@@ -26,7 +26,7 @@ struct AccessibleRoleFail: View {
                         .padding(.horizontal, 16)
                         .background(Color.accentColor.opacity(0.15))
                         .clipShape(Capsule())
-                        .onTapGesture { /* refresh action */ }
+                        .onTapGesture { print("click")/* refresh action */ }
                         .srcLine()
                         // Actively wrong: tells VoiceOver this is
                         // definitely NOT interactive, despite the tap

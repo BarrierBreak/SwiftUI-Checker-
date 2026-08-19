@@ -468,10 +468,15 @@ private func allSwiftUIScreenEntries() -> [SwiftUIScreenEntry] {
         entry("Extras Fail", AccessibleNameExtrasFail()),
         entry("Extras Partial", AccessibleNameExtrasPartial()),
 
-        // The Native Role and Role screens are scanned by the role rulesets, not the
-        // accessible-name one this runner reports on, so they are deliberately not listed:
-        //   AccessibleNativeRolePass / Fail / Partial
-        //   AccessibleRolePass / Fail / Partial
+        // The Native Role and Role screens. The role rulesets (BB40001 / BB40042 /
+        // BB40043 / BB41004 and the heading rules) run in the same sweep as the
+        // accessible-name ones, so these screens are scanned by the same pipeline.
+        entry("Native Role Pass", AccessibleNativeRolePass()),
+        entry("Native Role Fail", AccessibleNativeRoleFail()),
+        entry("Native Role Partial", AccessibleNativeRolePartial()),
+        entry("Role Pass", AccessibleRolePass()),
+        entry("Role Fail", AccessibleRoleFail()),
+        entry("Role Partial", AccessibleRolePartial()),
     ]
 }
 
@@ -761,6 +766,63 @@ public final class SwiftUIA11yScanRunner {
         }
     }
 
+    /// Drops the "should this be a heading" suggestion for any control already identified
+    /// as having a role problem — missing, mismatched, or actively wrong.
+    ///
+    /// BB40041's heading-shape heuristic has no visibility into whether a piece of text is
+    /// actually tappable — it can only judge the text's shape (short, Title Case, no
+    /// sentence punctuation). A tappable control explicitly marked `.isStaticText` happens
+    /// to read exactly like a plausible section title ("Refresh"), so it was reported as a
+    /// heading candidate — actively misleading, since the real defect is a role problem,
+    /// and grouping it with genuine heading candidates buried that under an unrelated
+    /// rule. BB41004/BB60038/BB60039 (Scripts/source_role_linter.py's TAP_WITHOUT_ROLE and
+    /// DRAG_WITHOUT_ADJUSTABLE findings, surfaced by AccessibilityTraitsWorkflow) are the
+    /// correct, specific diagnosis for that same control, so the heading guess is removed
+    /// wherever any of them land on the same source line.
+    private func droppingHeadingGuessForKnownButtonRoleIssues(
+        _ results: [AccessibilityTechniqueAnnotated]
+    ) -> [AccessibilityTechniqueAnnotated] {
+        let roleFindingIDs: Set<String> = ["BB41004", "BB60038", "BB60039"]
+        let linesWithButtonRoleFinding = Set(
+            results.filter { roleFindingIDs.contains($0.record.techniqueID) }
+                   .compactMap { sourceLine($0.elementInfo) }
+        )
+        guard !linesWithButtonRoleFinding.isEmpty else { return results }
+
+        return results.filter { item in
+            guard item.record.techniqueID == "BB40041" else { return true }
+            guard let line = sourceLine(item.elementInfo) else { return true }
+            return !linesWithButtonRoleFinding.contains(line)
+        }
+    }
+
+    /// Drops the "verify accessible name for button is descriptive" manual-check row for
+    /// any control BB60039 already identified as carrying the WRONG role entirely.
+    ///
+    /// The "Brightness" dial in AccessibleRoleFail.swift is marked .isButton, so the
+    /// SwiftUI path sees a button-shaped element and asks a person to confirm its name
+    /// reads well as a button's — but the control isn't a button at all: it's a
+    /// continuous, drag-driven dial that should carry .accessibilityAdjustableAction, and
+    /// BB60039 (Scripts/source_role_linter.py's DRAG_WITHOUT_ADJUSTABLE finding) already
+    /// says so. Asking someone to review the button NAME when the button ROLE itself is
+    /// wrong is a distraction from the real defect, so that row is removed wherever both
+    /// land on the same source line.
+    private func droppingButtonNameCheckForWrongRoleIssues(
+        _ results: [AccessibilityTechniqueAnnotated]
+    ) -> [AccessibilityTechniqueAnnotated] {
+        let linesWithWrongRoleFinding = Set(
+            results.filter { $0.record.techniqueID == "BB60039" }
+                   .compactMap { sourceLine($0.elementInfo) }
+        )
+        guard !linesWithWrongRoleFinding.isEmpty else { return results }
+
+        return results.filter { item in
+            guard item.record.techniqueID == "BB40002" || item.record.techniqueID == "BB40540" else { return true }
+            guard let line = sourceLine(item.elementInfo) else { return true }
+            return !linesWithWrongRoleFinding.contains(line)
+        }
+    }
+
     /// Keeps one control in one rule family. If a source line is reported by a Button rule,
     /// any interactive-control rule row for that same line is dropped.
     ///
@@ -857,11 +919,14 @@ public final class SwiftUIA11yScanRunner {
         // of ~55 section titles per run. Re-enable together with the emission in
         // HeadingQualityWorkflow.validateSwiftUIHeadingRoles.
         "BB40041",              // Check whether the text should be a heading
-//        "BB41008",              // Headings not defined — disabled, see HeadingQualityWorkflow
+        // "BB41008" — Headings not defined (screen-level). Removed at the user's request;
+        // BB40041 above is the per-element replacement and still always runs.
 
         "BB40001",              // Verify if button does not require interaction
         "BB40043",              // Text functions as a button but is missing role button
         "BB41004",              // Missing role for button
+        "BB60038",              // Missing role for interactive control (non-image tap-without-role)
+        "BB60039",              // Wrong role for interactive control (drag-driven control marked with a discrete role)
         "BB40004",              // Missing accessible name for image button
         "BB40049",              // Incorrect method used to provide accessible name for Button
         "BB40088",              // Accessible name for button and its visual label don't match
@@ -988,6 +1053,80 @@ public final class SwiftUIA11yScanRunner {
         return found
     }
 
+
+    /// One manual-review row per tested element.
+    ///
+    /// A rule only speaks up when it has something to say, so an element that passes every
+    /// automated check produced no row at all and simply vanished from the report — a Pass
+    /// screen listed 22 elements tested and far fewer than 22 rows to review. Anything a
+    /// tool cannot decide still has to be looked at by a person, so every element that drew
+    /// no finding gets a Validate row here.
+    ///
+    /// Elements that already have a row keep exactly the one they have: a Fail stays a
+    /// Fail, and an element with several Validate rows is collapsed to its first, so the
+    /// number of rows for a clean screen equals the number of elements tested.
+    private func addingManualCheckRows(
+        to results: [AccessibilityTechniqueAnnotated],
+        testedElements: [String: SwiftUIAccessibilityElement]
+    ) -> [AccessibilityTechniqueAnnotated] {
+        guard let manualRecord = AccessibilityDatabase.shared.fetchFullRecord(forTechniqueID: "BB40051")
+        else { return results }
+
+        // One row per rule per element, keyed by technique ID + source line. A Fail
+        // always wins over a Validate for the SAME rule; otherwise the first Validate for
+        // that rule is kept and any further ones are dropped, so a control that tripped the
+        // same manual-review rule three times (once per scroll recapture) is still one
+        // thing to review.
+        //
+        // Keying on line alone collapsed genuinely different defects on the same control
+        // into one row: a source-linter finding like BB60037 (missing grouping) shares its
+        // line with BB41004 (missing role) for the same tappable icon, and BB41004 claimed
+        // the line first every time, silently dropping BB60037 from every report.
+        var rowForLine: [String: AccessibilityTechniqueAnnotated] = [:]
+        var linesWithAnyRow = Set<String>()
+        var unkeyed: [AccessibilityTechniqueAnnotated] = []
+        for item in results {
+            // A "Pass" record is not something a person needs to look at, and the report
+            // does not list it — counting it would make "Elements Tested" larger than the
+            // rows on screen. The element still gets a manual-review row below.
+            guard item.record.status.lowercased() != "pass" else { continue }
+            guard let line = sourceLine(item.elementInfo) else { unkeyed.append(item); continue }
+            linesWithAnyRow.insert(line)
+            let key = "\(item.record.techniqueID)|\(line)"
+            let isFail = item.record.status.lowercased() == "fail"
+            if let existing = rowForLine[key] {
+                if isFail, existing.record.status.lowercased() != "fail" { rowForLine[key] = item }
+            } else {
+                rowForLine[key] = item
+            }
+        }
+
+        // Elements no rule spoke about still need reviewing by a person, so each gets a
+        // Validate row. Without this a passing control simply vanished from the report:
+        // the Pass screen said 22 elements tested and listed far fewer than 22 to check.
+        // Checked against `linesWithAnyRow` (not `rowForLine`, which is now keyed per rule)
+        // so an element that already has a real finding does not also get a redundant
+        // "no automated issue found" placeholder alongside it.
+        for (_, element) in testedElements {
+            guard let id = element.identifier, id.hasPrefix("src:") else { continue }
+            let line = String(id.dropFirst(4))
+            guard !linesWithAnyRow.contains(line) else { continue }
+            linesWithAnyRow.insert(line)
+            var record = manualRecord
+            record.attribute = "No automated issue found — confirm the accessible name describes this control"
+            rowForLine["placeholder|\(line)"] = AccessibilityTechniqueAnnotated(
+                record: record,
+                elementInfo: AccessibilityElementInfo(swiftUIElement: element)
+            )
+        }
+
+        return unkeyed + rowForLine.keys.sorted { lhs, rhs in
+            let l = Int(lhs.split(separator: ":").last.map(String.init) ?? "") ?? 0
+            let r = Int(rhs.split(separator: ":").last.map(String.init) ?? "") ?? 0
+            return l < r
+        }.compactMap { rowForLine[$0] }
+    }
+
     private func runWorkflows(on view: UIView) -> [AccessibilityTechniqueAnnotated] {
         let nameQualityWorkflow = ElementNameQualityWorkflow()
         nameQualityWorkflow.validateAllElements(in: view)
@@ -1058,6 +1197,7 @@ public final class SwiftUIA11yScanRunner {
             var combinedResults: [AccessibilityTechniqueAnnotated] = []
             var seenResultKeys = Set<String>()
             var seenElementKeys = Set<String>()
+            var testedElements: [String: SwiftUIAccessibilityElement] = [:]
             var capturedLocations: [String: String] = [:]
 
             // Resolved once up front so the very first capture can already key UIKit
@@ -1083,8 +1223,16 @@ public final class SwiftUIA11yScanRunner {
                 }
 
                 for hv in AccessibilityScanner.findAllHostingViews(in: hostingController.view) {
-                    for el in AccessibilityScanner.collectSwiftUIElements(from: hv) where isInteractiveControl(el) {
-                        seenElementKeys.insert(elementKey(el))
+                    for el in AccessibilityScanner.collectSwiftUIElements(from: hv) {
+                        // Interactive controls, plus anything the screen tagged with
+                        // srcLine(). Interactive-only silently dropped elements that are
+                        // not controls but still carry meaning — a tagged progress view
+                        // that passes every rule appeared nowhere in the report.
+                        let isTagged = el.identifier?.hasPrefix("src:") == true
+                        guard isInteractiveControl(el) || isTagged else { continue }
+                        let key = elementKey(el)
+                        if isInteractiveControl(el) { seenElementKeys.insert(key) }
+                        if testedElements[key] == nil { testedElements[key] = el }
                     }
                 }
             }
@@ -1164,15 +1312,21 @@ public final class SwiftUIA11yScanRunner {
                 }
             }
 
-            let elementCount = seenElementKeys.count
+            // Counted over the same identity the rows use, so "Elements Tested" and the
+            // number of rows agree: every element contributes exactly one row.
+            _ = seenElementKeys
             // Drop the UIKit backing-view copies first, then collapse identical
             // manual-review rows, so one control yields one row.
             let deduped = removingBackingViewDuplicates(combinedResults, scrollView: scrollView)
             let screenLevel = collapsingScreenLevelFindings(deduped)
             let oneFamily = keepingButtonFamilyForButtons(screenLevel)
             let specificOnly = droppingGeneralWhenSpecificExists(oneFamily)
-            let singleRuled = droppingDescriptivenessForDuplicateNames(specificOnly)
-            let screenResults = collapsingRepeatedValidateRows(singleRuled)
+            let noHeadingGuessesForButtons = droppingHeadingGuessForKnownButtonRoleIssues(specificOnly)
+            let noButtonNameChecksForWrongRoles = droppingButtonNameCheckForWrongRoleIssues(noHeadingGuessesForButtons)
+            let singleRuled = droppingDescriptivenessForDuplicateNames(noButtonNameChecksForWrongRoles)
+            let reported = collapsingRepeatedValidateRows(singleRuled)
+            let screenResults = addingManualCheckRows(to: reported, testedElements: testedElements)
+            let elementCount = screenResults.count
             reporter.addScan(screenName: entry.name, screenClass: entry.className, elementCount: elementCount, results: screenResults, locations: capturedLocations)
 
             let failCount = screenResults.filter { $0.record.status.lowercased() == "fail" }.count

@@ -1,0 +1,742 @@
+[
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 28,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 43,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 56,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 69,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 80,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 86,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasPartial.swift",
+    "basename": "AccessibleNameExtrasPartial.swift",
+    "line": 30,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasPass.swift",
+    "basename": "AccessibleNameExtrasPass.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 39,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 86,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 96,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 104,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 112,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 120,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 131,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 143,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 150,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 157,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 164,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 174,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 185,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 193,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 201,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 211,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 221,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 225,
+    "element": "star.fill",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 233,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 242,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 178,
+    "element": "star.fill",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 35,
+    "element": "",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 41,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "DRAG_WITHOUT_ADJUSTABLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "responds to a continuous drag gesture but has no .accessibilityAdjustableAction \u2014 VoiceOver's swipe-up/down adjust gesture does nothing"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 63,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 70,
+    "element": "\u2212",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 79,
+    "element": "+",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 88,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 95,
+    "element": "minus",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 104,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 110,
+    "element": "I agree to the Terms of Service",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "DRAG_WITHOUT_ADJUSTABLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 59,
+    "element": "Slider",
+    "hasRealAction": false,
+    "detail": "responds to a continuous drag gesture but has no .accessibilityAdjustableAction \u2014 VoiceOver's swipe-up/down adjust gesture does nothing"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 30,
+    "element": "Refresh",
+    "hasRealAction": true,
+    "detail": "explicitly marked .isStaticText despite the tap gesture right above it"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 43,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 64,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 70,
+    "element": "Wi-Fi Only",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 79,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 90,
+    "element": "checkmark",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 100,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "DRAG_WITHOUT_ADJUSTABLE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 116,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "marked with a discrete role (.isButton/.isLink) despite responding to a continuous drag gesture \u2014 should carry .accessibilityAdjustableAction instead, not a single-tap role"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 126,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "ROLE_WITHOUT_ACTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 129,
+    "element": "sparkle",
+    "hasRealAction": false,
+    "detail": "carries an interactive trait (.isButton/.isLink/.isAdjustable) but its tap handler performs no real action \u2014 VoiceOver announces this as activatable, but double-tapping does nothing"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 24,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 31,
+    "element": "Refresh",
+    "hasRealAction": false,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 37,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 46,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 51,
+    "element": "View documentation",
+    "hasRealAction": false,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 57,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 72,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 93,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "DRAG_WITHOUT_ADJUSTABLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 110,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "responds to a continuous drag gesture but has no .accessibilityAdjustableAction \u2014 VoiceOver's swipe-up/down adjust gesture does nothing"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 118,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 121,
+    "element": "sparkle",
+    "hasRealAction": false,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 21,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "ROLE_WITHOUT_ACTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 28,
+    "element": "Refresh",
+    "hasRealAction": false,
+    "detail": "carries an interactive trait (.isButton/.isLink/.isAdjustable) but its tap handler performs no real action \u2014 VoiceOver announces this as activatable, but double-tapping does nothing"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 35,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 44,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "ROLE_WITHOUT_ACTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 49,
+    "element": "View documentation",
+    "hasRealAction": false,
+    "detail": "carries an interactive trait (.isButton/.isLink/.isAdjustable) but its tap handler performs no real action \u2014 VoiceOver announces this as activatable, but double-tapping does nothing"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 56,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 72,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 93,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 125,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  }
+]

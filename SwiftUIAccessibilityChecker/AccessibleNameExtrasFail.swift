@@ -94,7 +94,8 @@ struct AccessibleNameExtrasFail: View {
                 }
             }
             .tabItem {
-                Image(systemName: "gearshape")
+                Label("azhar", systemImage: "gearshape")
+                    .accessibilityLabel("shaikh")
             }
             .tag(0)
 
