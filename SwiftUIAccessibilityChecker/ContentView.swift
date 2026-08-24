@@ -49,6 +49,12 @@ struct ContentView: View {
                     NavigationLink("AccessibleRoleFail") { AccessibleRoleFail() }
                     NavigationLink("AccessibleRolePartial") { AccessibleRolePartial() }
                 }
+
+                Section("State") {
+                    NavigationLink("AccessibleStatePass") { AccessibleStatePass() }
+                    NavigationLink("AccessibleStateFail") { AccessibleStateFail() }
+                    NavigationLink("AccessibleStatePartial") { AccessibleStatePartial() }
+                }
             }
             .navigationTitle("Accessibility Examples")
         }

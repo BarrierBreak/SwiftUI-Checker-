@@ -420,6 +420,16 @@
     "detail": "responds to a continuous drag gesture but has no .accessibilityAdjustableAction \u2014 VoiceOver's swipe-up/down adjust gesture does nothing"
   },
   {
+    "check": "STALE_VALUE_ON_TOGGLED_CONTROL",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 69,
+    "element": "notificationsOn",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'notificationsOn', but accessibilityValue is the fixed string \"Off\" \u2014 it can never change, so VoiceOver always announces the same value regardless of 'notificationsOn''s actual state"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
@@ -738,5 +748,165 @@
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 30,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "UNUSED_STATE_BOOLEAN",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 47,
+    "element": "isSelected",
+    "hasRealAction": false,
+    "detail": "'isSelected' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isSelected', not a hardcoded value or a different condition"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 55,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_HIDDEN_FROM_ACCESSIBILITY",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 69,
+    "element": "chevron.right",
+    "hasRealAction": false,
+    "detail": "has a real tap handler but is also marked .accessibilityHidden(true) \u2014 VoiceOver users have no way to reach this control's functionality at all"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 83,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "POSSIBLE_INVERTED_VALUE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 95,
+    "element": "agreedToTerms",
+    "hasRealAction": false,
+    "detail": "accessibilityValue reads \"Not checked\" when agreedToTerms is true and \"Checked\" when false \u2014 verify the branches are not swapped (heuristic: manual confirmation needed)"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 100,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 115,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "PREMATURE_COMPLETION_ANNOUNCEMENT",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 129,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "announces \"Submitted successfully\" here, but an async completion block (DispatchQueue.main.asyncAfter / Task) follows in the same handler \u2014 verify this doesn't announce completion before the operation has actually finished (heuristic: manual confirmation needed)"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 137,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 157,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 174,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "UNUSED_STATE_BOOLEAN",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 188,
+    "element": "isCurrent",
+    "hasRealAction": false,
+    "detail": "'isCurrent' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isCurrent', not a hardcoded value or a different condition"
+  },
+  {
+    "check": "UNUSED_STATE_BOOLEAN",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 52,
+    "element": "isSelected",
+    "hasRealAction": false,
+    "detail": "'isSelected' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isSelected', not a hardcoded value or a different condition"
+  },
+  {
+    "check": "STALE_VALUE_ON_TOGGLED_CONTROL",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 97,
+    "element": "agreedToTerms",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'agreedToTerms', but accessibilityValue is the fixed string \"Not checked\" \u2014 it can never change, so VoiceOver always announces the same value regardless of 'agreedToTerms''s actual state"
+  },
+  {
+    "check": "UNUSED_STATE_BOOLEAN",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 195,
+    "element": "isCurrent",
+    "hasRealAction": false,
+    "detail": "'isCurrent' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isCurrent', not a hardcoded value or a different condition"
   }
 ]

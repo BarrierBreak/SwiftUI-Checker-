@@ -44,6 +44,7 @@ struct AccessibleStateFail: View {
                                 .accessibilityAddTraits(
                                     filter == filters.first ? [.isButton, .isSelected] : .isButton
                                 )
+                                .srcLine()
                             // FIX — derive from the actual state:
                             // .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
                         }
@@ -65,6 +66,7 @@ struct AccessibleStateFail: View {
                         // the accessibility tree, so the collapsed content
                         // below it can never be revealed by a VoiceOver user.
                         .accessibilityHidden(true)
+                        .srcLine()
                         // FIX — expose it as a button and report its state:
                         // .accessibilityElement(children: .combine)
                         // .accessibilityAddTraits(.isButton)
@@ -90,6 +92,7 @@ struct AccessibleStateFail: View {
                     // has NOT agreed is told they have — a consent checkbox
                     // lying about consent.
                     .accessibilityValue(agreedToTerms ? "Not checked" : "Checked")
+                    .srcLine()
                     // FIX — .accessibilityValue(agreedToTerms ? "Checked" : "Not checked")
                 }
 
@@ -100,6 +103,7 @@ struct AccessibleStateFail: View {
                     } label: {
                         Text("Continue")
                     }
+                    .srcLine()
                     // Actively wrong: the button is dead code for most of the
                     // form's life, yet reports as a normal enabled control.
                     // No dimmed trait, no hint, no feedback on activation.
@@ -122,6 +126,7 @@ struct AccessibleStateFail: View {
                     } label: {
                         ProgressView()
                     }
+                    .srcLine()
                     // Icon-only trigger with no label either — reads as a
                     // bare "progress indicator" with no action attached.
                     // FIX — announce "Submitting" on entry and the result on
@@ -141,6 +146,7 @@ struct AccessibleStateFail: View {
                         // overwritten with a placeholder that erases both the
                         // entered text and the error.
                         .accessibilityValue("Empty")
+                        .srcLine()
                     // FIX — label the field (including "required"), and put
                     // the error into the value so it re-reads on refocus:
                     // .accessibilityLabel("Email address, required")
@@ -157,6 +163,7 @@ struct AccessibleStateFail: View {
                     // Actively wrong: a fixed label that stops being true the
                     // instant playback starts, and no value to correct it.
                     .accessibilityLabel("Play")
+                    .srcLine()
                     // FIX — flip the label with the action and carry the
                     // state in a value:
                     // .accessibilityLabel(isPlaying ? "Pause" : "Play")
@@ -178,6 +185,7 @@ struct AccessibleStateFail: View {
                                 // none of them being selected — except it
                                 // also suggests a multi-select control.
                                 .accessibilityAddTraits([.isButton, .isSelected])
+                                .srcLine()
                             // FIX — .accessibilityAddTraits(isCurrent ? [.isButton, .isSelected] : .isButton)
                             // .accessibilityValue("Step \(index + 1) of \(steps.count)")
                         }

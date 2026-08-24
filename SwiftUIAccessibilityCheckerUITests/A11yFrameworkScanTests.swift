@@ -72,6 +72,20 @@ final class A11yDemoScanTests: XCTestCase {
         try runScan(screen: "AccessibleRolePartial")
     }
 
+    // MARK: - State screens
+
+    func testAccessibleStatePass() throws {
+        try runScan(screen: "AccessibleStatePass")
+    }
+
+    func testAccessibleStateFail() throws {
+        try runScan(screen: "AccessibleStateFail")
+    }
+
+    func testAccessibleStatePartial() throws {
+        try runScan(screen: "AccessibleStatePartial")
+    }
+
     /// Every screen in one run — the combined report, as before.
     func testAllScreens() throws {
         try runScan(screen: nil)

@@ -477,6 +477,13 @@ private func allSwiftUIScreenEntries() -> [SwiftUIScreenEntry] {
         entry("Role Pass", AccessibleRolePass()),
         entry("Role Fail", AccessibleRoleFail()),
         entry("Role Partial", AccessibleRolePartial()),
+
+        // The State screens demonstrate accessibility STATE bugs (selected/expanded/
+        // checked/disabled/busy/invalid/current), as distinct from NAME or ROLE — see
+        // each screen's own doc comment.
+        entry("State Pass", AccessibleStatePass()),
+        entry("State Fail", AccessibleStateFail()),
+        entry("State Partial", AccessibleStatePartial()),
     ]
 }
 
@@ -943,9 +950,17 @@ public final class SwiftUIA11yScanRunner {
         // does still see the backing view and raises this manual-check row against it,
         // carrying the control's name and source line, so nothing goes unreported.
         "BB40546",              // Check if interactive controls needs to be hidden from screen reader user
-        
+
       //  For role
-        
+
+        // For state
+        "BB60040",              // Missing accessible state for interactive control (adjustable/toggle control with no accessibilityValue)
+        "BB60041",              // Interactive element hidden from accessibility (real tap handler + .accessibilityHidden(true))
+        "BB60042",              // Accessibility modifier may not reflect the control's actual state (unused per-item boolean)
+        "BB60043",              // Accessibility value may be inverted (heuristic)
+        "BB60044",              // Accessibility announcement may fire before the operation completes (heuristic)
+        "BB60045",              // Accessibility value never changes on a toggling control (flat literal next to a .toggle() handler)
+
     ]
 
     /// Reads the source line an element recorded on itself, at scan time. Captured here
@@ -1149,12 +1164,19 @@ public final class SwiftUIA11yScanRunner {
         let headingWorkflow = HeadingQualityWorkflow()
         headingWorkflow.validateAllElements(in: view)
 
+        // State rules (BB60040) — a control whose type structurally requires a value
+        // (adjustable, toggle) but exposes none at all. Was not being driven at all,
+        // matching how HeadingQualityWorkflow was missing before it was added above.
+        let stateQualityWorkflow = ElementStateQualityWorkflow()
+        stateQualityWorkflow.validateAllElements(in: view)
+
         let combined = nameQualityWorkflow.matchedTechniqueRecords
             + sufficientDescriptionWorkflow.matchedTechniqueRecords
             + buttonWorkflow.matchedTechniqueRecords
             + labelInNameWorkflow.matchedTechniqueRecords
             + traitsWorkflow.matchedTechniqueRecords
             + headingWorkflow.matchedTechniqueRecords
+            + stateQualityWorkflow.matchedTechniqueRecords
 
         return combined.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
             + findingsForUnreachableCompositeControls(in: view)
