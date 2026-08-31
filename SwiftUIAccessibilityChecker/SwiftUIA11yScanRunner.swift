@@ -484,6 +484,18 @@ private func allSwiftUIScreenEntries() -> [SwiftUIScreenEntry] {
         entry("State Pass", AccessibleStatePass()),
         entry("State Fail", AccessibleStateFail()),
         entry("State Partial", AccessibleStatePartial()),
+
+        // The Keyboard screens — dedicated Pass/Fail/Partial trio for hardware-keyboard
+        // focus support itself, distinct from NAME/ROLE/STATE.
+        entry("Keyboard Pass", AccessibleKeyboardPass()),
+        entry("Keyboard Fail", AccessibleKeyboardFail()),
+        entry("Keyboard Partial", AccessibleKeyboardPartial()),
+
+        // The Color Contrast screens — dedicated Pass/Fail/Partial trio for
+        // ColorContrastValidator (WCAG 1.4.3 text contrast).
+        entry("Contrast Pass", AccessibleColorContrastPass()),
+        entry("Contrast Fail", AccessibleColorContrastFail()),
+        entry("Contrast Partial", AccessibleColorContrastPartial()),
     ]
 }
 
@@ -912,9 +924,9 @@ public final class SwiftUIA11yScanRunner {
     /// "button does not require interaction", "text missing role button", "needs to be
     /// hidden", "inaccurate description", …) is filtered out.
     private let allowedTechniqueIDs: Set<String> = [
-        
+
         // For Name
-        
+
         "BB40002", "BB40540",   // Verify if accessible name for button is descriptive (UIKit + SwiftUI)
         "BB40003",              // Missing accessible name for button (UIButton only)
         "BB40042",              // Text functions as a link but is missing role link
@@ -961,6 +973,17 @@ public final class SwiftUIA11yScanRunner {
         "BB60044",              // Accessibility announcement may fire before the operation completes (heuristic)
         "BB60045",              // Accessibility value never changes on a toggling control (flat literal next to a .toggle() handler)
 
+        // For keyboard (KeyboardFocusableWorkflow)
+        "BB60046",              // Interactive control cannot receive keyboard focus
+        "BB60047",              // Interactive control can receive keyboard focus
+        "BB60048",              // Focusable control may not respond to a keyboard Select press
+        "BB60049",              // SwiftUI control's keyboard-focus reachability cannot be verified automatically
+
+        // For color contrast (ColorContrastValidator)
+        "BB40518",              // Insufficient color contrast for standard text
+        "BB40520",              // Insufficient color contrast for large text
+        "BB40522",              // Large text meets the required 3:1 contrast ratio
+        "BB40524",              // Standard text meets the required 4.5:1 contrast ratio
     ]
 
     /// Reads the source line an element recorded on itself, at scan time. Captured here
@@ -1170,6 +1193,13 @@ public final class SwiftUIA11yScanRunner {
         let stateQualityWorkflow = ElementStateQualityWorkflow()
         stateQualityWorkflow.validateAllElements(in: view)
 
+        // ColorContrastValidator's public entry point is validateAllTextElements(in:), not
+        // validateAllElements(in:) — its ViewScanWorkflow conformance wraps that call but
+        // isn't itself public, so the records are taken from this method's own return value
+        // instead of a matchedTechniqueRecords property read.
+        let colorContrastWorkflow = ColorContrastValidator()
+        let contrastRecords = colorContrastWorkflow.validateAllTextElements(in: view)
+
         let combined = nameQualityWorkflow.matchedTechniqueRecords
             + sufficientDescriptionWorkflow.matchedTechniqueRecords
             + buttonWorkflow.matchedTechniqueRecords
@@ -1177,6 +1207,7 @@ public final class SwiftUIA11yScanRunner {
             + traitsWorkflow.matchedTechniqueRecords
             + headingWorkflow.matchedTechniqueRecords
             + stateQualityWorkflow.matchedTechniqueRecords
+            + contrastRecords
 
         return combined.filter { allowedTechniqueIDs.contains($0.record.techniqueID) }
             + findingsForUnreachableCompositeControls(in: view)

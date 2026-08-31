@@ -314,7 +314,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 35,
+    "line": 37,
     "element": "",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
@@ -324,7 +324,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 41,
+    "line": 43,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -334,7 +334,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 52,
+    "line": 54,
     "element": "",
     "hasRealAction": false,
     "detail": "responds to a continuous drag gesture but has no .accessibilityAdjustableAction \u2014 VoiceOver's swipe-up/down adjust gesture does nothing"
@@ -344,7 +344,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 63,
+    "line": 65,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -354,7 +354,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 70,
+    "line": 72,
     "element": "\u2212",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
@@ -364,7 +364,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 79,
+    "line": 81,
     "element": "+",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
@@ -374,7 +374,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 88,
+    "line": 90,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -384,7 +384,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 95,
+    "line": 97,
     "element": "minus",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
@@ -394,7 +394,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 104,
+    "line": 106,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -404,7 +404,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
-    "line": 110,
+    "line": 112,
     "element": "I agree to the Terms of Service",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"

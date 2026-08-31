@@ -86,6 +86,34 @@ final class A11yDemoScanTests: XCTestCase {
         try runScan(screen: "AccessibleStatePartial")
     }
 
+    // MARK: - Keyboard screens
+
+    func testAccessibleKeyboardPass() throws {
+        try runScan(screen: "AccessibleKeyboardPass")
+    }
+
+    func testAccessibleKeyboardFail() throws {
+        try runScan(screen: "AccessibleKeyboardFail")
+    }
+
+    func testAccessibleKeyboardPartial() throws {
+        try runScan(screen: "AccessibleKeyboardPartial")
+    }
+
+    // MARK: - Color Contrast screens
+
+    func testAccessibleColorContrastPass() throws {
+        try runScan(screen: "AccessibleColorContrastPass")
+    }
+
+    func testAccessibleColorContrastFail() throws {
+        try runScan(screen: "AccessibleColorContrastFail")
+    }
+
+    func testAccessibleColorContrastPartial() throws {
+        try runScan(screen: "AccessibleColorContrastPartial")
+    }
+
     /// Every screen in one run — the combined report, as before.
     func testAllScreens() throws {
         try runScan(screen: nil)

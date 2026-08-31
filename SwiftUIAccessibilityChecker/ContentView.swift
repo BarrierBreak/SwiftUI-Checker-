@@ -55,6 +55,18 @@ struct ContentView: View {
                     NavigationLink("AccessibleStateFail") { AccessibleStateFail() }
                     NavigationLink("AccessibleStatePartial") { AccessibleStatePartial() }
                 }
+
+                Section("Keyboard") {
+                    NavigationLink("AccessibleKeyboardPass") { AccessibleKeyboardPass() }
+                    NavigationLink("AccessibleKeyboardFail") { AccessibleKeyboardFail() }
+                    NavigationLink("AccessibleKeyboardPartial") { AccessibleKeyboardPartial() }
+                }
+
+                Section("Color Contrast") {
+                    NavigationLink("AccessibleColorContrastPass") { AccessibleColorContrastPass() }
+                    NavigationLink("AccessibleColorContrastFail") { AccessibleColorContrastFail() }
+                    NavigationLink("AccessibleColorContrastPartial") { AccessibleColorContrastPartial() }
+                }
             }
             .navigationTitle("Accessibility Examples")
         }

@@ -32,6 +32,8 @@ struct AccessibleNativeRoleFail: View {
                             .shadow(radius: 1)
                     }
                     .onTapGesture { notificationsOn.toggle() }
+                    .accessibilityElement()
+                    .accessibilityLabel("Notifications")
                     .srcLine()
                     // No accessibility modifiers at all — sighted users see
                     // it slide on/off; VoiceOver users don't know it exists.
