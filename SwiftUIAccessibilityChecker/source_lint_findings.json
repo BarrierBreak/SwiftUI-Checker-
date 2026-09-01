@@ -554,7 +554,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 24,
+    "line": 25,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -564,7 +564,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 31,
+    "line": 32,
     "element": "Refresh",
     "hasRealAction": false,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
@@ -574,7 +574,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 37,
+    "line": 38,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -584,19 +584,19 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 46,
+    "line": 47,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
-    "check": "TAP_WITHOUT_ROLE",
+    "check": "LINK_WITHOUT_ROLE",
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 51,
+    "line": 55,
     "element": "View documentation",
-    "hasRealAction": false,
+    "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
@@ -604,7 +604,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 57,
+    "line": 61,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -614,7 +614,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 72,
+    "line": 76,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -624,7 +624,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 93,
+    "line": 97,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -634,7 +634,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 110,
+    "line": 114,
     "element": "",
     "hasRealAction": false,
     "detail": "responds to a continuous drag gesture but has no .accessibilityAdjustableAction \u2014 VoiceOver's swipe-up/down adjust gesture does nothing"
@@ -644,7 +644,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 118,
+    "line": 122,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -654,7 +654,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 121,
+    "line": 125,
     "element": "sparkle",
     "hasRealAction": false,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
