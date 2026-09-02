@@ -66,9 +66,7 @@
 				A11yInspect_Accessibility_Framework.xcframework,
 			);
 			platformFiltersByRelativePath = {
-				A11yInspect_Accessibility_Framework.xcframework = (
-					ios,
-				);
+				A11yInspect_Accessibility_Framework.xcframework = (ios, );
 			};
 			target = EC6744B2301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests */;
 		};
@@ -78,16 +76,14 @@
 				A11yInspect_Accessibility_Framework.xcframework,
 			);
 			platformFiltersByRelativePath = {
-				A11yInspect_Accessibility_Framework.xcframework = (
-					ios,
-				);
+				A11yInspect_Accessibility_Framework.xcframework = (ios, );
 			};
 			target = EC6744BC301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		EC6744F3301B728F0080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "Embed Frameworks" build phase */ = {
+		EC6744F3301B728F0080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "Embed Frameworks" phase from "SwiftUIAccessibilityChecker" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
 				A11yInspect_Accessibility_Framework.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
@@ -103,7 +99,7 @@
 		EC6744A8301B6C620080BF16 /* SwiftUIAccessibilityChecker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				EC6744F3301B728F0080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "Embed Frameworks" build phase */,
+				EC6744F3301B728F0080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "Embed Frameworks" phase from "SwiftUIAccessibilityChecker" target */,
 				EC6744EE301B72780080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityCheckerTests" target */,
 				EC6744EF301B72780080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityCheckerUITests" target */,
 			);
@@ -112,15 +108,11 @@
 		};
 		EC6744B6301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = SwiftUIAccessibilityCheckerTests;
 			sourceTree = "<group>";
 		};
 		EC6744C0301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = SwiftUIAccessibilityCheckerUITests;
 			sourceTree = "<group>";
 		};

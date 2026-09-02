@@ -13,6 +13,8 @@ struct AccessibleRolePartial: View {
     @State private var isWifiOnlyFilterOn = false
     @State private var selectedShippingOption = 0
     @State private var brightness: Double = 0.5
+    @Environment(\.openURL) private var openURL
+
 
     private let shippingOptions = ["Standard (5-7 days)", "Express (2-3 days)", "Overnight"]
 
@@ -47,8 +49,15 @@ struct AccessibleRolePartial: View {
                     Text("View documentation")
                         .foregroundStyle(.blue)
                         .underline()
-                        .onTapGesture { /* open URL */ }
+                        //.onTapGesture {
+                            .onTapGesture {
+                                if let url = URL(string: "https://www.apple.com/documentation") {
+                                    openURL(url)
+                                }
+                            }
+                       // }
                         .srcLine()
+                        .accessibilityAddTraits(.isLink)
                         // No .isLink — VoiceOver has no idea this behaves
                         // differently from any other line of text.
                 }

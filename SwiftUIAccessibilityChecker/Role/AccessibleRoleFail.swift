@@ -55,7 +55,7 @@ struct AccessibleRoleFail: View {
                         // link conventions gets the wrong mental model,
                         // e.g. expecting it to open in a new context vs.
                         // trigger an in-place action.
-                        .accessibilityAddTraits(.isStaticText)
+                        .accessibilityAddTraits(.isButton)
                         // FIX — correct role for link-like behavior:
                         // .accessibilityAddTraits(.isLink)
                 }
