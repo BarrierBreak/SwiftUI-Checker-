@@ -947,6 +947,7 @@ public final class SwiftUIA11yScanRunner {
         "BB60038",              // Missing role for interactive control (non-image tap-without-role)
         "BB60039",              // Wrong role for interactive control (drag-driven control marked with a discrete role)
         "BB60050",              // Wrong role for link (link-shaped text marked .isButton instead of .isLink)
+        "BB60051",              // Verify role is appropriate for custom control (has a role + real action, but the choice can't be auto-confirmed)
         "BB40004",              // Missing accessible name for image button
         "BB40049",              // Incorrect method used to provide accessible name for Button
         "BB40088",              // Accessible name for button and its visual label don't match

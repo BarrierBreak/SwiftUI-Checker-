@@ -1,14 +1,12 @@
 import SwiftUI
 
-/// Partial tier: every native control from AccessibleNativeRolePass is
-/// replaced with a hand-drawn visual clone (built for custom styling
-/// designers often want). Each clone gets SOME accessibility wiring — a
-/// label, a button trait — but the piece that requires the developer to
-/// manually re-derive what the native control gave for free (a live
-/// value, a selected state, an adjustable action) is missing or stale.
-/// The result LOOKS accessible in code review but is functionally broken
-/// for VoiceOver users in a specific, easy-to-miss way.
-struct AccessibleNativeRolePartial: View {
+/// Worst-case tier: the same hand-drawn clones as Partial, but with NO
+/// accessibility wiring at all. Nothing here is a real Toggle/Slider/
+/// Stepper/Picker — they're all custom shapes driven by tap/drag gestures
+/// — and without a single accessibility modifier, VoiceOver either skips
+/// them entirely or reads them as generic, unlabeled shapes with zero
+/// indication of function or state. Deliberately broken; reference only.
+struct AccessibleNativeRoleFail: View {
 
     @State private var notificationsOn = false
     @State private var volume: Double = 0.5
@@ -21,8 +19,8 @@ struct AccessibleNativeRolePartial: View {
     var body: some View {
         NavigationStack {
             Form {
-                // MARK: Custom switch — value never syncs
-                Section("Toggle") {
+                // MARK: Custom switch — completely silent
+                Section {
                     ZStack(alignment: notificationsOn ? .trailing : .leading) {
                         Capsule()
                             .fill(notificationsOn ? Color.green : Color(.systemGray4))
@@ -35,17 +33,14 @@ struct AccessibleNativeRolePartial: View {
                     }
                     .onTapGesture { notificationsOn.toggle() }
                     .accessibilityElement()
-                    .accessibilityLabel("Enable Notifications")
-                    .accessibilityAddTraits(.isButton)
-                        .srcLine()
-                    // Bug: hardcoded instead of reading notificationsOn —
-                    // VoiceOver always announces "Off" no matter what the
-                    // switch visually shows.
-                    .accessibilityValue("Off")
+                    .accessibilityLabel("Notifications")
+                    .srcLine()
+                    // No accessibility modifiers at all — sighted users see
+                    // it slide on/off; VoiceOver users don't know it exists.
                 }
 
-                // MARK: Custom slider — not adjustable
-                Section("Slider") {
+                // MARK: Custom slider — completely silent
+                Section {
                     GeometryReader { geometry in
                         ZStack(alignment: .leading) {
                             Capsule().fill(Color(.systemGray4)).frame(height: 4)
@@ -63,18 +58,11 @@ struct AccessibleNativeRolePartial: View {
                         )
                     }
                     .frame(height: 20)
-                    .accessibilityElement()
-                    .accessibilityLabel("Volume")
-                    .accessibilityValue("\(Int(volume * 100)) percent")
-                        .srcLine()
-                    // Bug: no .accessibilityAdjustableAction — VoiceOver
-                    // reports the current value but swiping up/down to
-                    // change it does nothing. The drag gesture that
-                    // sighted users rely on is unreachable under VoiceOver.
+                    .srcLine()
                 }
 
-                // MARK: Custom stepper — buttons work, count is silent
-                Section("Stepper") {
+                // MARK: Custom stepper — unlabeled symbols
+                Section {
                     HStack(spacing: 20) {
                         Text("−")
                             .font(.title2)
@@ -82,8 +70,6 @@ struct AccessibleNativeRolePartial: View {
                             .background(Color(.systemGray5))
                             .clipShape(Circle())
                             .onTapGesture { quantity = max(quantity - 1, 1) }
-                            .accessibilityAddTraits(.isButton)
-                            .accessibilityLabel("Decrease quantity")
 
                         Text("\(quantity)")
 
@@ -93,19 +79,15 @@ struct AccessibleNativeRolePartial: View {
                             .background(Color(.systemGray5))
                             .clipShape(Circle())
                             .onTapGesture { quantity = min(quantity + 1, 10) }
-                            .accessibilityAddTraits(.isButton)
-                            .accessibilityLabel("Increase quantity")
                     }
                         .srcLine()
-                    // Bug: the two buttons work and are individually
-                    // labeled, but the current quantity Text in the middle
-                    // has no accessibilityValue tying it to either button —
-                    // a VoiceOver user has to manually swipe to a third,
-                    // disconnected element to hear the count at all.
+                    // VoiceOver reads three disconnected text glyphs:
+                    // "minus", the number, "plus" — nothing indicates two
+                    // of them are buttons or what they control.
                 }
 
-                // MARK: Custom segmented control — selection is invisible
-                Section("Segmented Picker") {
+                // MARK: Custom segmented control — unlabeled colors
+                Section {
                     HStack(spacing: 0) {
                         ForEach(colorOptions, id: \.self) { option in
                             Text(option)
@@ -113,10 +95,6 @@ struct AccessibleNativeRolePartial: View {
                                 .padding(.vertical, 6)
                                 .background(selectedColorOption == option ? Color.accentColor.opacity(0.2) : .clear)
                                 .onTapGesture { selectedColorOption = option }
-                                .accessibilityAddTraits(.isButton)
-                            // Bug: no .isSelected — every segment reads as
-                            // just "button", so a VoiceOver user can't tell
-                            // which color is currently chosen.
                         }
                     }
                     .clipShape(Capsule())
@@ -124,26 +102,25 @@ struct AccessibleNativeRolePartial: View {
                         .srcLine()
                 }
 
-                // MARK: Custom checkbox — button but no state
-                Section("Checkbox-style Toggle") {
+                // MARK: Custom checkbox — silent icon + text
+                Section {
                     HStack {
                         Image(systemName: agreedToTerms ? "checkmark.square.fill" : "square")
                         Text("I agree to the Terms of Service")
                     }
                     .onTapGesture { agreedToTerms.toggle() }
-                    .accessibilityElement(children: .combine)
-                    .accessibilityAddTraits(.isButton)
                         .srcLine()
-                    // Bug: no accessibilityValue at all — VoiceOver knows
-                    // this is tappable but never announces agreed/not
-                    // agreed, unlike the native Toggle which always does.
+                    // Not combined into one element either — VoiceOver
+                    // swipes through the checkbox image and the agreement
+                    // text as two separate, unrelated pieces, with the
+                    // image announced only as "square" or "checkmark
+                    // square fill" depending on state.
                 }
             }
-            .navigationTitle("Native Controls (Partial)")
         }
     }
 }
 
 #Preview {
-    AccessibleNativeRolePartial()
+    AccessibleNativeRoleFail()
 }

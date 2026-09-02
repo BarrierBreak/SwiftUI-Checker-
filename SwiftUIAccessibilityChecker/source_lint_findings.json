@@ -1,8 +1,38 @@
 [
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardFail.swift",
+    "basename": "AccessibleKeyboardFail.swift",
+    "line": 20,
+    "element": "",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPartial.swift",
+    "basename": "AccessibleKeyboardPartial.swift",
+    "line": 22,
+    "element": "focusable",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPass.swift",
+    "basename": "AccessibleKeyboardPass.swift",
+    "line": 25,
+    "element": "",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
     "basename": "AccessibleNameExtrasFail.swift",
     "line": 23,
     "element": "",
@@ -12,7 +42,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
     "basename": "AccessibleNameExtrasFail.swift",
     "line": 28,
     "element": "",
@@ -22,7 +52,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
     "basename": "AccessibleNameExtrasFail.swift",
     "line": 43,
     "element": "",
@@ -32,7 +62,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
     "basename": "AccessibleNameExtrasFail.swift",
     "line": 56,
     "element": "",
@@ -42,7 +72,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
     "basename": "AccessibleNameExtrasFail.swift",
     "line": 69,
     "element": "",
@@ -52,7 +82,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
     "basename": "AccessibleNameExtrasFail.swift",
     "line": 80,
     "element": "",
@@ -62,7 +92,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
     "basename": "AccessibleNameExtrasFail.swift",
     "line": 86,
     "element": "",
@@ -72,7 +102,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasPartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPartial.swift",
     "basename": "AccessibleNameExtrasPartial.swift",
     "line": 30,
     "element": "",
@@ -82,7 +112,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameExtrasPass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
     "basename": "AccessibleNameExtrasPass.swift",
     "line": 22,
     "element": "",
@@ -92,7 +122,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 39,
     "element": "",
@@ -102,7 +132,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 86,
     "element": "",
@@ -112,7 +142,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 96,
     "element": "",
@@ -122,7 +152,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 104,
     "element": "",
@@ -132,7 +162,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 112,
     "element": "",
@@ -142,7 +172,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 120,
     "element": "",
@@ -152,7 +182,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 131,
     "element": "",
@@ -162,7 +192,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 143,
     "element": "",
@@ -172,7 +202,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 150,
     "element": "",
@@ -182,7 +212,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 157,
     "element": "",
@@ -192,7 +222,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 164,
     "element": "",
@@ -202,7 +232,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 174,
     "element": "",
@@ -212,7 +242,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 185,
     "element": "",
@@ -222,7 +252,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 193,
     "element": "",
@@ -232,7 +262,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 201,
     "element": "",
@@ -242,7 +272,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 211,
     "element": "",
@@ -252,7 +282,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 221,
     "element": "",
@@ -262,7 +292,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 225,
     "element": "star.fill",
@@ -272,7 +302,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 233,
     "element": "",
@@ -282,7 +312,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNameFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
     "basename": "AccessibleNameFail.swift",
     "line": 242,
     "element": "",
@@ -292,7 +322,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNamePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
     "basename": "AccessibleNamePartial.swift",
     "line": 178,
     "element": "star.fill",
@@ -300,9 +330,19 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 218,
+    "element": "star.fill",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 23,
     "element": "",
@@ -312,7 +352,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 37,
     "element": "",
@@ -322,7 +362,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 43,
     "element": "",
@@ -332,7 +372,7 @@
   {
     "check": "DRAG_WITHOUT_ADJUSTABLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 54,
     "element": "",
@@ -342,7 +382,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 65,
     "element": "",
@@ -352,7 +392,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 72,
     "element": "\u2212",
@@ -362,7 +402,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 81,
     "element": "+",
@@ -372,7 +412,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 90,
     "element": "",
@@ -382,7 +422,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 97,
     "element": "minus",
@@ -392,7 +432,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 106,
     "element": "",
@@ -402,7 +442,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
     "basename": "AccessibleNativeRoleFail.swift",
     "line": 112,
     "element": "I agree to the Terms of Service",
@@ -410,9 +450,19 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 40,
+    "element": "Toggle",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "DRAG_WITHOUT_ADJUSTABLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
     "basename": "AccessibleNativeRolePartial.swift",
     "line": 59,
     "element": "Slider",
@@ -422,7 +472,7 @@
   {
     "check": "STALE_VALUE_ON_TOGGLED_CONTROL",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleNativeRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
     "basename": "AccessibleNativeRolePartial.swift",
     "line": 69,
     "element": "notificationsOn",
@@ -430,9 +480,49 @@
     "detail": "this control's own tap handler toggles 'notificationsOn', but accessibilityValue is the fixed string \"Off\" \u2014 it can never change, so VoiceOver always announces the same value regardless of 'notificationsOn''s actual state"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 84,
+    "element": "\u2212",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 95,
+    "element": "+",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 115,
+    "element": "Segmented Picker",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 136,
+    "element": "I agree to the Terms of Service",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 23,
     "element": "",
@@ -440,19 +530,19 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
-    "check": "TAP_WITHOUT_ROLE",
-    "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 30,
     "element": "Refresh",
     "hasRealAction": true,
-    "detail": "explicitly marked .isStaticText despite the tap gesture right above it"
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 38,
     "element": "",
@@ -462,7 +552,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 43,
     "element": "",
@@ -470,9 +560,19 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "LINK_WITHOUT_ROLE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 52,
+    "element": "View documentation",
+    "hasRealAction": true,
+    "detail": "explicitly marked .isStaticText despite the tap gesture right above it"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 64,
     "element": "",
@@ -482,7 +582,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 70,
     "element": "Wi-Fi Only",
@@ -492,7 +592,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 79,
     "element": "",
@@ -502,7 +602,7 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 90,
     "element": "checkmark",
@@ -512,7 +612,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 100,
     "element": "",
@@ -522,7 +622,7 @@
   {
     "check": "DRAG_WITHOUT_ADJUSTABLE",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 116,
     "element": "",
@@ -532,7 +632,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 126,
     "element": "",
@@ -542,7 +642,7 @@
   {
     "check": "ROLE_WITHOUT_ACTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRoleFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 129,
     "element": "sparkle",
@@ -552,9 +652,9 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 25,
+    "line": 24,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -562,9 +662,9 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 32,
+    "line": 31,
     "element": "Refresh",
     "hasRealAction": false,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
@@ -572,9 +672,9 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 38,
+    "line": 37,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -582,9 +682,9 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 47,
+    "line": 46,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -592,39 +692,59 @@
   {
     "check": "LINK_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 55,
+    "line": 51,
     "element": "View documentation",
-    "hasRealAction": true,
+    "hasRealAction": false,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 61,
+    "line": 57,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 64,
+    "element": "Wi-Fi Only",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 76,
+    "line": 72,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 84,
+    "element": "checkmark",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 97,
+    "line": 93,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -632,9 +752,9 @@
   {
     "check": "DRAG_WITHOUT_ADJUSTABLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 114,
+    "line": 110,
     "element": "",
     "hasRealAction": false,
     "detail": "responds to a continuous drag gesture but has no .accessibilityAdjustableAction \u2014 VoiceOver's swipe-up/down adjust gesture does nothing"
@@ -642,9 +762,9 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 122,
+    "line": 118,
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
@@ -652,9 +772,9 @@
   {
     "check": "TAP_WITHOUT_ROLE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
     "basename": "AccessibleRolePartial.swift",
-    "line": 125,
+    "line": 121,
     "element": "sparkle",
     "hasRealAction": false,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
@@ -662,7 +782,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 21,
     "element": "",
@@ -672,7 +792,7 @@
   {
     "check": "ROLE_WITHOUT_ACTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 28,
     "element": "Refresh",
@@ -682,7 +802,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 35,
     "element": "",
@@ -692,7 +812,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 44,
     "element": "",
@@ -702,7 +822,7 @@
   {
     "check": "ROLE_WITHOUT_ACTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 49,
     "element": "View documentation",
@@ -712,7 +832,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 56,
     "element": "",
@@ -720,9 +840,19 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 63,
+    "element": "Wi-Fi Only",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 72,
     "element": "",
@@ -730,9 +860,19 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 84,
+    "element": "checkmark",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 93,
     "element": "",
@@ -742,7 +882,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleRolePass.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
     "basename": "AccessibleRolePass.swift",
     "line": 125,
     "element": "",
@@ -752,7 +892,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 30,
     "element": "",
@@ -760,9 +900,19 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 47,
+    "element": "",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "UNUSED_STATE_BOOLEAN",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 47,
     "element": "isSelected",
@@ -772,7 +922,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 55,
     "element": "",
@@ -782,7 +932,7 @@
   {
     "check": "TAP_HIDDEN_FROM_ACCESSIBILITY",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 69,
     "element": "chevron.right",
@@ -792,7 +942,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 83,
     "element": "",
@@ -800,9 +950,19 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 95,
+    "element": "I agree to the Terms of Service",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "POSSIBLE_INVERTED_VALUE",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 95,
     "element": "agreedToTerms",
@@ -812,7 +972,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 100,
     "element": "",
@@ -822,7 +982,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 115,
     "element": "",
@@ -832,7 +992,7 @@
   {
     "check": "PREMATURE_COMPLETION_ANNOUNCEMENT",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 129,
     "element": "",
@@ -842,7 +1002,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 137,
     "element": "",
@@ -852,7 +1012,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 157,
     "element": "",
@@ -862,7 +1022,7 @@
   {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 174,
     "element": "",
@@ -870,9 +1030,19 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 188,
+    "element": "Playing",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "UNUSED_STATE_BOOLEAN",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStateFail.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
     "basename": "AccessibleStateFail.swift",
     "line": 188,
     "element": "isCurrent",
@@ -880,9 +1050,19 @@
     "detail": "'isCurrent' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isCurrent', not a hardcoded value or a different condition"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 52,
+    "element": "Selected",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "UNUSED_STATE_BOOLEAN",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStatePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
     "line": 52,
     "element": "isSelected",
@@ -890,9 +1070,29 @@
     "detail": "'isSelected' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isSelected', not a hardcoded value or a different condition"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 70,
+    "element": "chevron.right",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 97,
+    "element": "I agree to the Terms of Service",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "STALE_VALUE_ON_TOGGLED_CONTROL",
     "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStatePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
     "line": 97,
     "element": "agreedToTerms",
@@ -900,13 +1100,63 @@
     "detail": "this control's own tap handler toggles 'agreedToTerms', but accessibilityValue is the fixed string \"Not checked\" \u2014 it can never change, so VoiceOver always announces the same value regardless of 'agreedToTerms''s actual state"
   },
   {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 195,
+    "element": "Current",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
     "check": "UNUSED_STATE_BOOLEAN",
     "severity": "WARN",
-    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/AccessibleStatePartial.swift",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
     "line": 195,
     "element": "isCurrent",
     "hasRealAction": false,
     "detail": "'isCurrent' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isCurrent', not a hardcoded value or a different condition"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 53,
+    "element": "Selected",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 76,
+    "element": "chevron.right",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 98,
+    "element": "I agree to the Terms of Service",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 218,
+    "element": "Current",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   }
 ]
