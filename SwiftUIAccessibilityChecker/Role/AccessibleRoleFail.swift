@@ -31,7 +31,7 @@ struct AccessibleRoleFail: View {
                         // Actively wrong: tells VoiceOver this is
                         // definitely NOT interactive, despite the tap
                         // gesture right above it actually doing something.
-                        .accessibilityAddTraits(.isButton)
+                       // .accessibilityAddTraits(.isButton)
                 }
 
                 // MARK: Section header — no header at all, no context
