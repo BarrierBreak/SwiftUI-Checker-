@@ -11,17 +11,20 @@ import UIKit
 /// chips have no .isSelected, the disclosure row never reports
 /// expanded/collapsed, the checkbox has a hardcoded value that never syncs,
 /// the notifications row's value was copied from a sibling control and
-/// still tracks that control's state instead of its own, the disabled
-/// button is only visually dimmed, the busy state is never announced, the
-/// error message is orphaned from the field it describes, the play
-/// button's label and value contradict each other, and the step tracker's
-/// current position is bold-only.
+/// still tracks that control's state instead of its own, the Wi-Fi row's
+/// value is read through a computed property a static scan can't see
+/// inside of (genuinely ambiguous — flagged for manual review, not as a
+/// confirmed defect), the disabled button is only visually dimmed, the
+/// busy state is never announced, the error message is orphaned from the
+/// field it describes, the play button's label and value contradict each
+/// other, and the step tracker's current position is bold-only.
 struct AccessibleStatePartial: View {
 
     @State private var selectedFilter = "Unread"
     @State private var isDetailsExpanded = false
     @State private var agreedToTerms = false
     @State private var notificationsEnabled = false
+    @State private var wifiEnabled = false
     @State private var isSubmitting = false
     @State private var email = ""
     @State private var emailError: String?
@@ -32,6 +35,7 @@ struct AccessibleStatePartial: View {
     private let steps = ["Cart", "Shipping", "Payment", "Review"]
 
     private var isFormValid: Bool { !email.isEmpty && emailError == nil }
+    private var wifiStatusText: String { wifiEnabled ? "On" : "Off" }
 
     var body: some View {
         NavigationStack {
@@ -117,6 +121,25 @@ struct AccessibleStatePartial: View {
                     // control's state, so it never changes no matter how
                     // many times this control is actually tapped.
                     .accessibilityValue(agreedToTerms ? "Enabled" : "Disabled")
+                    .srcLine()
+                }
+
+                // MARK: Connected state — value read through a computed property
+                Section("Connected") {
+                    HStack {
+                        Image(systemName: wifiEnabled ? "wifi" : "wifi.slash")
+                        Text("Wi-Fi")
+                    }
+                    .onTapGesture { wifiEnabled.toggle() }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityAddTraits(.isButton)
+                    // Ambiguous, not a confirmed bug: wifiStatusText correctly
+                    // reads wifiEnabled, but nothing on this line proves that —
+                    // a static scan sees a bare property reference, not the
+                    // ternary itself, and cannot see inside the property's own
+                    // implementation to confirm it actually tracks this
+                    // control's own toggled identifier.
+                    .accessibilityValue(wifiStatusText)
                     .srcLine()
                 }
 

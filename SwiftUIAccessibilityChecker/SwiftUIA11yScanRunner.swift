@@ -363,10 +363,11 @@ public final class SwiftUIDemoA11ySummaryReporter {
             let fails   = entries.filter { $0.result.record.status.lowercased() == "fail" }
             let byClass = Dictionary(grouping: fails) { displayClass($0.result.elementInfo) }.mapValues { $0.count }
             let affectedElements = fails.map { entry -> [String: String] in
-                [
+                let loc = elementLocation(entry.result.elementInfo, captured: locationsByID[entry.result.id])
+                return [
                     "screen": entry.screen,
                     "class": displayClass(entry.result.elementInfo),
-                    "element": elementName(entry.result.elementInfo),
+                    "element": elementName(entry.result.elementInfo) + (loc.isEmpty ? "" : " — \(loc)"),
                     "detail": detailText(entry.result.record.attribute, screenClass: entry.screenClass)
                 ]
             }
@@ -386,12 +387,13 @@ public final class SwiftUIDemoA11ySummaryReporter {
                 return s == "fail" || s == "validate" || s == "suggestion"
             }
             .map { entry -> [String: String] in
-                [
+                let loc = elementLocation(entry.result.elementInfo, captured: locationsByID[entry.result.id])
+                return [
                     "screen": entry.screen,
                     "rule": entry.result.record.issueVariable,
                     "status": entry.result.record.status,
                     "class": displayClass(entry.result.elementInfo),
-                    "element": elementName(entry.result.elementInfo),
+                    "element": elementName(entry.result.elementInfo) + (loc.isEmpty ? "" : " — \(loc)"),
                     "detail": detailText(entry.result.record.attribute, screenClass: entry.screenClass)
                 ]
             }
@@ -968,14 +970,10 @@ public final class SwiftUIA11yScanRunner {
       //  For role
 
         // For state
-        "BB60040",              // Missing accessible state for interactive control (adjustable/toggle control with no accessibilityValue)
-        "BB60041",              // Interactive element hidden from accessibility (real tap handler + .accessibilityHidden(true))
-        "BB60042",              // Accessibility modifier may not reflect the control's actual state (unused per-item boolean)
-        "BB60043",              // Accessibility value may be inverted (heuristic)
-        "BB60044",              // Accessibility announcement may fire before the operation completes (heuristic)
         "BB60045",              // Accessibility value never changes on a toggling control (flat literal next to a .toggle() handler)
         "BB60052",              // Missing state for interactive control (toggling control with no value/.isSelected/.notEnabled anywhere in its chain)
         "BB60053",              // State does not get updated on user interaction (value/trait exists but the toggle handler never refreshes it)
+        "BB60054",              // Verify if the state for interactive control gets updated on user interaction (source analysis can't confidently resolve it either way)
 
         // For keyboard (KeyboardFocusableWorkflow)
         "BB60046",              // Interactive control cannot receive keyboard focus
