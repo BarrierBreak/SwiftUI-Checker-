@@ -360,6 +360,16 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 37,
+    "element": "notificationsOn",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'notificationsOn', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
@@ -450,6 +460,16 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 112,
+    "element": "agreedToTerms",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'agreedToTerms', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
+  },
+  {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
@@ -520,6 +540,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 136,
+    "element": "agreedToTerms",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'agreedToTerms', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
@@ -530,14 +560,14 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
-    "check": "TAP_ROLE_PRESENT",
-    "severity": "VALIDATE",
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
     "basename": "AccessibleRoleFail.swift",
     "line": 30,
     "element": "Refresh",
     "hasRealAction": true,
-    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -560,6 +590,16 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "LINK_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 52,
+    "element": "View documentation",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
@@ -578,6 +618,16 @@
     "element": "Wi-Fi Only",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 70,
+    "element": "isWifiOnlyFilterOn",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'isWifiOnlyFilterOn', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -670,6 +720,16 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "LINK_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 59,
+    "element": "View documentation",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
@@ -688,6 +748,16 @@
     "element": "Wi-Fi Only",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 73,
+    "element": "isWifiOnlyFilterOn",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'isWifiOnlyFilterOn', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -1014,7 +1084,7 @@
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
-    "line": 52,
+    "line": 55,
     "element": "Selected",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
@@ -1024,7 +1094,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
-    "line": 52,
+    "line": 55,
     "element": "isSelected",
     "hasRealAction": false,
     "detail": "'isSelected' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isSelected', not a hardcoded value or a different condition"
@@ -1034,17 +1104,27 @@
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
-    "line": 70,
+    "line": 73,
     "element": "chevron.right",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 73,
+    "element": "isDetailsExpanded",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'isDetailsExpanded', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
   },
   {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
-    "line": 97,
+    "line": 100,
     "element": "I agree to the Terms of Service",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
@@ -1054,7 +1134,7 @@
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
-    "line": 97,
+    "line": 100,
     "element": "agreedToTerms",
     "hasRealAction": false,
     "detail": "this control's own tap handler toggles 'agreedToTerms', but accessibilityValue is the fixed string \"Not checked\" \u2014 it can never change, so VoiceOver always announces the same value regardless of 'agreedToTerms''s actual state"
@@ -1064,7 +1144,27 @@
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
-    "line": 195,
+    "line": 120,
+    "element": "Notifications",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_NOT_UPDATED_ON_INTERACTION",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 120,
+    "element": "notificationsEnabled",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'notificationsEnabled', but accessibilityValue(agreedToTerms ? \"Enabled\" : \"Disabled\") never references 'notificationsEnabled' \u2014 VoiceOver's announced state does not change when this control is actually interacted with"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 218,
     "element": "Current",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
@@ -1074,7 +1174,7 @@
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
-    "line": 195,
+    "line": 218,
     "element": "isCurrent",
     "hasRealAction": false,
     "detail": "'isCurrent' is computed above but this accessibility modifier never references it \u2014 verify the reported state actually reflects 'isCurrent', not a hardcoded value or a different condition"

@@ -974,6 +974,8 @@ public final class SwiftUIA11yScanRunner {
         "BB60043",              // Accessibility value may be inverted (heuristic)
         "BB60044",              // Accessibility announcement may fire before the operation completes (heuristic)
         "BB60045",              // Accessibility value never changes on a toggling control (flat literal next to a .toggle() handler)
+        "BB60052",              // Missing state for interactive control (toggling control with no value/.isSelected/.notEnabled anywhere in its chain)
+        "BB60053",              // State does not get updated on user interaction (value/trait exists but the toggle handler never refreshes it)
 
         // For keyboard (KeyboardFocusableWorkflow)
         "BB60046",              // Interactive control cannot receive keyboard focus

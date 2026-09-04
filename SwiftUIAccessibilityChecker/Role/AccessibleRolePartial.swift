@@ -57,7 +57,7 @@ struct AccessibleRolePartial: View {
                             }
                        // }
                         .srcLine()
-                        .accessibilityAddTraits(.isLink)
+                      //  .accessibilityAddTraits(.isLink)
                         // No .isLink — VoiceOver has no idea this behaves
                         // differently from any other line of text.
                 }

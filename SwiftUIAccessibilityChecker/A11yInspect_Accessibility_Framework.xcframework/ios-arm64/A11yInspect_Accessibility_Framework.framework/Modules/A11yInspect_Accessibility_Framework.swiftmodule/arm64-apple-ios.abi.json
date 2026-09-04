@@ -14614,10 +14614,24 @@
     },
     {
       "filePath": "\/Users\/azharuddhin\/Downloads\/Untitled\/AccessibilityTest-Framework\/AccessibilityWorkflow\/ElementStateQualityWorkflow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4861,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Downloads\/Untitled\/AccessibilityTest-Framework\/AccessibilityWorkflow\/ElementStateQualityWorkflow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6991,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Downloads\/Untitled\/AccessibilityTest-Framework\/AccessibilityWorkflow\/ElementStateQualityWorkflow.swift",
       "kind": "Array",
-      "offset": 8004,
-      "length": 186,
-      "value": "[\"TAP_HIDDEN_FROM_ACCESSIBILITY\", \"UNUSED_STATE_BOOLEAN\", \"POSSIBLE_INVERTED_VALUE\", \"PREMATURE_COMPLETION_ANNOUNCEMENT\", \"STALE_VALUE_ON_TOGGLED_CONTROL\"]"
+      "offset": 12129,
+      "length": 332,
+      "value": "[\"TAP_HIDDEN_FROM_ACCESSIBILITY\", \"UNUSED_STATE_BOOLEAN\", \"POSSIBLE_INVERTED_VALUE\", \"PREMATURE_COMPLETION_ANNOUNCEMENT\", \"STALE_VALUE_ON_TOGGLED_CONTROL\", \"STATE_WITHOUT_VALUE\", \"UIKIT_STATE_WITHOUT_VALUE\", \"STATE_NOT_UPDATED_ON_INTERACTION\", \"UIKIT_STATE_NOT_UPDATED_ON_INTERACTION\"]"
     },
     {
       "filePath": "\/Users\/azharuddhin\/Downloads\/Untitled\/AccessibilityTest-Framework\/AccessibilityWorkflow\/EnhancedTargetSizeWorkflow.swift",

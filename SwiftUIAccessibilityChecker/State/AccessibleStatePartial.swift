@@ -10,15 +10,18 @@ import UIKit
 /// The specific gaps, in order:
 /// chips have no .isSelected, the disclosure row never reports
 /// expanded/collapsed, the checkbox has a hardcoded value that never syncs,
-/// the disabled button is only visually dimmed, the busy state is never
-/// announced, the error message is orphaned from the field it describes,
-/// the play button's label and value contradict each other, and the step
-/// tracker's current position is bold-only.
+/// the notifications row's value was copied from a sibling control and
+/// still tracks that control's state instead of its own, the disabled
+/// button is only visually dimmed, the busy state is never announced, the
+/// error message is orphaned from the field it describes, the play
+/// button's label and value contradict each other, and the step tracker's
+/// current position is bold-only.
 struct AccessibleStatePartial: View {
 
     @State private var selectedFilter = "Unread"
     @State private var isDetailsExpanded = false
     @State private var agreedToTerms = false
+    @State private var notificationsEnabled = false
     @State private var isSubmitting = false
     @State private var email = ""
     @State private var emailError: String?
@@ -94,6 +97,26 @@ struct AccessibleStatePartial: View {
                     // checks it — worse than silence, because it's confidently
                     // wrong and the user has no reason to doubt it.
                     .accessibilityValue("Not checked")
+                    .srcLine()
+                }
+
+                // MARK: Enabled state — value tracks the wrong control
+                Section("Enabled") {
+                    HStack {
+                        Image(systemName: notificationsEnabled ? "bell.fill" : "bell.slash")
+                        Text("Notifications")
+                    }
+                    .onTapGesture { notificationsEnabled.toggle() }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityAddTraits(.isButton)
+                    // Bug: copied from the "Checked" row above and never
+                    // repointed — this reads agreedToTerms, not
+                    // notificationsEnabled. The row's own tap handler
+                    // toggles the right property, but VoiceOver's
+                    // announced value is silently driven by a different
+                    // control's state, so it never changes no matter how
+                    // many times this control is actually tapped.
+                    .accessibilityValue(agreedToTerms ? "Enabled" : "Disabled")
                     .srcLine()
                 }
 
