@@ -194,13 +194,33 @@ final class RoleElementScanTests: XCTestCase {
 
     // MARK: - AccessibleNativeRolePartial — buttons/labels present, only live-state wiring
     // missing (hardcoded value, no adjustable action, no isSelected, no accessibilityValue).
-    // None of these state-only defects are detected yet, so this tier should have no Fails —
-    // this pins down that known gap so a future fix is a deliberate, visible change here.
+    //
+    // This used to assert zero Fail rows, pinning down the fact that state-only defects went
+    // undetected. They are detected now, so the assertion is the other way round: no ROLE
+    // rule fires here (roles really are correct on this tier), and the state defects that
+    // were previously invisible do.
 
-    func testAccessibleNativeRolePartial_noFailures() throws {
+    func testAccessibleNativeRolePartial_noRoleFailures() throws {
         let issues = try runScan(screen: "AccessibleNativeRolePartial")
-        let fails = issues.filter { $0.status.lowercased() == "fail" }
-        XCTAssertTrue(fails.isEmpty, "Native Role Partial should have zero Fail rows today (state-only defects are an undetected gap), got: \(fails.map(\.rule))")
+        let roleFails = issues.filter {
+            $0.status.lowercased() == "fail" && $0.rule.lowercased().contains("role")
+        }
+        XCTAssertTrue(roleFails.isEmpty, "Native Role Partial's roles are correct — no role rule should Fail, got: \(roleFails.map(\.rule))")
+    }
+
+    func testAccessibleNativeRolePartial_stateDefectsAreDetected() throws {
+        let issues = try runScan(screen: "AccessibleNativeRolePartial")
+        let stateRules = [
+            "Missing state information for interactive control",
+            "Incorrect State value provided for interactive control",
+            "State does not get updated on user interaction",
+            "Verify if the state for interactive control gets updated on user interaction",
+        ]
+        let stateFails = issues.filter { stateRules.contains($0.rule) }
+        XCTAssertFalse(
+            stateFails.isEmpty,
+            "This tier's whole point is that its state wiring is missing — the state rules should report it"
+        )
     }
 
     // MARK: - Assertion helpers
