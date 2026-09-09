@@ -1,5 +1,15 @@
 [
   {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastPass.swift",
+    "basename": "AccessibleTextContrastPass.swift",
+    "line": 111,
+    "element": "Enter a valid email address",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through a .disabled(\u2026) modifier, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardFail.swift",
@@ -8,6 +18,16 @@
     "element": "",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardFail.swift",
+    "basename": "AccessibleKeyboardFail.swift",
+    "line": 20,
+    "element": "isOn",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   },
   {
     "check": "TAP_ROLE_PRESENT",
@@ -20,6 +40,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPartial.swift",
+    "basename": "AccessibleKeyboardPartial.swift",
+    "line": 22,
+    "element": "isOn",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPass.swift",
@@ -28,6 +58,16 @@
     "element": "",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPass.swift",
+    "basename": "AccessibleKeyboardPass.swift",
+    "line": 25,
+    "element": "isOn",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -350,6 +390,16 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 205,
+    "element": "isFavorite",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue and the .isSelected trait, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
@@ -498,6 +548,16 @@
     "element": "Toggle",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 40,
+    "element": "notificationsOn",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   },
   {
     "check": "DRAG_WITHOUT_ADJUSTABLE",
@@ -920,6 +980,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 63,
+    "element": "isWifiOnlyFilterOn",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue and the .isSelected trait, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
@@ -938,6 +1008,16 @@
     "element": "checkmark",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 84,
+    "element": "selectedShippingOption",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through the .isSelected trait, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -1230,14 +1310,14 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
-    "check": "STATE_UPDATE_UNCONFIRMED",
-    "severity": "WARN",
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
     "basename": "AccessibleStatePartial.swift",
     "line": 143,
     "element": "wifiEnabled",
     "hasRealAction": false,
-    "detail": "this control's own tap handler toggles 'wifiEnabled', but accessibilityValue(wifiStatusText) is not a direct expression this scan can verify \u2014 if wifiStatusText does not itself reflect 'wifiEnabled''s current state, VoiceOver's announced value will not change when this control is interacted with"
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   },
   {
     "check": "DISABLED_STATE_WITHOUT_VALUE",
@@ -1310,6 +1390,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 53,
+    "element": "selectedFilter",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through the .isSelected trait, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
@@ -1318,6 +1408,16 @@
     "element": "chevron.right",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 76,
+    "element": "isDetailsExpanded",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   },
   {
     "check": "TAP_ROLE_PRESENT",
@@ -1330,6 +1430,56 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 98,
+    "element": "agreedToTerms",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 113,
+    "element": "Disabled",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through a .disabled(\u2026) modifier, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 142,
+    "element": "Busy",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue and a .disabled(\u2026) modifier, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 167,
+    "element": "Invalid",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 197,
+    "element": "isPlaying",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
@@ -1338,5 +1488,15 @@
     "element": "Current",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "STATE_UPDATE_VERIFY",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 218,
+    "element": "currentStep",
+    "hasRealAction": false,
+    "detail": "this control communicates its state through the .isSelected trait, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   }
 ]

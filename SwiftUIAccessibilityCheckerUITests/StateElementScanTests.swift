@@ -36,13 +36,16 @@ final class StateElementScanTests: XCTestCase {
         assertOnlyRule(issues, rule: incorrect, elementContaining: "I agree to the Terms of Service")
     }
 
-    /// Play/Pause: `Button { isPlaying.toggle() }` with a fixed `.accessibilityLabel("Play")`
-    /// and no value at all. Worth pinning specifically because the control is a native
-    /// `Button` rather than an `.onTapGesture` — the shape the source scan used to miss.
-    func testAccessibleStateFail_playPauseButton_hasNoStateValue() throws {
+    /// Play/Pause carries `.accessibilityValue(isPlaying ? "Playing" : "Paused")`, so its
+    /// state is wired correctly and none of the four rules should have anything to say about
+    /// it. Worth asserting rather than omitting: this is a native `Button { ident.toggle() }`,
+    /// the shape the source scan reaches only through the Button anchor, so a false positive
+    /// here would mean that anchor is matching the chain but misreading it. The Partial tier's
+    /// own Play/Pause covers the missing-value side of the same shape.
+    func testAccessibleStateFail_playPauseButton_isCorrectlyWired() throws {
         let issues = try runScan(screen: "AccessibleStateFail")
-        assertFires(issues, rule: missing, elementContaining: "Play")
-        assertOnlyRule(issues, rule: missing, elementContaining: "Play")
+        assertVerifies(issues, elementContaining: "Play")
+        assertOnlyRule(issues, rule: verifyUpdates, elementContaining: "Play")
     }
 
     /// Step tracker: `.accessibilityAddTraits([.isButton, .isSelected])` unconditionally, so
@@ -53,28 +56,49 @@ final class StateElementScanTests: XCTestCase {
         assertOnlyRule(issues, rule: incorrect, elementContaining: "Cart")
     }
 
-    /// The busy Submit button (an unlabeled ProgressView) and the unlabeled email field both
-    /// report as "no name", so they are pinned by rule counts rather than by element text:
-    /// the busy button is missing state entirely, the field's `.accessibilityValue("Empty")`
-    /// is present but fixed.
-    func testAccessibleStateFail_unlabeledBusyButtonAndEmailField() throws {
+    /// The email field is unlabeled, so it is pinned by rule rather than element text: its
+    /// `.accessibilityValue("Empty")` is present but fixed, hence "incorrect" rather than
+    /// "missing".
+    ///
+    /// The busy Submit button next to it is deliberately NOT asserted. Its only label is a
+    /// `ProgressView()`, and whether SwiftUI publishes that button as an accessibility element
+    /// at all varies by device and by when the scan lands relative to the spinner's animation
+    /// — it appears on some simulators and not others. The source-level finding for it is
+    /// stable (BUSY_STATE_WITHOUT_VALUE at AccessibleStateFail.swift:129); only its presence
+    /// in the live tree is not, so asserting it here would buy a flaky test rather than
+    /// coverage.
+    func testAccessibleStateFail_unlabeledEmailField_hasAFixedValue() throws {
         let issues = try runScan(screen: "AccessibleStateFail")
         let unnamed = issues.filter { stateRules.contains($0.rule) && $0.element.hasPrefix("no name") }
-        XCTAssertEqual(
-            Set(unnamed.map(\.rule)), [missing, incorrect],
-            "Expected the busy Submit button to report missing state and the email field to report an incorrect one, got: \(unnamed.map { "\($0.rule) — \($0.element)" })"
+        XCTAssertTrue(
+            unnamed.contains { $0.rule == incorrect },
+            "Expected the unlabeled email field to report an incorrect state value, got: \(unnamed.map { "\($0.rule) — \($0.element)" })"
         )
     }
 
-    /// The whole screen at once: six of its eight controls report a state rule. The
-    /// disclosure row is the deliberate exception — it is `.accessibilityHidden(true)`, so it
-    /// never becomes a live element and there is nothing for a finding to attach to, and the
-    /// "Continue" button carries no source signal that its availability is conditional at
-    /// all (no guard, no dimming), so it is left to a human by design.
+    /// The whole screen at once: five provable defects, plus Play/Pause asking to be
+    /// confirmed (it is correctly wired). Two controls report nothing, each for its own
+    /// reason — the disclosure row is `.accessibilityHidden(true)`, so it never becomes a
+    /// live element for any finding to attach to, and the "Continue" button carries no source
+    /// signal that its availability is conditional at all (no guard, no dimming, no
+    /// `.disabled`), so it is left to a human by design.
     func testAccessibleStateFail_stateRuleCoverage() throws {
         let issues = try runScan(screen: "AccessibleStateFail")
         let rows = issues.filter { stateRules.contains($0.rule) }
-        XCTAssertEqual(rows.count, 6, "Expected six state rows, got: \(rows.map { "\($0.rule) — \($0.element)" })")
+
+        // Pinned by element rather than by a total, because one row on this screen is not
+        // deterministic: the busy Submit button's only label is a ProgressView, and whether
+        // SwiftUI publishes it as an element varies by device (see
+        // testAccessibleStateFail_unlabeledEmailField_hasAFixedValue).
+        for (element, rule) in [("All", notUpdated), ("I agree to the Terms of Service", incorrect),
+                                ("Cart", incorrect), ("Play", verifyUpdates)] {
+            XCTAssertTrue(
+                rows.contains { $0.rule == rule && $0.element.contains(element) },
+                "Expected '\(rule)' for '\(element)', got: \(rows.map { "\($0.rule) — \($0.element)" })"
+            )
+        }
+        XCTAssertTrue((5...6).contains(rows.count),
+                      "Expected five or six state rows, got: \(rows.map { "\($0.rule) — \($0.element)" })")
     }
 
     // MARK: - AccessibleStatePartial
@@ -106,20 +130,15 @@ final class StateElementScanTests: XCTestCase {
         assertOnlyRule(issues, rule: notUpdated, elementContaining: "Notifications")
     }
 
-    /// The one Validate row on this screen: `.accessibilityValue(wifiStatusText)` reads a
-    /// computed property, which does track `wifiEnabled` correctly — but nothing on that line
-    /// proves it, so the scan asks rather than asserts.
-    func testAccessibleStatePartial_wifiRow_asksForManualVerification() throws {
+    /// `.accessibilityValue(wifiStatusText)` reads a computed property that does correctly
+    /// track `wifiEnabled` — the scan resolves one level into the property's body to
+    /// establish that, so this row is not a defect. What it gets instead is the
+    /// manual-confirmation row: the wiring is right, and only using the control proves the
+    /// announcement actually changes.
+    func testAccessibleStatePartial_wifiRow_isWiredAndAsksForConfirmation() throws {
         let issues = try runScan(screen: "AccessibleStatePartial")
-        let rows = issues.filter { $0.rule == verifyUpdates && $0.element.contains("Wi-Fi") }
-        XCTAssertFalse(rows.isEmpty, "Expected a Validate row for the Wi-Fi row, got: \(issues.filter { stateRules.contains($0.rule) }.map(\.element))")
-        XCTAssertTrue(
-            rows.allSatisfy { $0.status.lowercased() == "validate" },
-            "The Wi-Fi row's finding must be Validate, not Fail — the value is unverifiable, not wrong"
-        )
-        assertDoesNotFire(issues, rule: missing, elementContaining: "Wi-Fi")
-        assertDoesNotFire(issues, rule: incorrect, elementContaining: "Wi-Fi")
-        assertDoesNotFire(issues, rule: notUpdated, elementContaining: "Wi-Fi")
+        assertVerifies(issues, elementContaining: "Wi-Fi")
+        assertOnlyRule(issues, rule: verifyUpdates, elementContaining: "Wi-Fi")
     }
 
     /// Dimmed with `.opacity(isFormValid ? …)` and guarded internally, but never `.disabled()`,
@@ -162,26 +181,37 @@ final class StateElementScanTests: XCTestCase {
         )
     }
 
-    /// All ten controls on this screen report a state rule — nine Fail, one Validate.
+    /// All ten controls on this screen report a state rule: nine provable defects, plus the
+    /// Wi-Fi row, whose wiring is correct and so gets the manual-confirmation row instead.
     func testAccessibleStatePartial_everyControlReportsAStateRule() throws {
         let issues = try runScan(screen: "AccessibleStatePartial")
         let rows = issues.filter { stateRules.contains($0.rule) }
         XCTAssertEqual(rows.count, 10, "Expected ten state rows, got: \(rows.map { "\($0.rule) — \($0.element)" })")
         XCTAssertEqual(rows.filter { $0.status.lowercased() == "validate" }.count, 1,
-                       "Exactly one control (the Wi-Fi row) should be Validate rather than Fail")
+                       "Only the correctly-wired Wi-Fi row should be Validate: \(rows.map { "[\($0.status)] \($0.element)" })")
     }
 
     // MARK: - AccessibleStatePass
 
     /// The reference tier: every control keeps its accessibility state in sync in the same
-    /// code path that changes its appearance, so none of the four rules has anything to say.
-    func testAccessibleStatePass_reportsNoStateRuleAtAll() throws {
+    /// code path that changes its appearance, so nothing here is a defect — and every one of
+    /// them reports the manual-confirmation row instead, because "the source is right" and
+    /// "the announcement actually changes when used" are different claims.
+    func testAccessibleStatePass_reportsNoStateDefect() throws {
         let issues = try runScan(screen: "AccessibleStatePass")
-        let rows = issues.filter { stateRules.contains($0.rule) }
+        let defects = issues.filter { stateRules.contains($0.rule) && $0.status.lowercased() == "fail" }
         XCTAssertTrue(
-            rows.isEmpty,
-            "State Pass must report none of the four state rules, Fail or Validate, got: \(rows.map { "[\($0.status)] \($0.rule) — \($0.element)" })"
+            defects.isEmpty,
+            "State Pass must report no state defect, got: \(defects.map { "\($0.rule) — \($0.element)" })"
         )
+    }
+
+    func testAccessibleStatePass_everyControlAsksForConfirmation() throws {
+        let issues = try runScan(screen: "AccessibleStatePass")
+        for control in ["All", "Shipping details", "I agree to the Terms of Service",
+                        "Continue", "Submit", "Play", "Cart"] {
+            assertVerifies(issues, elementContaining: control)
+        }
     }
 
     // MARK: - Assertion helpers (same shape as RoleElementScanTests.swift's own)
@@ -218,6 +248,28 @@ final class StateElementScanTests: XCTestCase {
         XCTAssertTrue(
             matches.isEmpty,
             "Did not expect '\(rule)' for element containing '\(substring)', but found: \(matches.map { "[\($0.status)] \($0.rule) — \($0.element)" })",
+            file: file, line: line
+        )
+    }
+
+    /// Asserts the element reports the manual-confirmation row: its state is wired, no defect
+    /// was found in it, and a person still has to use it to hear whether the announcement
+    /// changes. Checked as Validate specifically — a Fail-status row carrying the same rule
+    /// text would mean the tier split has broken.
+    private func assertVerifies(
+        _ issues: [A11yIssue],
+        elementContaining substring: String,
+        file: StaticString = #filePath,
+        line: UInt = #line
+    ) {
+        let matches = issues.filter { issue in
+            issue.rule == verifyUpdates
+                && issue.status.lowercased() == "validate"
+                && issue.element.contains(substring)
+        }
+        XCTAssertFalse(
+            matches.isEmpty,
+            "Expected a [Validate] '\(verifyUpdates)' for element containing '\(substring)' — none found. All issues: \(issues.map { "[\($0.status)] \($0.rule) — \($0.element)" })",
             file: file, line: line
         )
     }

@@ -100,18 +100,44 @@ final class A11yDemoScanTests: XCTestCase {
         try runScan(screen: "AccessibleKeyboardPartial")
     }
 
+    // MARK: - Target Size screens
+
+    func testAccessibleTargetSizePass() throws {
+        try runScan(screen: "AccessibleTargetSizePass")
+    }
+
+    func testAccessibleTargetSizeFail() throws {
+        try runScan(screen: "AccessibleTargetSizeFail")
+    }
+
+    func testAccessibleTargetSizePartial() throws {
+        try runScan(screen: "AccessibleTargetSizePartial")
+    }
+
     // MARK: - Color Contrast screens
 
-    func testAccessibleColorContrastPass() throws {
-        try runScan(screen: "AccessibleColorContrastPass")
+    func testAccessibleTextContrastPass() throws {
+        try runScan(screen: "AccessibleTextContrastPass")
     }
 
-    func testAccessibleColorContrastFail() throws {
-        try runScan(screen: "AccessibleColorContrastFail")
+    func testAccessibleTextContrastFail() throws {
+        try runScan(screen: "AccessibleTextContrastFail")
     }
 
-    func testAccessibleColorContrastPartial() throws {
-        try runScan(screen: "AccessibleColorContrastPartial")
+    func testAccessibleTextContrastPartial() throws {
+        try runScan(screen: "AccessibleTextContrastPartial")
+    }
+
+    func testAccessibleTextContrastCompositedPass() throws {
+        try runScan(screen: "AccessibleTextContrastCompositedPass")
+    }
+
+    func testAccessibleTextContrastCompositedFail() throws {
+        try runScan(screen: "AccessibleTextContrastCompositedFail")
+    }
+
+    func testAccessibleTextContrastCompositedPartial() throws {
+        try runScan(screen: "AccessibleTextContrastCompositedPartial")
     }
 
     /// Every screen in one run — the combined report, as before.
