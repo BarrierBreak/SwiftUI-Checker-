@@ -172,7 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6744C7301B6C640080BF16 /* Build configuration list for PBXNativeTarget "SwiftUIAccessibilityChecker" */;
 			buildPhases = (
-				77E68F74EF5AFF8D16471C0E /* Regenerate source_lint_findings.json */,
+				77E68F74EF5AFF8D16471C0E /* Regenerate A11yInspect source JSON */,
 				EC6744A2301B6C620080BF16 /* Sources */,
 				EC6744A3301B6C620080BF16 /* Frameworks */,
 				EC6744A4301B6C620080BF16 /* Resources */,
@@ -302,7 +302,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		77E68F74EF5AFF8D16471C0E /* Regenerate source_lint_findings.json */ = {
+		77E68F74EF5AFF8D16471C0E /* Regenerate A11yInspect source JSON */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,14 +311,14 @@
 			);
 			inputPaths = (
 			);
-			name = "Regenerate source_lint_findings.json";
+			name = "Regenerate A11yInspect source JSON";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "LINTER=\"/Users/azharuddhin/Downloads/Untitled/Scripts/source_role_linter.py\"\nOUT=\"$SRCROOT/SwiftUIAccessibilityChecker/source_lint_findings.json\"\nif [ -f \"$LINTER\" ]; then\n  python3 \"$LINTER\" --json \"$SRCROOT/SwiftUIAccessibilityChecker\" > \"$OUT.tmp\" \\\n    && mv \"$OUT.tmp\" \"$OUT\" \\\n    && echo \"source_lint_findings.json regenerated ($(wc -l < \"$OUT\") lines)\"\nelse\n  echo \"warning: source_role_linter.py not found at $LINTER — keeping existing source_lint_findings.json\"\nfi\n";
+			shellScript = "LINTER=\"/Users/azharuddhin/Downloads/Untitled/Scripts/source_role_linter.py\"\nOUT=\"$SRCROOT/SwiftUIAccessibilityChecker/source_lint_findings.json\"\nif [ -f \"$LINTER\" ]; then\n  python3 \"$LINTER\" --json \"$SRCROOT/SwiftUIAccessibilityChecker\" > \"$OUT.tmp\" \\\n    && mv \"$OUT.tmp\" \"$OUT\" \\\n    && echo \"source_lint_findings.json regenerated ($(wc -l < \"$OUT\") lines)\"\nelse\n  echo \"warning: source_role_linter.py not found at $LINTER — keeping existing source_lint_findings.json\"\nfi\n\n# Source-element index — lets the framework put a line number on every finding\n# without this app tagging its controls by hand. See A11ySourceIndex.swift.\nINDEXER=\"/Users/azharuddhin/Downloads/Untitled/Scripts/a11y_source_indexer.py\"\nIDX=\"$SRCROOT/SwiftUIAccessibilityChecker/a11y_source_index.json\"\nif [ -f \"$INDEXER\" ]; then\n  python3 \"$INDEXER\" \"$SRCROOT/SwiftUIAccessibilityChecker\" > \"$IDX.tmp\" \\\n    && mv \"$IDX.tmp\" \"$IDX\" \\\n    && echo \"a11y_source_index.json regenerated ($(wc -l < \"$IDX\") lines)\"\nelse\n  echo \"warning: a11y_source_indexer.py not found at $INDEXER — keeping existing a11y_source_index.json\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
