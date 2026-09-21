@@ -17,7 +17,7 @@
 //
 
 import SwiftUI
-import A11yInspect_Accessibility_Framework
+import A11yInspectTestCases
 
 enum SwiftUIA11yScan {
 
@@ -47,6 +47,15 @@ enum SwiftUIA11yScan {
         A11yScreen("State Partial", AccessibleStatePartial()),
 
         // Keyboard — hardware-keyboard focus support itself.
+        // Resize text and text clipping — WCAG 1.4.4, both answered from source:
+        // _UIHostingView has no subviews, so there is no rendered label to measure.
+        A11yScreen("Text Resize Pass", AccessibleTextResizePass()),
+        A11yScreen("Text Resize Fail", AccessibleTextResizeFail()),
+        A11yScreen("Text Resize Partial", AccessibleTextResizePartial()),
+        A11yScreen("Text Clipping Pass", AccessibleTextClippingPass()),
+        A11yScreen("Text Clipping Fail", AccessibleTextClippingFail()),
+        A11yScreen("Text Clipping Partial", AccessibleTextClippingPartial()),
+
         A11yScreen("Keyboard Pass", AccessibleKeyboardPass()),
         A11yScreen("Keyboard Fail", AccessibleKeyboardFail()),
         A11yScreen("Keyboard Partial", AccessibleKeyboardPartial()),
@@ -80,8 +89,34 @@ enum SwiftUIA11yScan {
     /// which showed up as the screenshot-based contrast rules sampling partly-rendered
     /// screens and reporting a different set of ratios each time.
     @MainActor
+    /// Narrows the scan to one rule family, via `--a11y-testcases-family=<name>`.
+    ///
+    /// This is what makes a per-family XCTest readable: a keyboard test asks for the keyboard
+    /// family and gets a report with nothing else in it, instead of filtering forty rules'
+    /// worth of rows down to six in the assertion. Omitting the argument scans everything.
+    static let familyArgument = "--a11y-testcases-family="
+
+    static var requestedFamily: String? {
+        guard let arg = CommandLine.arguments.first(where: { $0.hasPrefix(familyArgument) }) else {
+            return nil
+        }
+        return String(arg.dropFirst(familyArgument.count))
+    }
+
     static func runIfRequested() async {
         guard A11yInspectScan.isScanRequested else { return }
-        await A11yInspectScan.shared.run(platform: .swiftUI, screens: screens)
+
+        // An unknown family name falls back to the full set rather than scanning nothing: a
+        // report of zero rows and a report the argument never reached look identical from a
+        // test, and the first is the one that wastes an afternoon.
+        var rules: Set<String>?
+        if let family = requestedFamily {
+            rules = A11yRuleSet.rules(for: family, platform: .swiftUI)
+            if rules == nil {
+                print("[A11yInspectTestCases] ⚠️ \(familyArgument)\(family) matched no family; scanning all rules instead.")
+            }
+        }
+
+        await A11yInspectScan.shared.run(platform: .swiftUI, rules: rules, screens: screens)
     }
 }

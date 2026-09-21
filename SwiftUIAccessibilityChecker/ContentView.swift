@@ -63,6 +63,12 @@ struct ContentView: View {
                 }
 
                 Section("Target Size") {
+                    NavigationLink("AccessibleTextResizePass") { AccessibleTextResizePass() }
+                    NavigationLink("AccessibleTextResizeFail") { AccessibleTextResizeFail() }
+                    NavigationLink("AccessibleTextResizePartial") { AccessibleTextResizePartial() }
+                    NavigationLink("AccessibleTextClippingPass") { AccessibleTextClippingPass() }
+                    NavigationLink("AccessibleTextClippingFail") { AccessibleTextClippingFail() }
+                    NavigationLink("AccessibleTextClippingPartial") { AccessibleTextClippingPartial() }
                     NavigationLink("AccessibleTargetSizePass") { AccessibleTargetSizePass() }
                     NavigationLink("AccessibleTargetSizeFail") { AccessibleTargetSizeFail() }
                     NavigationLink("AccessibleTargetSizePartial") { AccessibleTargetSizePartial() }

@@ -1820,6 +1820,114 @@
       ]
     },
     {
+      "type": "AccessibleTextClippingFail",
+      "file": "AccessibleTextClippingFail.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Estimated delivery Tuesday 14 March between 9am and 6pm",
+          "ordinal": 0
+        },
+        {
+          "line": 26,
+          "kind": "Text",
+          "label": "Payment method ending 4417 expires next month",
+          "ordinal": 1
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Your parcel is being held at the depot because nobody was home when the courier called.",
+          "ordinal": 2
+        },
+        {
+          "line": 40,
+          "kind": "Text",
+          "label": "Refunds are issued to the original payment method and can take up to ten working days to appear.",
+          "ordinal": 3
+        },
+        {
+          "line": 47,
+          "kind": "Text",
+          "label": "These terms describe how we handle returns, exchanges and refunds.",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTextClippingPartial",
+      "file": "AccessibleTextClippingPartial.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Checkout",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Review your items before you pay.",
+          "ordinal": 1
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Total \u00a342.60",
+          "ordinal": 2
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Spend \u00a350 today and get free next-day delivery on this order",
+          "ordinal": 3
+        },
+        {
+          "line": 36,
+          "kind": "Text",
+          "label": "Prices include VAT. Delivery charges are calculated at the next step.",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTextClippingPass",
+      "file": "AccessibleTextClippingPass.swift",
+      "elements": [
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "Text",
+          "label": "Your order will arrive between Tuesday and Thursday next week.",
+          "ordinal": 1
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Delivery times are estimates and can change if the weather is bad or if the courier is held up on an earlier stop.",
+          "ordinal": 2
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "Contactless delivery is available on request",
+          "ordinal": 3
+        },
+        {
+          "line": 42,
+          "kind": "Text",
+          "label": "Leave with a neighbour.",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
       "type": "AccessibleTextContrastCompositedFail",
       "file": "AccessibleTextContrastCompositedFail.swift",
       "elements": [
@@ -1918,6 +2026,114 @@
           "kind": "Text",
           "label": "Email address",
           "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTextResizeFail",
+      "file": "AccessibleTextResizeFail.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Account settings",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Notifications",
+          "ordinal": 1
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Choose which updates you want to receive about your orders.",
+          "ordinal": 2
+        },
+        {
+          "line": 28,
+          "kind": "Text",
+          "label": "You can change this at any time.",
+          "ordinal": 3
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "Order updates are sent to the email on your account.",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTextResizePartial",
+      "file": "AccessibleTextResizePartial.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Your orders",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Track a delivery or start a return.",
+          "ordinal": 1
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Returns are free within 30 days.",
+          "ordinal": 2
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "2 items",
+          "ordinal": 3
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Orders",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTextResizePass",
+      "file": "AccessibleTextResizePass.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Account settings",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Notifications",
+          "ordinal": 1
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Choose which updates you want to receive about your orders.",
+          "ordinal": 2
+        },
+        {
+          "line": 28,
+          "kind": "Text",
+          "label": "You can change this at any time.",
+          "ordinal": 3
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "Order updates are sent to the email on your account.",
+          "ordinal": 4
         }
       ]
     },
@@ -2036,56 +2252,92 @@
         {
           "line": 66,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizePass",
+          "label": "AccessibleTextResizePass",
           "ordinal": 18
         },
         {
           "line": 67,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizeFail",
+          "label": "AccessibleTextResizeFail",
           "ordinal": 19
         },
         {
           "line": 68,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizePartial",
+          "label": "AccessibleTextResizePartial",
           "ordinal": 20
+        },
+        {
+          "line": 69,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextClippingPass",
+          "ordinal": 21
+        },
+        {
+          "line": 70,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextClippingFail",
+          "ordinal": 22
+        },
+        {
+          "line": 71,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextClippingPartial",
+          "ordinal": 23
         },
         {
           "line": 72,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPass",
-          "ordinal": 21
+          "label": "AccessibleTargetSizePass",
+          "ordinal": 24
         },
         {
           "line": 73,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastFail",
-          "ordinal": 22
+          "label": "AccessibleTargetSizeFail",
+          "ordinal": 25
         },
         {
           "line": 74,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPartial",
-          "ordinal": 23
+          "label": "AccessibleTargetSizePartial",
+          "ordinal": 26
         },
         {
           "line": 78,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedPass",
-          "ordinal": 24
+          "label": "AccessibleTextContrastPass",
+          "ordinal": 27
         },
         {
           "line": 79,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedFail",
-          "ordinal": 25
+          "label": "AccessibleTextContrastFail",
+          "ordinal": 28
         },
         {
           "line": 80,
           "kind": "NavigationLink",
+          "label": "AccessibleTextContrastPartial",
+          "ordinal": 29
+        },
+        {
+          "line": 84,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedPass",
+          "ordinal": 30
+        },
+        {
+          "line": 85,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedFail",
+          "ordinal": 31
+        },
+        {
+          "line": 86,
+          "kind": "NavigationLink",
           "label": "AccessibleTextContrastCompositedPartial",
-          "ordinal": 26
+          "ordinal": 32
         }
       ]
     },

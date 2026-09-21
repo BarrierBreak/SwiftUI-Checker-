@@ -1,5 +1,125 @@
 [
   {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedFail.swift",
+    "basename": "AccessibleTextContrastCompositedFail.swift",
+    "line": 85,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedFail.swift",
+    "basename": "AccessibleTextContrastCompositedFail.swift",
+    "line": 85,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedFail.swift",
+    "basename": "AccessibleTextContrastCompositedFail.swift",
+    "line": 127,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedFail.swift",
+    "basename": "AccessibleTextContrastCompositedFail.swift",
+    "line": 127,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPartial.swift",
+    "basename": "AccessibleTextContrastCompositedPartial.swift",
+    "line": 91,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPartial.swift",
+    "basename": "AccessibleTextContrastCompositedPartial.swift",
+    "line": 91,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPartial.swift",
+    "basename": "AccessibleTextContrastCompositedPartial.swift",
+    "line": 140,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPartial.swift",
+    "basename": "AccessibleTextContrastCompositedPartial.swift",
+    "line": 140,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPass.swift",
+    "basename": "AccessibleTextContrastCompositedPass.swift",
+    "line": 138,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPass.swift",
+    "basename": "AccessibleTextContrastCompositedPass.swift",
+    "line": 138,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastPartial.swift",
+    "basename": "AccessibleTextContrastPartial.swift",
+    "line": 116,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastPartial.swift",
+    "basename": "AccessibleTextContrastPartial.swift",
+    "line": 116,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_UPDATE_VERIFY",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastPass.swift",
@@ -18,6 +138,16 @@
     "element": "",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardFail.swift",
+    "basename": "AccessibleKeyboardFail.swift",
+    "line": 20,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -40,6 +170,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPartial.swift",
+    "basename": "AccessibleKeyboardPartial.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_UPDATE_VERIFY",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPartial.swift",
@@ -58,6 +198,16 @@
     "element": "",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPass.swift",
+    "basename": "AccessibleKeyboardPass.swift",
+    "line": 25,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -88,6 +238,16 @@
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasFail.swift",
+    "basename": "AccessibleNameExtrasFail.swift",
+    "line": 37,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -150,6 +310,56 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPartial.swift",
+    "basename": "AccessibleNameExtrasPartial.swift",
+    "line": 48,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPartial.swift",
+    "basename": "AccessibleNameExtrasPartial.swift",
+    "line": 48,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPartial.swift",
+    "basename": "AccessibleNameExtrasPartial.swift",
+    "line": 48,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPartial.swift",
+    "basename": "AccessibleNameExtrasPartial.swift",
+    "line": 97,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPartial.swift",
+    "basename": "AccessibleNameExtrasPartial.swift",
+    "line": 97,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
@@ -158,6 +368,56 @@
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
+    "basename": "AccessibleNameExtrasPass.swift",
+    "line": 42,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
+    "basename": "AccessibleNameExtrasPass.swift",
+    "line": 42,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
+    "basename": "AccessibleNameExtrasPass.swift",
+    "line": 42,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
+    "basename": "AccessibleNameExtrasPass.swift",
+    "line": 69,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
+    "basename": "AccessibleNameExtrasPass.swift",
+    "line": 96,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -218,6 +478,16 @@
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 127,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -310,6 +580,16 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
+    "basename": "AccessibleNameFail.swift",
+    "line": 207,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameFail.swift",
@@ -370,6 +650,56 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 48,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 56,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 64,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 75,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 160,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_WITHOUT_VALUE",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
@@ -390,6 +720,76 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 191,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 209,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 63,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 75,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 85,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 99,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 195,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_UPDATE_VERIFY",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
@@ -408,6 +808,26 @@
     "element": "star.fill",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 245,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 265,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -490,6 +910,56 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 83,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 83,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 83,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 83,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 83,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
@@ -510,6 +980,16 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 102,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
@@ -528,6 +1008,16 @@
     "element": "I agree to the Terms of Service",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRoleFail.swift",
+    "basename": "AccessibleNativeRoleFail.swift",
+    "line": 112,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_WITHOUT_VALUE",
@@ -600,6 +1090,56 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 99,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 99,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 99,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 99,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 99,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "TAP_ROLE_PRESENT",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
@@ -608,6 +1148,16 @@
     "element": "Segmented Picker",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 124,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "TAP_ROLE_PRESENT",
@@ -620,6 +1170,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 136,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_WITHOUT_VALUE",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
@@ -628,6 +1188,56 @@
     "element": "agreedToTerms",
     "hasRealAction": false,
     "detail": "this control's own tap handler toggles 'agreedToTerms', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePass.swift",
+    "basename": "AccessibleNativeRolePass.swift",
+    "line": 28,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePass.swift",
+    "basename": "AccessibleNativeRolePass.swift",
+    "line": 39,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePass.swift",
+    "basename": "AccessibleNativeRolePass.swift",
+    "line": 50,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePass.swift",
+    "basename": "AccessibleNativeRolePass.swift",
+    "line": 63,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePass.swift",
+    "basename": "AccessibleNativeRolePass.swift",
+    "line": 74,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -648,6 +1258,16 @@
     "element": "Refresh",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 30,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -680,6 +1300,26 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
@@ -698,6 +1338,16 @@
     "element": "Wi-Fi Only",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 70,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_WITHOUT_VALUE",
@@ -728,6 +1378,16 @@
     "element": "checkmark",
     "hasRealAction": true,
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRoleFail.swift",
+    "basename": "AccessibleRoleFail.swift",
+    "line": 90,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "SELECTION_STATE_WITHOUT_VALUE",
@@ -790,6 +1450,16 @@
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 33,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
@@ -820,6 +1490,36 @@
     "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 59,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 59,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 59,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
@@ -838,6 +1538,16 @@
     "element": "Wi-Fi Only",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 73,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_WITHOUT_VALUE",
@@ -868,6 +1578,16 @@
     "element": "checkmark",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 93,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "SELECTION_STATE_WITHOUT_VALUE",
@@ -930,6 +1650,16 @@
     "detail": "carries an interactive trait (.isButton/.isLink/.isAdjustable) but its tap handler performs no real action \u2014 VoiceOver announces this as activatable, but double-tapping does nothing"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 28,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
@@ -960,6 +1690,36 @@
     "detail": "carries an interactive trait (.isButton/.isLink/.isAdjustable) but its tap handler performs no real action \u2014 VoiceOver announces this as activatable, but double-tapping does nothing"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 49,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 49,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 49,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "HEADERLESS_SECTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
@@ -978,6 +1738,16 @@
     "element": "Wi-Fi Only",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 63,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -1008,6 +1778,16 @@
     "element": "checkmark",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 84,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -1060,6 +1840,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 47,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "SELECTION_STATE_NOT_UPDATED_ON_INTERACTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
@@ -1078,6 +1868,16 @@
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 69,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_WITHOUT_VALUE",
@@ -1110,6 +1910,36 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 95,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 95,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 95,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "POSSIBLE_INVERTED_VALUE",
     "severity": "WARN",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
@@ -1128,6 +1958,16 @@
     "element": "",
     "hasRealAction": false,
     "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 106,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "HEADERLESS_SECTION",
@@ -1210,6 +2050,26 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 188,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
+    "basename": "AccessibleStateFail.swift",
+    "line": 188,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "SELECTION_STATE_INCORRECT",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStateFail.swift",
@@ -1228,6 +2088,16 @@
     "element": "Selected",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 59,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "SELECTION_STATE_WITHOUT_VALUE",
@@ -1250,6 +2120,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 77,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_WITHOUT_VALUE",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
@@ -1268,6 +2148,36 @@
     "element": "I agree to the Terms of Service",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 104,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 104,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 104,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STALE_VALUE_ON_TOGGLED_CONTROL",
@@ -1290,6 +2200,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 124,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_NOT_UPDATED_ON_INTERACTION",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
@@ -1308,6 +2228,16 @@
     "element": "Wi-Fi",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 143,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -1330,6 +2260,16 @@
     "detail": "this button's availability is conditional on 'isFormValid' \u2014 it guards its own action against it, but no .disabled(...) anywhere in its chain gives it the .notEnabled trait, so VoiceOver announces a fully available control and a user who activates it gets silence"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 174,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "BUSY_STATE_WITHOUT_VALUE",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
@@ -1348,6 +2288,26 @@
     "element": "email",
     "hasRealAction": false,
     "detail": "this field validates itself on every change of 'email', but has no .accessibilityValue \u2014 the error text below it is a separate element reachable only by swiping past the field, so the field itself announces nothing about its own validity"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 226,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 226,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_WITHOUT_VALUE",
@@ -1370,6 +2330,26 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 241,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 241,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "SELECTION_STATE_WITHOUT_VALUE",
     "severity": "FAIL",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
@@ -1388,6 +2368,16 @@
     "element": "Selected",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 53,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -1410,6 +2400,16 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 76,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_UPDATE_VERIFY",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
@@ -1428,6 +2428,36 @@
     "element": "I agree to the Terms of Service",
     "hasRealAction": true,
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 98,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 98,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 98,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -1450,6 +2480,16 @@
     "detail": "this control communicates its state through a .disabled(\u2026) modifier, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
   },
   {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 142,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_UPDATE_VERIFY",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
@@ -1468,6 +2508,26 @@
     "element": "Invalid",
     "hasRealAction": false,
     "detail": "this control communicates its state through an accessibilityValue, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 197,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 197,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "STATE_UPDATE_VERIFY",
@@ -1490,6 +2550,26 @@
     "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
   },
   {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 218,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 218,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
     "check": "STATE_UPDATE_VERIFY",
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
@@ -1498,5 +2578,885 @@
     "element": "currentStep",
     "hasRealAction": false,
     "detail": "this control communicates its state through the .isSelected trait, and no source-level defect was found in it \u2014 interact with it and confirm VoiceOver's announced state actually changes, which is the one thing reading the source cannot show"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 45,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 45,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 65,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 65,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 85,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 85,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 105,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 105,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 70,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 70,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 87,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 87,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 104,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 104,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 120,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 120,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 43,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 43,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 68,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 68,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 75,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 75,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 84,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 84,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 24,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_CLIPPED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 24,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is pinned to a fixed frame with a line limit and an explicit truncation mode \u2014 it is configured to be cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 31,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_CLIPPED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 31,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is pinned to a fixed frame with a line limit and an explicit truncation mode \u2014 it is configured to be cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_CLIPPED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is pinned to a fixed frame with a line limit and an explicit truncation mode \u2014 it is configured to be cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 45,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_CLIPPED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 45,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is pinned to a fixed frame with a line limit and an explicit truncation mode \u2014 it is configured to be cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_CLIPPED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 52,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is pinned to a fixed frame with a line limit and an explicit truncation mode \u2014 it is configured to be cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 34,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_CLIPPED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 34,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is pinned to a fixed frame with a line limit and an explicit truncation mode \u2014 it is configured to be cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 41,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_CLIPPED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 41,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is pinned to a fixed frame with a line limit and an explicit truncation mode \u2014 it is configured to be cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 27,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 27,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 31,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 31,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 45,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 45,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 30,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 30,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 36,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 36,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 31,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 31,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FIXED_FONT_SIZE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 35,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is set at a fixed point size, so it does not grow when the reader raises their text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 35,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 26,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 30,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 30,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 36,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 36,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   }
 ]

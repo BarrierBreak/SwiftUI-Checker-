@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8EDA37458374D689295462A /* A11yInspect_Accessibility_Framework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B80DDD4AEB54B7CA1008C4A /* A11yInspect_Accessibility_Framework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BA8606320C544CC692915612 /* A11yInspect_Accessibility_Framework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B80DDD4AEB54B7CA1008C4A /* A11yInspect_Accessibility_Framework.xcframework */; };
+		BB2000000000000000000002 /* A11yInspectTestCases.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2000000000000000000001 /* A11yInspectTestCases.xcframework */; };
+		BB2000000000000000000003 /* A11yInspectTestCases.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB2000000000000000000001 /* A11yInspectTestCases.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A8EDA37458374D689295462A /* A11yInspect_Accessibility_Framework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BB2000000000000000000003 /* A11yInspectTestCases.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,56 +53,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B80DDD4AEB54B7CA1008C4A /* A11yInspect_Accessibility_Framework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = A11yInspect_Accessibility_Framework.xcframework; path = SwiftUIAccessibilityChecker/A11yInspect_Accessibility_Framework.xcframework; sourceTree = "<group>"; };
+		BB2000000000000000000001 /* A11yInspectTestCases.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = A11yInspectTestCases.xcframework; path = SwiftUIAccessibilityChecker/A11yInspectTestCases.xcframework; sourceTree = "<group>"; };
 		EC6744A6301B6C620080BF16 /* SwiftUIAccessibilityChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAccessibilityChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6744B3301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAccessibilityCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6744BD301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAccessibilityCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		EC6744EE301B72780080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityCheckerTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				A11yInspect_Accessibility_Framework.xcframework,
-			);
-			platformFiltersByRelativePath = {
-				A11yInspect_Accessibility_Framework.xcframework = (ios, );
-			};
-			target = EC6744B2301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests */;
-		};
-		EC6744EF301B72780080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityCheckerUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				A11yInspect_Accessibility_Framework.xcframework,
-			);
-			platformFiltersByRelativePath = {
-				A11yInspect_Accessibility_Framework.xcframework = (ios, );
-			};
-			target = EC6744BC301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		EC6744F3301B728F0080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "Embed Frameworks" phase from "SwiftUIAccessibilityChecker" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			attributesByRelativePath = {
-				A11yInspect_Accessibility_Framework.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
-			};
-			buildPhase = EC6744F2301B728E0080BF16 /* Embed Frameworks */;
-			membershipExceptions = (
-				A11yInspect_Accessibility_Framework.xcframework,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EC6744A8301B6C620080BF16 /* SwiftUIAccessibilityChecker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				EC6744F3301B728F0080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "Embed Frameworks" phase from "SwiftUIAccessibilityChecker" target */,
-				EC6744EE301B72780080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityCheckerTests" target */,
-				EC6744EF301B72780080BF16 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityCheckerUITests" target */,
-			);
 			path = SwiftUIAccessibilityChecker;
 			sourceTree = "<group>";
 		};
@@ -123,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2000000000000000000002 /* A11yInspectTestCases.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA8606320C544CC692915612 /* A11yInspect_Accessibility_Framework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +106,11 @@
 		EC67449D301B6C620080BF16 = {
 			isa = PBXGroup;
 			children = (
+				BB2000000000000000000001 /* A11yInspectTestCases.xcframework */,
 				EC6744A8301B6C620080BF16 /* SwiftUIAccessibilityChecker */,
 				EC6744B6301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests */,
 				EC6744C0301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests */,
 				EC6744A7301B6C620080BF16 /* Products */,
-				9B80DDD4AEB54B7CA1008C4A /* A11yInspect_Accessibility_Framework.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
