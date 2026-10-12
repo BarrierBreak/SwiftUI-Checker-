@@ -72,6 +72,15 @@ struct ContentView: View {
                     NavigationLink("AccessibleTargetSizePass") { AccessibleTargetSizePass() }
                     NavigationLink("AccessibleTargetSizeFail") { AccessibleTargetSizeFail() }
                     NavigationLink("AccessibleTargetSizePartial") { AccessibleTargetSizePartial() }
+                    NavigationLink("AccessibleHiddenPass") { AccessibleHiddenPass() }
+                    NavigationLink("AccessibleHiddenFail") { AccessibleHiddenFail() }
+                    NavigationLink("AccessibleHiddenPartial") { AccessibleHiddenPartial() }
+                    NavigationLink("AccessibleLanguagePass") { AccessibleLanguagePass() }
+                    NavigationLink("AccessibleLanguageFail") { AccessibleLanguageFail() }
+                    NavigationLink("AccessibleLanguagePartial") { AccessibleLanguagePartial() }
+                    NavigationLink("AccessibleMotionPass") { AccessibleMotionPass() }
+                    NavigationLink("AccessibleMotionFail") { AccessibleMotionFail() }
+                    NavigationLink("AccessibleMotionPartial") { AccessibleMotionPartial() }
                 }
 
                 Section("Text Contrast") {

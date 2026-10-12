@@ -140,6 +140,48 @@ final class A11yDemoScanTests: XCTestCase {
         try runScan(screen: "AccessibleTextContrastCompositedPartial")
     }
 
+    // MARK: - Motion screens
+
+    func testAccessibleMotionPass() throws {
+        try runScan(screen: "AccessibleMotionPass")
+    }
+
+    func testAccessibleMotionFail() throws {
+        try runScan(screen: "AccessibleMotionFail")
+    }
+
+    func testAccessibleMotionPartial() throws {
+        try runScan(screen: "AccessibleMotionPartial")
+    }
+
+    // MARK: - Language screens
+
+    func testAccessibleLanguagePass() throws {
+        try runScan(screen: "AccessibleLanguagePass")
+    }
+
+    func testAccessibleLanguageFail() throws {
+        try runScan(screen: "AccessibleLanguageFail")
+    }
+
+    func testAccessibleLanguagePartial() throws {
+        try runScan(screen: "AccessibleLanguagePartial")
+    }
+
+    // MARK: - Hidden from Screen Reader screens
+
+    func testAccessibleHiddenPass() throws {
+        try runScan(screen: "AccessibleHiddenPass")
+    }
+
+    func testAccessibleHiddenFail() throws {
+        try runScan(screen: "AccessibleHiddenFail")
+    }
+
+    func testAccessibleHiddenPartial() throws {
+        try runScan(screen: "AccessibleHiddenPartial")
+    }
+
     /// Every screen in one run — the combined report, as before.
     func testAllScreens() throws {
         try runScan(screen: nil)

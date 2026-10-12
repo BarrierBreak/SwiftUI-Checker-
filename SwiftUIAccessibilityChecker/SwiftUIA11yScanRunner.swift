@@ -66,6 +66,23 @@ enum SwiftUIA11yScan {
         A11yScreen("Target Size Fail", AccessibleTargetSizeFail()),
         A11yScreen("Target Size Partial", AccessibleTargetSizePartial()),
 
+        // Hidden from screen reader — decided from the source, because SwiftUI never hands a
+        // hidden view to the accessibility tree.
+        A11yScreen("Hidden Pass", AccessibleHiddenPass()),
+        A11yScreen("Hidden Fail", AccessibleHiddenFail()),
+        A11yScreen("Hidden Partial", AccessibleHiddenPartial()),
+
+        // Language — whether the app has one, and whether each piece of text declares a
+        // language that agrees with the text and the app.
+        A11yScreen("Language Pass", AccessibleLanguagePass()),
+        A11yScreen("Language Fail", AccessibleLanguageFail()),
+        A11yScreen("Language Partial", AccessibleLanguagePartial()),
+
+        // Motion — a shake-handled action needs an on-screen alternative control.
+        A11yScreen("Motion Pass", AccessibleMotionPass()),
+        A11yScreen("Motion Fail", AccessibleMotionFail()),
+        A11yScreen("Motion Partial", AccessibleMotionPartial()),
+
         // Text contrast — WCAG 1.4.3 on SOLID backgrounds. On SwiftUI the ratio comes out
         // of a screenshot rather than out of two known colours, so these screens are built
         // so the verdict does not depend on where the crop landed.

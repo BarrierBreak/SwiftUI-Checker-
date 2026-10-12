@@ -3458,5 +3458,115 @@
     "element": "",
     "hasRealAction": false,
     "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_INTERACTIVE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 42,
+    "element": "Pay now",
+    "hasRealAction": false,
+    "detail": "control is marked .accessibilityHidden(true), so VoiceOver and Switch Control cannot reach it"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_INTERACTIVE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 46,
+    "element": "Notifications",
+    "hasRealAction": false,
+    "detail": "control is marked .accessibilityHidden(true), so VoiceOver and Switch Control cannot reach it"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_INTERACTIVE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 51,
+    "element": "Volume",
+    "hasRealAction": false,
+    "detail": "control is marked .accessibilityHidden(true), so VoiceOver and Switch Control cannot reach it"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_INTERACTIVE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 55,
+    "element": "Quantity: \\(quantity)",
+    "hasRealAction": false,
+    "detail": "control is marked .accessibilityHidden(true), so VoiceOver and Switch Control cannot reach it"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_INTERACTIVE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 60,
+    "element": "Search",
+    "hasRealAction": false,
+    "detail": "control is marked .accessibilityHidden(true), so VoiceOver and Switch Control cannot reach it"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_INTERACTIVE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 64,
+    "element": "Terms of service",
+    "hasRealAction": false,
+    "detail": "control is marked .accessibilityHidden(true), so VoiceOver and Switch Control cannot reach it"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_INTERACTIVE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 68,
+    "element": "Delete account",
+    "hasRealAction": false,
+    "detail": "control is inside a container marked .accessibilityHidden(true), so VoiceOver and Switch Control cannot reach it"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_CONTENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenPartial.swift",
+    "basename": "AccessibleHiddenPartial.swift",
+    "line": 35,
+    "element": "Order #4821 confirmed",
+    "hasRealAction": false,
+    "detail": "content is marked .accessibilityHidden(true) \u2014 confirm a screen-reader user gets it another way"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_CONTENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenPartial.swift",
+    "basename": "AccessibleHiddenPartial.swift",
+    "line": 39,
+    "element": "Total: $42.00",
+    "hasRealAction": false,
+    "detail": "content is marked .accessibilityHidden(true) \u2014 confirm a screen-reader user gets it another way"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_CONTENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenPartial.swift",
+    "basename": "AccessibleHiddenPartial.swift",
+    "line": 48,
+    "element": "Warning: low stock",
+    "hasRealAction": false,
+    "detail": "content is marked .accessibilityHidden(true) \u2014 confirm a screen-reader user gets it another way"
+  },
+  {
+    "check": "SWIFTUI_HIDDEN_CONTENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenPartial.swift",
+    "basename": "AccessibleHiddenPartial.swift",
+    "line": 52,
+    "element": "Prices include tax",
+    "hasRealAction": false,
+    "detail": "content is inside a container marked .accessibilityHidden(true) \u2014 confirm a screen-reader user gets it another way"
   }
 ]
