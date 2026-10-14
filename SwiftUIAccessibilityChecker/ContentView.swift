@@ -84,6 +84,9 @@ struct ContentView: View {
                     NavigationLink("AccessibleImagesPass") { AccessibleImagesPass() }
                     NavigationLink("AccessibleImagesFail") { AccessibleImagesFail() }
                     NavigationLink("AccessibleImagesPartial") { AccessibleImagesPartial() }
+                    NavigationLink("AccessibleReadingOrderPass") { AccessibleReadingOrderPass() }
+                    NavigationLink("AccessibleReadingOrderFail") { AccessibleReadingOrderFail() }
+                    NavigationLink("AccessibleReadingOrderPartial") { AccessibleReadingOrderPartial() }
                 }
 
                 Section("Text Contrast") {

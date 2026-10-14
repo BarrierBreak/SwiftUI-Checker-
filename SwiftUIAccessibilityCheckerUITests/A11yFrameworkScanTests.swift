@@ -140,6 +140,20 @@ final class A11yDemoScanTests: XCTestCase {
         try runScan(screen: "AccessibleTextContrastCompositedPartial")
     }
 
+    // MARK: - Reading Order screens
+
+    func testAccessibleReadingOrderPass() throws {
+        try runScan(screen: "AccessibleReadingOrderPass")
+    }
+
+    func testAccessibleReadingOrderFail() throws {
+        try runScan(screen: "AccessibleReadingOrderFail")
+    }
+
+    func testAccessibleReadingOrderPartial() throws {
+        try runScan(screen: "AccessibleReadingOrderPartial")
+    }
+
     // MARK: - Image screens
 
     func testAccessibleImagesPass() throws {

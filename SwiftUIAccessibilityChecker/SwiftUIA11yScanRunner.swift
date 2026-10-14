@@ -88,6 +88,11 @@ enum SwiftUIA11yScan {
         A11yScreen("Images Fail", AccessibleImagesFail()),
         A11yScreen("Images Partial", AccessibleImagesPartial()),
 
+        // Reading order — whether the order VoiceOver follows matches the layout.
+        A11yScreen("Reading Order Pass", AccessibleReadingOrderPass()),
+        A11yScreen("Reading Order Fail", AccessibleReadingOrderFail()),
+        A11yScreen("Reading Order Partial", AccessibleReadingOrderPartial()),
+
         // Text contrast — WCAG 1.4.3 on SOLID backgrounds. On SwiftUI the ratio comes out
         // of a screenshot rather than out of two known colours, so these screens are built
         // so the verdict does not depend on where the crop landed.
