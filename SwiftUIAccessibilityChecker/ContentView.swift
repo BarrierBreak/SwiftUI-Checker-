@@ -87,6 +87,30 @@ struct ContentView: View {
                     NavigationLink("AccessibleReadingOrderPass") { AccessibleReadingOrderPass() }
                     NavigationLink("AccessibleReadingOrderFail") { AccessibleReadingOrderFail() }
                     NavigationLink("AccessibleReadingOrderPartial") { AccessibleReadingOrderPartial() }
+                    NavigationLink("AccessibleFocusPass") { AccessibleFocusPass() }
+                    NavigationLink("AccessibleFocusFail") { AccessibleFocusFail() }
+                    NavigationLink("AccessibleFocusPartial") { AccessibleFocusPartial() }
+                    NavigationLink("AccessibleLinkPass") { AccessibleLinkPass() }
+                    NavigationLink("AccessibleLinkFail") { AccessibleLinkFail() }
+                    NavigationLink("AccessibleLinkPartial") { AccessibleLinkPartial() }
+                    NavigationLink("AccessibleRoleTraitPass") { AccessibleRoleTraitPass() }
+                    NavigationLink("AccessibleRoleTraitFail") { AccessibleRoleTraitFail() }
+                    NavigationLink("AccessibleRoleTraitPartial") { AccessibleRoleTraitPartial() }
+                    NavigationLink("AccessibleStateTraitPass") { AccessibleStateTraitPass() }
+                    NavigationLink("AccessibleStateTraitFail") { AccessibleStateTraitFail() }
+                    NavigationLink("AccessibleStateTraitPartial") { AccessibleStateTraitPartial() }
+                    NavigationLink("AccessibleButtonPass") { AccessibleButtonPass() }
+                    NavigationLink("AccessibleButtonFail") { AccessibleButtonFail() }
+                    NavigationLink("AccessibleButtonPartial") { AccessibleButtonPartial() }
+                    NavigationLink("AccessibleFormLabelPass") { AccessibleFormLabelPass() }
+                    NavigationLink("AccessibleFormLabelFail") { AccessibleFormLabelFail() }
+                    NavigationLink("AccessibleFormLabelPartial") { AccessibleFormLabelPartial() }
+                    NavigationLink("AccessibleCustomActionPass") { AccessibleCustomActionPass() }
+                    NavigationLink("AccessibleCustomActionFail") { AccessibleCustomActionFail() }
+                    NavigationLink("AccessibleCustomActionPartial") { AccessibleCustomActionPartial() }
+                    NavigationLink("AccessibleTouchEventPass") { AccessibleTouchEventPass() }
+                    NavigationLink("AccessibleTouchEventFail") { AccessibleTouchEventFail() }
+                    NavigationLink("AccessibleTouchEventPartial") { AccessibleTouchEventPartial() }
                 }
 
                 Section("Text Contrast") {

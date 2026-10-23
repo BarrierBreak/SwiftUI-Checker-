@@ -93,6 +93,38 @@ enum SwiftUIA11yScan {
         A11yScreen("Reading Order Fail", AccessibleReadingOrderFail()),
         A11yScreen("Reading Order Partial", AccessibleReadingOrderPartial()),
 
+        // Focus indicator — the ring a field draws: its contrast, and whether it is more than a
+        // colour. Judged from source: SwiftUI draws the ring in a display list.
+        A11yScreen("Focus Pass", AccessibleFocusPass()),
+        A11yScreen("Focus Fail", AccessibleFocusFail()),
+        A11yScreen("Focus Partial", AccessibleFocusPartial()),
+
+        // Links — an inline link set apart from its text by more than colour.
+        A11yScreen("Link Pass", AccessibleLinkPass()),
+        A11yScreen("Link Fail", AccessibleLinkFail()),
+        A11yScreen("Link Partial", AccessibleLinkPartial()),
+
+        // Role trait, state trait, button, form label, custom action and touch event — judged from
+        // source (the linter's bundled findings), because SwiftUI keeps these decisions out of the tree.
+        A11yScreen("Role trait Pass", AccessibleRoleTraitPass()),
+        A11yScreen("Role trait Fail", AccessibleRoleTraitFail()),
+        A11yScreen("Role trait Partial", AccessibleRoleTraitPartial()),
+        A11yScreen("State trait Pass", AccessibleStateTraitPass()),
+        A11yScreen("State trait Fail", AccessibleStateTraitFail()),
+        A11yScreen("State trait Partial", AccessibleStateTraitPartial()),
+        A11yScreen("Button Pass", AccessibleButtonPass()),
+        A11yScreen("Button Fail", AccessibleButtonFail()),
+        A11yScreen("Button Partial", AccessibleButtonPartial()),
+        A11yScreen("Form label Pass", AccessibleFormLabelPass()),
+        A11yScreen("Form label Fail", AccessibleFormLabelFail()),
+        A11yScreen("Form label Partial", AccessibleFormLabelPartial()),
+        A11yScreen("Custom action Pass", AccessibleCustomActionPass()),
+        A11yScreen("Custom action Fail", AccessibleCustomActionFail()),
+        A11yScreen("Custom action Partial", AccessibleCustomActionPartial()),
+        A11yScreen("Touch event Pass", AccessibleTouchEventPass()),
+        A11yScreen("Touch event Fail", AccessibleTouchEventFail()),
+        A11yScreen("Touch event Partial", AccessibleTouchEventPartial()),
+
         // Text contrast — WCAG 1.4.3 on SOLID backgrounds. On SwiftUI the ratio comes out
         // of a screenshot rather than out of two known colours, so these screens are built
         // so the verdict does not depend on where the crop landed.
