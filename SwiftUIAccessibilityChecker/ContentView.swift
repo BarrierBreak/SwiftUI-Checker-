@@ -113,6 +113,42 @@ struct ContentView: View {
                     NavigationLink("AccessibleTouchEventPartial") { AccessibleTouchEventPartial() }
                 }
 
+                Section("Error message") {
+                    NavigationLink("AccessibleErrorMessagePass") { AccessibleErrorMessagePass() }
+                    NavigationLink("AccessibleErrorMessageFail") { AccessibleErrorMessageFail() }
+                    NavigationLink("AccessibleErrorMessagePartial") { AccessibleErrorMessagePartial() }
+                }
+
+                Section("Non-text contrast") {
+                    NavigationLink("AccessibleNonTextContrastPass") { AccessibleNonTextContrastPass() }
+                    NavigationLink("AccessibleNonTextContrastFail") { AccessibleNonTextContrastFail() }
+                    NavigationLink("AccessibleNonTextContrastPartial") { AccessibleNonTextContrastPartial() }
+                }
+
+                Section("Focus obscured") {
+                    NavigationLink("AccessibleFocusObscuredPass") { AccessibleFocusObscuredPass() }
+                    NavigationLink("AccessibleFocusObscuredFail") { AccessibleFocusObscuredFail() }
+                    NavigationLink("AccessibleFocusObscuredPartial") { AccessibleFocusObscuredPartial() }
+                }
+
+                Section("Modal") {
+                    NavigationLink("AccessibleModalPass") { AccessibleModalPass() }
+                    NavigationLink("AccessibleModalFail") { AccessibleModalFail() }
+                    NavigationLink("AccessibleModalPartial") { AccessibleModalPartial() }
+                }
+
+                Section("Tab control") {
+                    NavigationLink("AccessibleTabControlPass") { AccessibleTabControlPass() }
+                    NavigationLink("AccessibleTabControlFail") { AccessibleTabControlFail() }
+                    NavigationLink("AccessibleTabControlPartial") { AccessibleTabControlPartial() }
+                }
+
+                Section("Screen title") {
+                    NavigationLink("AccessibleScreenTitlePass") { AccessibleScreenTitlePass() }
+                    NavigationLink("AccessibleScreenTitleFail") { AccessibleScreenTitleFail() }
+                    NavigationLink("AccessibleScreenTitlePartial") { AccessibleScreenTitlePartial() }
+                }
+
                 Section("Text Contrast") {
                     NavigationLink("AccessibleTextContrastPass") { AccessibleTextContrastPass() }
                     NavigationLink("AccessibleTextContrastFail") { AccessibleTextContrastFail() }

@@ -125,6 +125,32 @@ enum SwiftUIA11yScan {
         A11yScreen("Touch event Fail", AccessibleTouchEventFail()),
         A11yScreen("Touch event Partial", AccessibleTouchEventPartial()),
 
+        // Batch 2 — error message announced, non-text contrast, focus obscured, modal dialogs,
+        // tab controls and the screen title.
+        A11yScreen("Error message Pass", AccessibleErrorMessagePass()),
+        A11yScreen("Error message Fail", AccessibleErrorMessageFail()),
+        A11yScreen("Error message Partial", AccessibleErrorMessagePartial()),
+
+        A11yScreen("Non-text contrast Pass", AccessibleNonTextContrastPass()),
+        A11yScreen("Non-text contrast Fail", AccessibleNonTextContrastFail()),
+        A11yScreen("Non-text contrast Partial", AccessibleNonTextContrastPartial()),
+
+        A11yScreen("Focus obscured Pass", AccessibleFocusObscuredPass()),
+        A11yScreen("Focus obscured Fail", AccessibleFocusObscuredFail()),
+        A11yScreen("Focus obscured Partial", AccessibleFocusObscuredPartial()),
+
+        A11yScreen("Modal Pass", AccessibleModalPass()),
+        A11yScreen("Modal Fail", AccessibleModalFail()),
+        A11yScreen("Modal Partial", AccessibleModalPartial()),
+
+        A11yScreen("Tab control Pass", AccessibleTabControlPass()),
+        A11yScreen("Tab control Fail", AccessibleTabControlFail()),
+        A11yScreen("Tab control Partial", AccessibleTabControlPartial()),
+
+        A11yScreen("Screen title Pass", AccessibleScreenTitlePass()),
+        A11yScreen("Screen title Fail", AccessibleScreenTitleFail()),
+        A11yScreen("Screen title Partial", AccessibleScreenTitlePartial()),
+
         // Text contrast — WCAG 1.4.3 on SOLID backgrounds. On SwiftUI the ratio comes out
         // of a screenshot rather than out of two known colours, so these screens are built
         // so the verdict does not depend on where the crop landed.

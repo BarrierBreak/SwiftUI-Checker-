@@ -6988,5 +6988,1065 @@
     "element": "Counter: \\(count)",
     "hasRealAction": false,
     "detail": "tap action runs when the touch is released, so it can be cancelled"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Button/AccessibleButtonFail.swift",
+    "basename": "AccessibleButtonFail.swift",
+    "line": 36,
+    "element": "ButtonFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Button/AccessibleButtonPartial.swift",
+    "basename": "AccessibleButtonPartial.swift",
+    "line": 32,
+    "element": "ButtonPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Button/AccessibleButtonPass.swift",
+    "basename": "AccessibleButtonPass.swift",
+    "line": 32,
+    "element": "ButtonPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedFail.swift",
+    "basename": "AccessibleTextContrastCompositedFail.swift",
+    "line": 131,
+    "element": "Composited Contrast (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPartial.swift",
+    "basename": "AccessibleTextContrastCompositedPartial.swift",
+    "line": 144,
+    "element": "Composited Contrast (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastCompositedPass.swift",
+    "basename": "AccessibleTextContrastCompositedPass.swift",
+    "line": 142,
+    "element": "Composited Contrast (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastFail.swift",
+    "basename": "AccessibleTextContrastFail.swift",
+    "line": 103,
+    "element": "Text Contrast (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastPartial.swift",
+    "basename": "AccessibleTextContrastPartial.swift",
+    "line": 120,
+    "element": "Text Contrast (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ColourContrast/AccessibleTextContrastPass.swift",
+    "basename": "AccessibleTextContrastPass.swift",
+    "line": 115,
+    "element": "Text Contrast (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ContentView.swift",
+    "basename": "ContentView.swift",
+    "line": 128,
+    "element": "Accessibility Examples",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/CustomAction/AccessibleCustomActionFail.swift",
+    "basename": "AccessibleCustomActionFail.swift",
+    "line": 54,
+    "element": "CustomActionFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/CustomAction/AccessibleCustomActionPartial.swift",
+    "basename": "AccessibleCustomActionPartial.swift",
+    "line": 45,
+    "element": "CustomActionPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/CustomAction/AccessibleCustomActionPass.swift",
+    "basename": "AccessibleCustomActionPass.swift",
+    "line": 63,
+    "element": "CustomActionPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_ERROR_NOT_ANNOUNCED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ErrorMessage/AccessibleErrorMessageFail.swift",
+    "basename": "AccessibleErrorMessageFail.swift",
+    "line": 34,
+    "element": "Invalid email address",
+    "hasRealAction": false,
+    "detail": "error message is marked .accessibilityHidden(true), so a screen-reader user is never told what went wrong"
+  },
+  {
+    "check": "SWIFTUI_ERROR_NOT_ANNOUNCED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ErrorMessage/AccessibleErrorMessageFail.swift",
+    "basename": "AccessibleErrorMessageFail.swift",
+    "line": 47,
+    "element": "Password required",
+    "hasRealAction": false,
+    "detail": "error message is marked .accessibilityHidden(true), so a screen-reader user is never told what went wrong"
+  },
+  {
+    "check": "SWIFTUI_ERROR_NOT_ANNOUNCED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ErrorMessage/AccessibleErrorMessageFail.swift",
+    "basename": "AccessibleErrorMessageFail.swift",
+    "line": 60,
+    "element": "Phone number is incorrect",
+    "hasRealAction": false,
+    "detail": "error message is marked .accessibilityHidden(true), so a screen-reader user is never told what went wrong"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ErrorMessage/AccessibleErrorMessageFail.swift",
+    "basename": "AccessibleErrorMessageFail.swift",
+    "line": 65,
+    "element": "ErrorMessageFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_ERROR_NOT_ANNOUNCED",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ErrorMessage/AccessibleErrorMessagePartial.swift",
+    "basename": "AccessibleErrorMessagePartial.swift",
+    "line": 39,
+    "element": "Password required",
+    "hasRealAction": false,
+    "detail": "error message is marked .accessibilityHidden(true), so a screen-reader user is never told what went wrong"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ErrorMessage/AccessibleErrorMessagePartial.swift",
+    "basename": "AccessibleErrorMessagePartial.swift",
+    "line": 44,
+    "element": "ErrorMessagePartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ErrorMessage/AccessibleErrorMessagePass.swift",
+    "basename": "AccessibleErrorMessagePass.swift",
+    "line": 44,
+    "element": "ErrorMessagePass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_FIELD_BORDER_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Focus/AccessibleFocusFail.swift",
+    "basename": "AccessibleFocusFail.swift",
+    "line": 41,
+    "element": "Email address",
+    "hasRealAction": false,
+    "detail": "field border contrast ratio 1.56:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_FIELD_BORDER_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Focus/AccessibleFocusFail.swift",
+    "basename": "AccessibleFocusFail.swift",
+    "line": 50,
+    "element": "Phone number",
+    "hasRealAction": false,
+    "detail": "field border contrast ratio 2.61:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_FIELD_BORDER_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Focus/AccessibleFocusFail.swift",
+    "basename": "AccessibleFocusFail.swift",
+    "line": 68,
+    "element": "Company",
+    "hasRealAction": false,
+    "detail": "field border contrast ratio 1.56:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Focus/AccessibleFocusFail.swift",
+    "basename": "AccessibleFocusFail.swift",
+    "line": 72,
+    "element": "Focus (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_FIELD_BORDER_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Focus/AccessibleFocusPartial.swift",
+    "basename": "AccessibleFocusPartial.swift",
+    "line": 47,
+    "element": "Phone number",
+    "hasRealAction": false,
+    "detail": "field border contrast ratio 1.56:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Focus/AccessibleFocusPartial.swift",
+    "basename": "AccessibleFocusPartial.swift",
+    "line": 69,
+    "element": "Focus (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Focus/AccessibleFocusPass.swift",
+    "basename": "AccessibleFocusPass.swift",
+    "line": 62,
+    "element": "Focus (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/FocusObscured/AccessibleFocusObscuredFail.swift",
+    "basename": "AccessibleFocusObscuredFail.swift",
+    "line": 46,
+    "element": "FocusObscuredFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/FocusObscured/AccessibleFocusObscuredPartial.swift",
+    "basename": "AccessibleFocusObscuredPartial.swift",
+    "line": 39,
+    "element": "FocusObscuredPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/FocusObscured/AccessibleFocusObscuredPass.swift",
+    "basename": "AccessibleFocusObscuredPass.swift",
+    "line": 39,
+    "element": "FocusObscuredPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/FormLabel/AccessibleFormLabelFail.swift",
+    "basename": "AccessibleFormLabelFail.swift",
+    "line": 35,
+    "element": "FormLabelFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/FormLabel/AccessibleFormLabelPartial.swift",
+    "basename": "AccessibleFormLabelPartial.swift",
+    "line": 31,
+    "element": "FormLabelPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/FormLabel/AccessibleFormLabelPass.swift",
+    "basename": "AccessibleFormLabelPass.swift",
+    "line": 35,
+    "element": "FormLabelPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenFail.swift",
+    "basename": "AccessibleHiddenFail.swift",
+    "line": 74,
+    "element": "Hidden (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenPartial.swift",
+    "basename": "AccessibleHiddenPartial.swift",
+    "line": 63,
+    "element": "Hidden (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Hidden/AccessibleHiddenPass.swift",
+    "basename": "AccessibleHiddenPass.swift",
+    "line": 68,
+    "element": "Hidden (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Images/AccessibleImagesFail.swift",
+    "basename": "AccessibleImagesFail.swift",
+    "line": 43,
+    "element": "Images (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Images/AccessibleImagesPartial.swift",
+    "basename": "AccessibleImagesPartial.swift",
+    "line": 46,
+    "element": "Images (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Images/AccessibleImagesPass.swift",
+    "basename": "AccessibleImagesPass.swift",
+    "line": 50,
+    "element": "Images (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardFail.swift",
+    "basename": "AccessibleKeyboardFail.swift",
+    "line": 36,
+    "element": "Accessible Keyboard (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPartial.swift",
+    "basename": "AccessibleKeyboardPartial.swift",
+    "line": 40,
+    "element": "Accessible Keyboard (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardPass.swift",
+    "basename": "AccessibleKeyboardPass.swift",
+    "line": 41,
+    "element": "Accessible Keyboard (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Language/AccessibleLanguageFail.swift",
+    "basename": "AccessibleLanguageFail.swift",
+    "line": 44,
+    "element": "Language (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Language/AccessibleLanguagePartial.swift",
+    "basename": "AccessibleLanguagePartial.swift",
+    "line": 40,
+    "element": "Language (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Language/AccessibleLanguagePass.swift",
+    "basename": "AccessibleLanguagePass.swift",
+    "line": 43,
+    "element": "Language (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
+    "basename": "AccessibleLinkFail.swift",
+    "line": 31,
+    "element": "Links (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkPartial.swift",
+    "basename": "AccessibleLinkPartial.swift",
+    "line": 46,
+    "element": "Links (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkPass.swift",
+    "basename": "AccessibleLinkPass.swift",
+    "line": 58,
+    "element": "Links (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_CONTROLS",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalFail.swift",
+    "basename": "AccessibleModalFail.swift",
+    "line": 30,
+    "element": "Session expired",
+    "hasRealAction": false,
+    "detail": "dialog has no control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_ESCAPE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalFail.swift",
+    "basename": "AccessibleModalFail.swift",
+    "line": 30,
+    "element": "Session expired",
+    "hasRealAction": false,
+    "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_ESCAPE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalFail.swift",
+    "basename": "AccessibleModalFail.swift",
+    "line": 42,
+    "element": "Remember choice",
+    "hasRealAction": false,
+    "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalFail.swift",
+    "basename": "AccessibleModalFail.swift",
+    "line": 46,
+    "element": "ModalFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_ESCAPE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPartial.swift",
+    "basename": "AccessibleModalPartial.swift",
+    "line": 39,
+    "element": "Remember choice",
+    "hasRealAction": false,
+    "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPartial.swift",
+    "basename": "AccessibleModalPartial.swift",
+    "line": 43,
+    "element": "ModalPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPass.swift",
+    "basename": "AccessibleModalPass.swift",
+    "line": 30,
+    "element": "ModalPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Motion/AccessibleMotionFail.swift",
+    "basename": "AccessibleMotionFail.swift",
+    "line": 39,
+    "element": "Motion (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Motion/AccessibleMotionPartial.swift",
+    "basename": "AccessibleMotionPartial.swift",
+    "line": 36,
+    "element": "Motion (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Motion/AccessibleMotionPass.swift",
+    "basename": "AccessibleMotionPass.swift",
+    "line": 23,
+    "element": "Motion (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPartial.swift",
+    "basename": "AccessibleNameExtrasPartial.swift",
+    "line": 110,
+    "element": "Extras",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNameExtrasPass.swift",
+    "basename": "AccessibleNameExtrasPass.swift",
+    "line": 113,
+    "element": "Extras",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePartial.swift",
+    "basename": "AccessibleNamePartial.swift",
+    "line": 156,
+    "element": "Settings",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Name/AccessibleNamePass.swift",
+    "basename": "AccessibleNamePass.swift",
+    "line": 190,
+    "element": "Settings",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_FIELD_BORDER_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastFail.swift",
+    "basename": "AccessibleNonTextContrastFail.swift",
+    "line": 28,
+    "element": "Full name",
+    "hasRealAction": false,
+    "detail": "field border contrast ratio 1.54:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastFail.swift",
+    "basename": "AccessibleNonTextContrastFail.swift",
+    "line": 32,
+    "element": "#CFE3F7",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 1.31:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_CONTROL_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastFail.swift",
+    "basename": "AccessibleNonTextContrastFail.swift",
+    "line": 36,
+    "element": "Notifications",
+    "hasRealAction": false,
+    "detail": "control colour contrast ratio 1.35:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_CONTROL_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastFail.swift",
+    "basename": "AccessibleNonTextContrastFail.swift",
+    "line": 40,
+    "element": "star.fill",
+    "hasRealAction": false,
+    "detail": "control colour contrast ratio 1.25:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastFail.swift",
+    "basename": "AccessibleNonTextContrastFail.swift",
+    "line": 44,
+    "element": "NonTextContrastFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_FIELD_BORDER_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastPartial.swift",
+    "basename": "AccessibleNonTextContrastPartial.swift",
+    "line": 28,
+    "element": "Email",
+    "hasRealAction": false,
+    "detail": "field border contrast ratio 1.54:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastPartial.swift",
+    "basename": "AccessibleNonTextContrastPartial.swift",
+    "line": 32,
+    "element": "#CFE3F7",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 1.31:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastPartial.swift",
+    "basename": "AccessibleNonTextContrastPartial.swift",
+    "line": 40,
+    "element": "NonTextContrastPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastPass.swift",
+    "basename": "AccessibleNonTextContrastPass.swift",
+    "line": 34,
+    "element": "NonTextContrastPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ReadingOrder/AccessibleReadingOrderFail.swift",
+    "basename": "AccessibleReadingOrderFail.swift",
+    "line": 37,
+    "element": "Reading Order (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ReadingOrder/AccessibleReadingOrderPartial.swift",
+    "basename": "AccessibleReadingOrderPartial.swift",
+    "line": 36,
+    "element": "Reading Order (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ReadingOrder/AccessibleReadingOrderPass.swift",
+    "basename": "AccessibleReadingOrderPass.swift",
+    "line": 37,
+    "element": "Reading Order (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePartial.swift",
+    "basename": "AccessibleNativeRolePartial.swift",
+    "line": 142,
+    "element": "Native Controls (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleNativeRolePass.swift",
+    "basename": "AccessibleNativeRolePass.swift",
+    "line": 80,
+    "element": "Native Controls",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePartial.swift",
+    "basename": "AccessibleRolePartial.swift",
+    "line": 138,
+    "element": "Accessible Roles (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Role/AccessibleRolePass.swift",
+    "basename": "AccessibleRolePass.swift",
+    "line": 136,
+    "element": "Accessible Roles",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/RoleTrait/AccessibleRoleTraitFail.swift",
+    "basename": "AccessibleRoleTraitFail.swift",
+    "line": 49,
+    "element": "RoleTraitFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/RoleTrait/AccessibleRoleTraitPartial.swift",
+    "basename": "AccessibleRoleTraitPartial.swift",
+    "line": 38,
+    "element": "RoleTraitPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/RoleTrait/AccessibleRoleTraitPass.swift",
+    "basename": "AccessibleRoleTraitPass.swift",
+    "line": 42,
+    "element": "RoleTraitPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ScreenTitle/AccessibleScreenTitlePartial.swift",
+    "basename": "AccessibleScreenTitlePartial.swift",
+    "line": 25,
+    "element": "Order summary",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ScreenTitle/AccessibleScreenTitlePass.swift",
+    "basename": "AccessibleScreenTitlePass.swift",
+    "line": 25,
+    "element": "Order summary",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePartial.swift",
+    "basename": "AccessibleStatePartial.swift",
+    "line": 249,
+    "element": "Accessible State (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/State/AccessibleStatePass.swift",
+    "basename": "AccessibleStatePass.swift",
+    "line": 223,
+    "element": "Accessible State",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/StateTrait/AccessibleStateTraitFail.swift",
+    "basename": "AccessibleStateTraitFail.swift",
+    "line": 35,
+    "element": "StateTraitFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/StateTrait/AccessibleStateTraitPartial.swift",
+    "basename": "AccessibleStateTraitPartial.swift",
+    "line": 28,
+    "element": "StateTraitPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/StateTrait/AccessibleStateTraitPass.swift",
+    "basename": "AccessibleStateTraitPass.swift",
+    "line": 36,
+    "element": "StateTraitPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_TAB_HIDDEN",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TabControl/AccessibleTabControlPartial.swift",
+    "basename": "AccessibleTabControlPartial.swift",
+    "line": 35,
+    "element": "TabView",
+    "hasRealAction": false,
+    "detail": "tab control is marked .accessibilityHidden(true) \u2014 confirm a screen-reader user can switch tabs another way"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TabControl/AccessibleTabControlPartial.swift",
+    "basename": "AccessibleTabControlPartial.swift",
+    "line": 39,
+    "element": "TabControlPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TabControl/AccessibleTabControlPass.swift",
+    "basename": "AccessibleTabControlPass.swift",
+    "line": 38,
+    "element": "TabControlPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizeFail.swift",
+    "basename": "AccessibleTargetSizeFail.swift",
+    "line": 118,
+    "element": "Target Size (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePartial.swift",
+    "basename": "AccessibleTargetSizePartial.swift",
+    "line": 125,
+    "element": "Target Size (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TargetSize/AccessibleTargetSizePass.swift",
+    "basename": "AccessibleTargetSizePass.swift",
+    "line": 89,
+    "element": "Target Size (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingFail.swift",
+    "basename": "AccessibleTextClippingFail.swift",
+    "line": 57,
+    "element": "Text Clipping (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPartial.swift",
+    "basename": "AccessibleTextClippingPartial.swift",
+    "line": 46,
+    "element": "Text Clipping (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextClipping/AccessibleTextClippingPass.swift",
+    "basename": "AccessibleTextClippingPass.swift",
+    "line": 50,
+    "element": "Text Clipping (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizeFail.swift",
+    "basename": "AccessibleTextResizeFail.swift",
+    "line": 41,
+    "element": "Text Resize (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePartial.swift",
+    "basename": "AccessibleTextResizePartial.swift",
+    "line": 40,
+    "element": "Text Resize (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TextResize/AccessibleTextResizePass.swift",
+    "basename": "AccessibleTextResizePass.swift",
+    "line": 41,
+    "element": "Text Resize (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TouchEvent/AccessibleTouchEventFail.swift",
+    "basename": "AccessibleTouchEventFail.swift",
+    "line": 35,
+    "element": "TouchEventFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TouchEvent/AccessibleTouchEventPartial.swift",
+    "basename": "AccessibleTouchEventPartial.swift",
+    "line": 29,
+    "element": "TouchEventPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TouchEvent/AccessibleTouchEventPass.swift",
+    "basename": "AccessibleTouchEventPass.swift",
+    "line": 30,
+    "element": "TouchEventPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_TAB_HIDDEN",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TabControl/AccessibleTabControlFail.swift",
+    "basename": "AccessibleTabControlFail.swift",
+    "line": 31,
+    "element": "TabView",
+    "hasRealAction": false,
+    "detail": "tab control is marked .accessibilityHidden(true) \u2014 confirm a screen-reader user can switch tabs another way"
+  },
+  {
+    "check": "SWIFTUI_TAB_HIDDEN",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TabControl/AccessibleTabControlFail.swift",
+    "basename": "AccessibleTabControlFail.swift",
+    "line": 42,
+    "element": "TabView",
+    "hasRealAction": false,
+    "detail": "tab control is marked .accessibilityHidden(true) \u2014 confirm a screen-reader user can switch tabs another way"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/Accessibility checker app/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/TabControl/AccessibleTabControlFail.swift",
+    "basename": "AccessibleTabControlFail.swift",
+    "line": 46,
+    "element": "TabControlFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
   }
 ]

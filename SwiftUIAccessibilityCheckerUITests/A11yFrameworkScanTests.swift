@@ -265,6 +265,15 @@ final class A11yDemoScanTests: XCTestCase {
         static let gesturePass = "Custom action present for gesture"
         static let downFail = "Action fires on touch down instead of touch up"
         static let upPass = "Action fires on touch up, allowing cancellation"
+        static let errorFail = "Error message not announced by screen reader"
+        static let controlFail = "Insufficient color contrast for non-text element"
+        static let borderFail = "Insufficient color contrast for border of form controls"
+        static let loadingFail = "Insufficient color contrast for loading indicator"
+        static let obscuredValidate = "Check if focus indicator is obscured by another element"
+        static let modalNoControls = "Modal has no keyboard-focusable interactive controls"
+        static let modalNoEscape = "Modal dialog inaccessible for screen reader users"
+        static let tabValidate = "Check if tab control needs to be hidden for screen reader user"
+        static let titlePass = "Title is specified for screen"
     }
 
     /// Scans `screen` and returns how many rows of each title the screen's own source produced.
@@ -382,6 +391,107 @@ final class A11yDemoScanTests: XCTestCase {
         let c = try counts("AccessibleTouchEventPartial", family: "pointerCancellation")
         assertCount(c, Title.upPass, 1)
         assertCount(c, Title.downFail, 1)
+    }
+
+    // MARK: - Batch 2: error message, non-text contrast, focus obscured, modal, tab control, screen title
+
+    func testAccessibleErrorMessagePass() throws {
+        let c = try counts("AccessibleErrorMessagePass", family: "errorMessage")
+        assertCount(c, Title.errorFail, 0)
+    }
+
+    func testAccessibleErrorMessageFail() throws {
+        let c = try counts("AccessibleErrorMessageFail", family: "errorMessage")
+        assertCount(c, Title.errorFail, 3)
+    }
+
+    func testAccessibleErrorMessagePartial() throws {
+        let c = try counts("AccessibleErrorMessagePartial", family: "errorMessage")
+        assertCount(c, Title.errorFail, 1)
+    }
+
+    func testAccessibleNonTextContrastPass() throws {
+        let c = try counts("AccessibleNonTextContrastPass", family: "nonTextContrast")
+        assertCount(c, Title.borderFail, 0)
+        assertCount(c, Title.loadingFail, 0)
+        assertCount(c, Title.controlFail, 0)
+    }
+
+    func testAccessibleNonTextContrastFail() throws {
+        let c = try counts("AccessibleNonTextContrastFail", family: "nonTextContrast")
+        assertCount(c, Title.borderFail, 1)
+        assertCount(c, Title.loadingFail, 1)
+        assertCount(c, Title.controlFail, 2)
+    }
+
+    func testAccessibleNonTextContrastPartial() throws {
+        let c = try counts("AccessibleNonTextContrastPartial", family: "nonTextContrast")
+        assertCount(c, Title.borderFail, 1)
+        assertCount(c, Title.loadingFail, 1)
+        assertCount(c, Title.controlFail, 0)
+    }
+
+    func testAccessibleFocusObscuredPass() throws {
+        let c = try counts("AccessibleFocusObscuredPass", family: "focusObscured")
+        assertCount(c, Title.obscuredValidate, 0)
+    }
+
+    func testAccessibleFocusObscuredFail() throws {
+        let c = try counts("AccessibleFocusObscuredFail", family: "focusObscured")
+        assertCount(c, Title.obscuredValidate, 2)
+    }
+
+    func testAccessibleFocusObscuredPartial() throws {
+        let c = try counts("AccessibleFocusObscuredPartial", family: "focusObscured")
+        assertCount(c, Title.obscuredValidate, 1)
+    }
+
+    func testAccessibleModalPass() throws {
+        let c = try counts("AccessibleModalPass", family: "modal")
+        assertCount(c, Title.modalNoControls, 0)
+        assertCount(c, Title.modalNoEscape, 0)
+    }
+
+    func testAccessibleModalFail() throws {
+        let c = try counts("AccessibleModalFail", family: "modal")
+        assertCount(c, Title.modalNoControls, 1)
+        assertCount(c, Title.modalNoEscape, 2)
+    }
+
+    func testAccessibleModalPartial() throws {
+        let c = try counts("AccessibleModalPartial", family: "modal")
+        assertCount(c, Title.modalNoControls, 0)
+        assertCount(c, Title.modalNoEscape, 1)
+    }
+
+    func testAccessibleTabControlPass() throws {
+        let c = try counts("AccessibleTabControlPass", family: "tabControl")
+        assertCount(c, Title.tabValidate, 0)
+    }
+
+    func testAccessibleTabControlFail() throws {
+        let c = try counts("AccessibleTabControlFail", family: "tabControl")
+        assertCount(c, Title.tabValidate, 2)
+    }
+
+    func testAccessibleTabControlPartial() throws {
+        let c = try counts("AccessibleTabControlPartial", family: "tabControl")
+        assertCount(c, Title.tabValidate, 1)
+    }
+
+    func testAccessibleScreenTitlePass() throws {
+        let c = try counts("AccessibleScreenTitlePass", family: "screenTitle")
+        assertCount(c, Title.titlePass, 1)
+    }
+
+    func testAccessibleScreenTitleFail() throws {
+        let c = try counts("AccessibleScreenTitleFail", family: "screenTitle")
+        assertCount(c, Title.titlePass, 0)
+    }
+
+    func testAccessibleScreenTitlePartial() throws {
+        let c = try counts("AccessibleScreenTitlePartial", family: "screenTitle")
+        assertCount(c, Title.titlePass, 1)
     }
 
     /// Every screen in one run — the combined report, as before.
