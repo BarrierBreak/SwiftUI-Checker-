@@ -9,27 +9,32 @@ import SwiftUI
 ///   2. Clear card  — shake to clear, nothing else on the card           → BB40052 Fail
 struct AccessibleMotionPartial: View {
 
+    @State private var undone = 0
+    @State private var cleared = 0
+
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 24) {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Shake your phone to undo the last change")
-                        Button("Undo last change") {}
+                        Button("Undo last change") { undone += 1 }
                             .srcLine()
+                        if undone > 0 { Text("Done: \(undone)").font(.footnote) }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(16)
                     .background(Color(.secondarySystemBackground))
-                    .onShake {}
+                    .onShake { undone += 1 }
 
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Shake your phone to clear the form")
+                        if cleared > 0 { Text("Done: \(cleared)").font(.footnote) }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(16)
                     .background(Color(.secondarySystemBackground))
-                    .onShake {}
+                    .onShake { cleared += 1 }
                 }
                 .padding(24)
             }

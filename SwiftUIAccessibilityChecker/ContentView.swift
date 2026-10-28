@@ -149,6 +149,36 @@ struct ContentView: View {
                     NavigationLink("AccessibleScreenTitlePartial") { AccessibleScreenTitlePartial() }
                 }
 
+                Section("Gesture keyboard") {
+                    NavigationLink("AccessibleGestureKeyboardPass") { AccessibleGestureKeyboardPass() }
+                    NavigationLink("AccessibleGestureKeyboardFail") { AccessibleGestureKeyboardFail() }
+                    NavigationLink("AccessibleGestureKeyboardPartial") { AccessibleGestureKeyboardPartial() }
+                }
+
+                Section("Autocomplete") {
+                    NavigationLink("AccessibleAutocompletePass") { AccessibleAutocompletePass() }
+                    NavigationLink("AccessibleAutocompleteFail") { AccessibleAutocompleteFail() }
+                    NavigationLink("AccessibleAutocompletePartial") { AccessibleAutocompletePartial() }
+                }
+
+                Section("Modal close") {
+                    NavigationLink("AccessibleModalClosePass") { AccessibleModalClosePass() }
+                    NavigationLink("AccessibleModalCloseFail") { AccessibleModalCloseFail() }
+                    NavigationLink("AccessibleModalClosePartial") { AccessibleModalClosePartial() }
+                }
+
+                Section("Language change") {
+                    NavigationLink("AccessibleLanguageChangePass") { AccessibleLanguageChangePass() }
+                    NavigationLink("AccessibleLanguageChangeFail") { AccessibleLanguageChangeFail() }
+                    NavigationLink("AccessibleLanguageChangePartial") { AccessibleLanguageChangePartial() }
+                }
+
+                Section("Focus order") {
+                    NavigationLink("AccessibleFocusOrderPass") { AccessibleFocusOrderPass() }
+                    NavigationLink("AccessibleFocusOrderFail") { AccessibleFocusOrderFail() }
+                    NavigationLink("AccessibleFocusOrderPartial") { AccessibleFocusOrderPartial() }
+                }
+
                 Section("Text Contrast") {
                     NavigationLink("AccessibleTextContrastPass") { AccessibleTextContrastPass() }
                     NavigationLink("AccessibleTextContrastFail") { AccessibleTextContrastFail() }

@@ -274,6 +274,14 @@ final class A11yDemoScanTests: XCTestCase {
         static let modalNoEscape = "Modal dialog inaccessible for screen reader users"
         static let tabValidate = "Check if tab control needs to be hidden for screen reader user"
         static let titlePass = "Title is specified for screen"
+        static let gestureKbPass = "Gesture-only control is operable with keyboard"
+        static let gestureKbFail = "Gesture-only control not operable with keyboard"
+        static let autocompletePass = "Autocomplete information is specified for form field"
+        static let autocompleteFail = "Missing autocomplete information for form field"
+        static let modalClosePass = "Modal dialog can be closed"
+        static let languageChangeFail = "Change in language not defined correctly"
+        static let focusOrderPass = "Screen has correct focus order"
+        static let focusOrderValidate = "Check if focus order is correct on the screen"
     }
 
     /// Scans `screen` and returns how many rows of each title the screen's own source produced.
@@ -492,6 +500,100 @@ final class A11yDemoScanTests: XCTestCase {
     func testAccessibleScreenTitlePartial() throws {
         let c = try counts("AccessibleScreenTitlePartial", family: "screenTitle")
         assertCount(c, Title.titlePass, 1)
+    }
+
+    // MARK: - Batch 3: gesture keyboard, autocomplete, modal close, language change, focus order
+
+    /// Scans `screen` and returns how many rows of each "title|status" the screen's own source produced
+    /// (only this batch's rule titles are counted, like `counts`; other rules judge the same screens).
+    private func rowCounts(_ screen: String, family: String) throws -> [String: Int] {
+        let issues = try runScan(screen: screen, family: family, includePasses: true)
+        var result: [String: Int] = [:]
+        let ownTitles: Set<String> = [
+            Title.gestureKbPass, Title.gestureKbFail, Title.autocompletePass, Title.autocompleteFail,
+            Title.modalClosePass, Title.modalNoEscape, Title.languageChangeFail,
+            Title.focusOrderPass, Title.focusOrderValidate,
+        ]
+        for row in issues where row.element.contains("\(screen).swift:") && ownTitles.contains(row.rule) {
+            result["\(row.rule)|\(row.status)", default: 0] += 1
+        }
+        return result
+    }
+
+    /// The scan's rows must be exactly `expected` (title, status, count) — nothing else.
+    private func expectRows(_ c: [String: Int], _ expected: [(String, String, Int)],
+                            file: StaticString = #filePath, line: UInt = #line) {
+        var want: [String: Int] = [:]
+        for (t, s, n) in expected { want["\(t)|\(s)"] = n }
+        XCTAssertEqual(c, want, file: file, line: line)
+    }
+
+    func testAccessibleGestureKeyboardPass() throws {
+        expectRows(try rowCounts("AccessibleGestureKeyboardPass", family: "gestureKeyboard"),
+                   [(Title.gestureKbPass, "Pass", 2)])
+    }
+    func testAccessibleGestureKeyboardFail() throws {
+        expectRows(try rowCounts("AccessibleGestureKeyboardFail", family: "gestureKeyboard"),
+                   [(Title.gestureKbFail, "Fail", 2)])
+    }
+    func testAccessibleGestureKeyboardPartial() throws {
+        expectRows(try rowCounts("AccessibleGestureKeyboardPartial", family: "gestureKeyboard"),
+                   [(Title.gestureKbPass, "Pass", 1), (Title.gestureKbFail, "Fail", 1)])
+    }
+
+    func testAccessibleAutocompletePass() throws {
+        expectRows(try rowCounts("AccessibleAutocompletePass", family: "autocomplete"),
+                   [(Title.autocompletePass, "Pass", 2)])
+    }
+    func testAccessibleAutocompleteFail() throws {
+        expectRows(try rowCounts("AccessibleAutocompleteFail", family: "autocomplete"),
+                   [(Title.autocompleteFail, "Fail", 2)])
+    }
+    func testAccessibleAutocompletePartial() throws {
+        expectRows(try rowCounts("AccessibleAutocompletePartial", family: "autocomplete"),
+                   [(Title.autocompletePass, "Pass", 1), (Title.autocompleteFail, "Fail", 1)])
+    }
+
+    func testAccessibleModalClosePass() throws {
+        expectRows(try rowCounts("AccessibleModalClosePass", family: "modalClose"),
+                   [(Title.modalClosePass, "Pass", 1)])
+        expectRows(try rowCounts("AccessibleModalClosePass", family: "modal"), [])
+    }
+    func testAccessibleModalCloseFail() throws {
+        expectRows(try rowCounts("AccessibleModalCloseFail", family: "modalClose"), [])
+        expectRows(try rowCounts("AccessibleModalCloseFail", family: "modal"),
+                   [(Title.modalNoEscape, "Fail", 1)])
+    }
+    func testAccessibleModalClosePartial() throws {
+        expectRows(try rowCounts("AccessibleModalClosePartial", family: "modalClose"),
+                   [(Title.modalClosePass, "Pass", 1)])
+        expectRows(try rowCounts("AccessibleModalClosePartial", family: "modal"),
+                   [(Title.modalNoEscape, "Fail", 1)])
+    }
+
+    func testAccessibleLanguageChangePass() throws {
+        expectRows(try rowCounts("AccessibleLanguageChangePass", family: "languageChange"), [])
+    }
+    func testAccessibleLanguageChangeFail() throws {
+        expectRows(try rowCounts("AccessibleLanguageChangeFail", family: "languageChange"),
+                   [(Title.languageChangeFail, "Fail", 2)])
+    }
+    func testAccessibleLanguageChangePartial() throws {
+        expectRows(try rowCounts("AccessibleLanguageChangePartial", family: "languageChange"),
+                   [(Title.languageChangeFail, "Fail", 1)])
+    }
+
+    func testAccessibleFocusOrderPass() throws {
+        expectRows(try rowCounts("AccessibleFocusOrderPass", family: "focusOrder"),
+                   [(Title.focusOrderPass, "Pass", 1)])
+    }
+    func testAccessibleFocusOrderFail() throws {
+        expectRows(try rowCounts("AccessibleFocusOrderFail", family: "focusOrder"),
+                   [(Title.focusOrderValidate, "Validate", 1)])
+    }
+    func testAccessibleFocusOrderPartial() throws {
+        expectRows(try rowCounts("AccessibleFocusOrderPartial", family: "focusOrder"),
+                   [(Title.focusOrderPass, "Pass", 1), (Title.focusOrderValidate, "Validate", 1)])
     }
 
     /// Every screen in one run — the combined report, as before.

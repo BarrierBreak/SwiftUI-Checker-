@@ -11,6 +11,9 @@ import SwiftUI
 ///   2. Clear card  — shake to clear, with a "Clear the form" button
 struct AccessibleMotionPass: View {
 
+    @State private var undone = 0
+    @State private var cleared = 0
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -25,15 +28,18 @@ struct AccessibleMotionPass: View {
     }
 
     private func card(_ prompt: String, button: String) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
+        let isUndo = button == "Undo last change"
+        let perform = { if isUndo { undone += 1 } else { cleared += 1 } }
+        return VStack(alignment: .leading, spacing: 12) {
             Text(prompt)
-            Button(button) {}
+            Button(button) { perform() }
                 .srcLine()
+            if (isUndo ? undone : cleared) > 0 { Text("Done: \(isUndo ? undone : cleared)").font(.footnote) }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)
         .background(Color(.secondarySystemBackground))
-        .onShake {}
+        .onShake { perform() }
     }
 }
 

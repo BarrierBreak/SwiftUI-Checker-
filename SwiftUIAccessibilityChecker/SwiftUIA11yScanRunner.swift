@@ -151,6 +151,27 @@ enum SwiftUIA11yScan {
         A11yScreen("Screen title Fail", AccessibleScreenTitleFail()),
         A11yScreen("Screen title Partial", AccessibleScreenTitlePartial()),
 
+        // Batch 3 — gesture-only controls, autocomplete, modal close, language change, focus order.
+        A11yScreen("Gesture keyboard Pass", AccessibleGestureKeyboardPass()),
+        A11yScreen("Gesture keyboard Fail", AccessibleGestureKeyboardFail()),
+        A11yScreen("Gesture keyboard Partial", AccessibleGestureKeyboardPartial()),
+
+        A11yScreen("Autocomplete Pass", AccessibleAutocompletePass()),
+        A11yScreen("Autocomplete Fail", AccessibleAutocompleteFail()),
+        A11yScreen("Autocomplete Partial", AccessibleAutocompletePartial()),
+
+        A11yScreen("Modal close Pass", AccessibleModalClosePass()),
+        A11yScreen("Modal close Fail", AccessibleModalCloseFail()),
+        A11yScreen("Modal close Partial", AccessibleModalClosePartial()),
+
+        A11yScreen("Language change Pass", AccessibleLanguageChangePass()),
+        A11yScreen("Language change Fail", AccessibleLanguageChangeFail()),
+        A11yScreen("Language change Partial", AccessibleLanguageChangePartial()),
+
+        A11yScreen("Focus order Pass", AccessibleFocusOrderPass()),
+        A11yScreen("Focus order Fail", AccessibleFocusOrderFail()),
+        A11yScreen("Focus order Partial", AccessibleFocusOrderPartial()),
+
         // Text contrast — WCAG 1.4.3 on SOLID backgrounds. On SwiftUI the ratio comes out
         // of a screenshot rather than out of two known colours, so these screens are built
         // so the verdict does not depend on where the crop landed.
