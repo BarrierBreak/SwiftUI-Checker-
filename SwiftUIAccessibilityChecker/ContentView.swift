@@ -152,6 +152,12 @@ struct ContentView: View {
                     NavigationLink("AccessibleScreenTitlePartial") { AccessibleScreenTitlePartial() }
                 }
 
+                Section("Orientation") {
+                    NavigationLink("AccessibleOrientationPass") { AccessibleOrientationPass() }
+                    NavigationLink("AccessibleOrientationFail") { AccessibleOrientationFail() }
+                    NavigationLink("AccessibleOrientationPartial") { AccessibleOrientationPartial() }
+                }
+
                 Section("Gesture keyboard") {
                     NavigationLink("AccessibleGestureKeyboardPass") { AccessibleGestureKeyboardPass() }
                     NavigationLink("AccessibleGestureKeyboardFail") { AccessibleGestureKeyboardFail() }

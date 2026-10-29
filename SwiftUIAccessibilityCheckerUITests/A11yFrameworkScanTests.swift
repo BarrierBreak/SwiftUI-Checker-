@@ -297,6 +297,8 @@ final class A11yDemoScanTests: XCTestCase {
         static let focusOrderPass = "Screen has correct focus order"
         static let focusOrderValidate = "Check if focus order is correct on the screen"
         static let linkNotOperable = "Link not keyboard operable"
+        static let orientationCheck = "Check if all the content is available when the device orientation is changed to landscape or portrait mode"
+        static let orientationLocked = "Screen is locked in orientation"
     }
 
     /// Scans `screen` and returns how many rows of each title the screen's own source produced.
@@ -528,8 +530,12 @@ final class A11yDemoScanTests: XCTestCase {
             Title.gestureKbPass, Title.gestureKbFail, Title.autocompletePass, Title.autocompleteFail,
             Title.modalClosePass, Title.modalNoEscape, Title.languageChangeFail,
             Title.focusOrderPass, Title.focusOrderValidate, Title.linkNotOperable,
+            Title.orientationCheck, Title.orientationLocked,
         ]
-        for row in issues where row.element.contains("\(screen).swift:") && ownTitles.contains(row.rule) {
+        // A source-linted finding names its file and line; a screen-level one (orientation) names
+        // the hosting controller of the screen.
+        for row in issues where (row.element.contains("\(screen).swift:") || row.class.contains("<\(screen)>"))
+            && ownTitles.contains(row.rule) {
             result["\(row.rule)|\(row.status)", default: 0] += 1
         }
         return result
@@ -541,6 +547,19 @@ final class A11yDemoScanTests: XCTestCase {
         var want: [String: Int] = [:]
         for (t, s, n) in expected { want["\(t)|\(s)"] = n }
         XCTAssertEqual(c, want, file: file, line: line)
+    }
+
+    func testAccessibleOrientationPass() throws {
+        expectRows(try rowCounts("AccessibleOrientationPass", family: "orientation"),
+                   [(Title.orientationCheck, "Validate", 1)])
+    }
+    func testAccessibleOrientationFail() throws {
+        expectRows(try rowCounts("AccessibleOrientationFail", family: "orientation"),
+                   [(Title.orientationLocked, "Fail", 1)])
+    }
+    func testAccessibleOrientationPartial() throws {
+        expectRows(try rowCounts("AccessibleOrientationPartial", family: "orientation"),
+                   [(Title.orientationLocked, "Fail", 1)])
     }
 
     func testAccessibleGestureKeyboardPass() throws {

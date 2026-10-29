@@ -155,6 +155,9 @@ enum SwiftUIA11yScan {
         A11yScreen("Screen title Partial", AccessibleScreenTitlePartial()),
 
         // Batch 3 — gesture-only controls, autocomplete, modal close, language change, focus order.
+        A11yScreen("Orientation Pass", AccessibleOrientationPass()),
+        A11yScreen("Orientation Fail", AccessibleOrientationFail()),
+        A11yScreen("Orientation Partial", AccessibleOrientationPartial()),
         A11yScreen("Gesture keyboard Pass", AccessibleGestureKeyboardPass()),
         A11yScreen("Gesture keyboard Fail", AccessibleGestureKeyboardFail()),
         A11yScreen("Gesture keyboard Partial", AccessibleGestureKeyboardPartial()),

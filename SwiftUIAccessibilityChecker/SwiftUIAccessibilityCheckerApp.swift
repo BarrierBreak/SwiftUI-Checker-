@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct SwiftUIAccessibilityCheckerApp: App {
+    @UIApplicationDelegateAdaptor(OrientationAppDelegate.self) private var orientationDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()
