@@ -100,6 +100,20 @@ final class A11yDemoScanTests: XCTestCase {
         try runScan(screen: "AccessibleKeyboardPartial")
     }
 
+    // MARK: - Keyboard Link screens (BB41067) — a Fail-only rule
+
+    func testAccessibleKeyboardLinkPass() throws {
+        expectRows(try rowCounts("AccessibleKeyboardLinkPass", family: "keyboard"), [])
+    }
+    func testAccessibleKeyboardLinkFail() throws {
+        expectRows(try rowCounts("AccessibleKeyboardLinkFail", family: "keyboard"),
+                   [(Title.linkNotOperable, "Fail", 2)])
+    }
+    func testAccessibleKeyboardLinkPartial() throws {
+        expectRows(try rowCounts("AccessibleKeyboardLinkPartial", family: "keyboard"),
+                   [(Title.linkNotOperable, "Fail", 1)])
+    }
+
     // MARK: - Target Size screens
 
     func testAccessibleTargetSizePass() throws {
@@ -282,6 +296,7 @@ final class A11yDemoScanTests: XCTestCase {
         static let languageChangeFail = "Change in language not defined correctly"
         static let focusOrderPass = "Screen has correct focus order"
         static let focusOrderValidate = "Check if focus order is correct on the screen"
+        static let linkNotOperable = "Link not keyboard operable"
     }
 
     /// Scans `screen` and returns how many rows of each title the screen's own source produced.
@@ -512,7 +527,7 @@ final class A11yDemoScanTests: XCTestCase {
         let ownTitles: Set<String> = [
             Title.gestureKbPass, Title.gestureKbFail, Title.autocompletePass, Title.autocompleteFail,
             Title.modalClosePass, Title.modalNoEscape, Title.languageChangeFail,
-            Title.focusOrderPass, Title.focusOrderValidate,
+            Title.focusOrderPass, Title.focusOrderValidate, Title.linkNotOperable,
         ]
         for row in issues where row.element.contains("\(screen).swift:") && ownTitles.contains(row.rule) {
             result["\(row.rule)|\(row.status)", default: 0] += 1

@@ -9224,7 +9224,7 @@
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
     "basename": "AccessibleLinkFail.swift",
-    "line": 29,
+    "line": 31,
     "element": "",
     "hasRealAction": false,
     "detail": "text is free to grow to the size it needs, so it is not cut off"
@@ -9234,27 +9234,27 @@
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
     "basename": "AccessibleLinkFail.swift",
-    "line": 29,
+    "line": 31,
     "element": "terms of service",
     "hasRealAction": false,
     "detail": "link 'terms of service' is set apart from the text around it by colour only \u2014 it has no underline (3:1 against the text is needed)"
   },
   {
-    "check": "SWIFTUI_SCREEN_TITLE",
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
     "basename": "AccessibleLinkFail.swift",
-    "line": 33,
-    "element": "Red Link (Fail)",
+    "line": 42,
+    "element": "",
     "hasRealAction": false,
-    "detail": "the screen declares a title with .navigationTitle"
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
   },
   {
     "check": "SWIFTUI_TEXT_NOT_CLIPPED",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
     "basename": "AccessibleLinkFail.swift",
-    "line": 55,
+    "line": 53,
     "element": "",
     "hasRealAction": false,
     "detail": "text is free to grow to the size it needs, so it is not cut off"
@@ -9264,27 +9264,7 @@
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
     "basename": "AccessibleLinkFail.swift",
-    "line": 55,
-    "element": "privacy policy",
-    "hasRealAction": false,
-    "detail": "link 'privacy policy' is set apart from the text around it by colour only \u2014 it has no underline (3:1 against the text is needed)"
-  },
-  {
-    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
-    "severity": "PASS",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
-    "basename": "AccessibleLinkFail.swift",
-    "line": 81,
-    "element": "",
-    "hasRealAction": false,
-    "detail": "text is free to grow to the size it needs, so it is not cut off"
-  },
-  {
-    "check": "SWIFTUI_INLINE_LINK_COLOR_ONLY",
-    "severity": "VALIDATE",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
-    "basename": "AccessibleLinkFail.swift",
-    "line": 81,
+    "line": 53,
     "element": "help centre",
     "hasRealAction": false,
     "detail": "link 'help centre' is set apart from the text around it by colour only \u2014 it has no underline (3:1 against the text is needed)"
@@ -9294,7 +9274,7 @@
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
     "basename": "AccessibleLinkFail.swift",
-    "line": 107,
+    "line": 64,
     "element": "",
     "hasRealAction": false,
     "detail": "text is free to grow to the size it needs, so it is not cut off"
@@ -9304,10 +9284,20 @@
     "severity": "VALIDATE",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
     "basename": "AccessibleLinkFail.swift",
-    "line": 107,
+    "line": 64,
     "element": "product documentation",
     "hasRealAction": false,
     "detail": "link 'product documentation' is set apart from the text around it by colour only \u2014 it has no underline (3:1 against the text is needed)"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Links/AccessibleLinkFail.swift",
+    "basename": "AccessibleLinkFail.swift",
+    "line": 68,
+    "element": "Color Only Links (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
   },
   {
     "check": "SWIFTUI_TEXT_NOT_CLIPPED",
@@ -9396,6 +9386,216 @@
     "basename": "AccessibleLinkPass.swift",
     "line": 58,
     "element": "Links (Pass)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 22,
+    "element": "Terms of service",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TOUCH_UP_ACTION",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 22,
+    "element": "Terms of service",
+    "hasRealAction": false,
+    "detail": "tap action runs when the touch is released, so it can be cancelled"
+  },
+  {
+    "check": "SWIFTUI_LINK_NOT_KEYBOARD_OPERABLE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 22,
+    "element": "Terms of service",
+    "hasRealAction": false,
+    "detail": "link is driven only by .onTapGesture \u2014 it cannot receive keyboard focus (no .focusable())"
+  },
+  {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 22,
+    "element": "opened",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'opened', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 28,
+    "element": "Help centre",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 28,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TOUCH_UP_ACTION",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 28,
+    "element": "Help centre",
+    "hasRealAction": false,
+    "detail": "tap action runs when the touch is released, so it can be cancelled"
+  },
+  {
+    "check": "SWIFTUI_LINK_NOT_KEYBOARD_OPERABLE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 28,
+    "element": "Help centre",
+    "hasRealAction": false,
+    "detail": "link is driven only by .onTapGesture \u2014 it cannot receive keyboard focus (no .focusable())"
+  },
+  {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 28,
+    "element": "opened",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'opened', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 32,
+    "element": "Keyboard Links (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
+    "basename": "AccessibleKeyboardLinkPartial.swift",
+    "line": 17,
+    "element": "Terms of service",
+    "hasRealAction": false,
+    "detail": "Link keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
+    "basename": "AccessibleKeyboardLinkPartial.swift",
+    "line": 23,
+    "element": "Help centre",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
+    "basename": "AccessibleKeyboardLinkPartial.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TOUCH_UP_ACTION",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
+    "basename": "AccessibleKeyboardLinkPartial.swift",
+    "line": 23,
+    "element": "Help centre",
+    "hasRealAction": false,
+    "detail": "tap action runs when the touch is released, so it can be cancelled"
+  },
+  {
+    "check": "SWIFTUI_LINK_NOT_KEYBOARD_OPERABLE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
+    "basename": "AccessibleKeyboardLinkPartial.swift",
+    "line": 23,
+    "element": "Help centre",
+    "hasRealAction": false,
+    "detail": "link is driven only by .onTapGesture \u2014 it cannot receive keyboard focus (no .focusable())"
+  },
+  {
+    "check": "STATE_WITHOUT_VALUE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
+    "basename": "AccessibleKeyboardLinkPartial.swift",
+    "line": 23,
+    "element": "opened",
+    "hasRealAction": false,
+    "detail": "this control's own tap handler toggles 'opened', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
+    "basename": "AccessibleKeyboardLinkPartial.swift",
+    "line": 27,
+    "element": "Keyboard Links (Partial)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPass.swift",
+    "basename": "AccessibleKeyboardLinkPass.swift",
+    "line": 15,
+    "element": "Terms of service",
+    "hasRealAction": false,
+    "detail": "Link keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPass.swift",
+    "basename": "AccessibleKeyboardLinkPass.swift",
+    "line": 18,
+    "element": "Privacy policy",
+    "hasRealAction": false,
+    "detail": "Link keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPass.swift",
+    "basename": "AccessibleKeyboardLinkPass.swift",
+    "line": 22,
+    "element": "Keyboard Links (Pass)",
     "hasRealAction": false,
     "detail": "the screen declares a title with .navigationTitle"
   }

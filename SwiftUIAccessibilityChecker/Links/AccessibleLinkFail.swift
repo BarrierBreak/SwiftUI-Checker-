@@ -7,16 +7,18 @@ import SwiftUI
 /// Each reports BB40306 "Link color differentiation check" — a Validate row, for a person to
 /// judge.
 ///
-/// Elements covered (3) — every one is reported:
-///   1. "terms of service"   — colour only
-///   2. "privacy policy"     — colour only
-///   3. "help centre"        — colour only
+/// Elements covered (4) — three are reported:
+///   1. "terms of service"        — colour only
+///   2. "privacy policy"          — underlined                → nothing
+///   3. "help centre"             — colour only
+///   4. "product documentation"   — colour only
 struct AccessibleLinkFail: View {
-    
+
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
+
                     Text(
                         makeColorOnlyLinkedText(
                             before: "Read our ",
@@ -27,24 +29,9 @@ struct AccessibleLinkFail: View {
                     )
                     .tint(.red)
                     .srcLine()
-                }
-                .padding(24)
-            }
-            .navigationTitle("Red Link (Fail)")
-        }
-    }
-}
- 
-// MARK: - Test Case 2: Green Link
- 
-struct AccessibleLinkGreenFail: View {
- 
-    var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
+
                     Text(
-                        makeColorOnlyLinkedText(
+                        makeUnderlinedLinkedText(
                             before: "Learn more in our ",
                             link: "privacy policy",
                             after: " for details.",
@@ -53,22 +40,7 @@ struct AccessibleLinkGreenFail: View {
                     )
                     .tint(.green)
                     .srcLine()
-                }
-                .padding(24)
-            }
-            .navigationTitle("Green Link (Fail)")
-        }
-    }
-}
- 
-// MARK: - Test Case 3: Purple Link
- 
-struct AccessibleLinkPurpleFail: View {
- 
-    var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
+
                     Text(
                         makeColorOnlyLinkedText(
                             before: "For assistance, visit the ",
@@ -79,22 +51,7 @@ struct AccessibleLinkPurpleFail: View {
                     )
                     .tint(.purple)
                     .srcLine()
-                }
-                .padding(24)
-            }
-            .navigationTitle("Purple Link (Fail)")
-        }
-    }
-}
- 
-// MARK: - Test Case 4: Orange Link
- 
-struct AccessibleLinkOrangeFail: View {
- 
-    var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
+
                     Text(
                         makeColorOnlyLinkedText(
                             before: "View the ",
@@ -108,11 +65,9 @@ struct AccessibleLinkOrangeFail: View {
                 }
                 .padding(24)
             }
-            .navigationTitle("Orange Link (Fail)")
+            .navigationTitle("Color Only Links (Fail)")
         }
     }
-    
-    
 }
 
 private func makeColorOnlyLinkedText(
@@ -121,35 +76,37 @@ private func makeColorOnlyLinkedText(
     after: String,
     url: String
 ) -> AttributedString {
+
     var result = AttributedString(before)
- 
+
     var linkedText = AttributedString(link)
     linkedText.link = URL(string: url)
- 
+
     // Intentional failure:
-    // The link has no underline or additional visual indicator.
+    // Link is identified only by color.
     result.append(linkedText)
     result.append(AttributedString(after))
- 
+
     return result
 }
- 
-// MARK: - Previews
- 
-#Preview("Red Link - Fail") {
-    AccessibleLinkFail()
-}
- 
-#Preview("Green Link - Fail") {
-    AccessibleLinkGreenFail()
-}
- 
-#Preview("Purple Link - Fail") {
-    AccessibleLinkPurpleFail()
-}
- 
-#Preview("Orange Link - Fail") {
-    AccessibleLinkOrangeFail()
+
+private func makeUnderlinedLinkedText(
+    before: String,
+    link: String,
+    after: String,
+    url: String
+) -> AttributedString {
+
+    var result = AttributedString(before)
+
+    var linkedText = AttributedString(link)
+    linkedText.link = URL(string: url)
+    // The underline sets the link apart by more than colour.
+    linkedText.underlineStyle = .single
+    result.append(linkedText)
+    result.append(AttributedString(after))
+
+    return result
 }
 
 #Preview {

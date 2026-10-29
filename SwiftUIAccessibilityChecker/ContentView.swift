@@ -60,6 +60,9 @@ struct ContentView: View {
                     NavigationLink("AccessibleKeyboardPass") { AccessibleKeyboardPass() }
                     NavigationLink("AccessibleKeyboardFail") { AccessibleKeyboardFail() }
                     NavigationLink("AccessibleKeyboardPartial") { AccessibleKeyboardPartial() }
+                    NavigationLink("AccessibleKeyboardLinkPass") { AccessibleKeyboardLinkPass() }
+                    NavigationLink("AccessibleKeyboardLinkFail") { AccessibleKeyboardLinkFail() }
+                    NavigationLink("AccessibleKeyboardLinkPartial") { AccessibleKeyboardLinkPartial() }
                 }
 
                 Section("Target Size") {
