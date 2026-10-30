@@ -9390,116 +9390,6 @@
     "detail": "the screen declares a title with .navigationTitle"
   },
   {
-    "check": "TAP_ROLE_PRESENT",
-    "severity": "VALIDATE",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 22,
-    "element": "Terms of service",
-    "hasRealAction": true,
-    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
-  },
-  {
-    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
-    "severity": "PASS",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 22,
-    "element": "",
-    "hasRealAction": false,
-    "detail": "text is free to grow to the size it needs, so it is not cut off"
-  },
-  {
-    "check": "SWIFTUI_TOUCH_UP_ACTION",
-    "severity": "PASS",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 22,
-    "element": "Terms of service",
-    "hasRealAction": false,
-    "detail": "tap action runs when the touch is released, so it can be cancelled"
-  },
-  {
-    "check": "SWIFTUI_LINK_NOT_KEYBOARD_OPERABLE",
-    "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 22,
-    "element": "Terms of service",
-    "hasRealAction": false,
-    "detail": "link is driven only by .onTapGesture \u2014 it cannot receive keyboard focus (no .focusable())"
-  },
-  {
-    "check": "STATE_WITHOUT_VALUE",
-    "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 22,
-    "element": "opened",
-    "hasRealAction": false,
-    "detail": "this control's own tap handler toggles 'opened', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
-  },
-  {
-    "check": "TAP_ROLE_PRESENT",
-    "severity": "VALIDATE",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 28,
-    "element": "Help centre",
-    "hasRealAction": true,
-    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
-  },
-  {
-    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
-    "severity": "PASS",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 28,
-    "element": "",
-    "hasRealAction": false,
-    "detail": "text is free to grow to the size it needs, so it is not cut off"
-  },
-  {
-    "check": "SWIFTUI_TOUCH_UP_ACTION",
-    "severity": "PASS",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 28,
-    "element": "Help centre",
-    "hasRealAction": false,
-    "detail": "tap action runs when the touch is released, so it can be cancelled"
-  },
-  {
-    "check": "SWIFTUI_LINK_NOT_KEYBOARD_OPERABLE",
-    "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 28,
-    "element": "Help centre",
-    "hasRealAction": false,
-    "detail": "link is driven only by .onTapGesture \u2014 it cannot receive keyboard focus (no .focusable())"
-  },
-  {
-    "check": "STATE_WITHOUT_VALUE",
-    "severity": "FAIL",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 28,
-    "element": "opened",
-    "hasRealAction": false,
-    "detail": "this control's own tap handler toggles 'opened', but no .accessibilityValue / .isSelected / .notEnabled anywhere in its modifier chain communicates that state to VoiceOver"
-  },
-  {
-    "check": "SWIFTUI_SCREEN_TITLE",
-    "severity": "PASS",
-    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
-    "basename": "AccessibleKeyboardLinkFail.swift",
-    "line": 32,
-    "element": "Keyboard Links (Fail)",
-    "hasRealAction": false,
-    "detail": "the screen declares a title with .navigationTitle"
-  },
-  {
     "check": "SWIFTUI_NATIVE_ROLE_OK",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkPartial.swift",
@@ -9646,6 +9536,106 @@
     "basename": "AccessibleKeyboardControlFail.swift",
     "line": 30,
     "element": "Keyboard Controls (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 12,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "TAP_ROLE_PRESENT",
+    "severity": "VALIDATE",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 38,
+    "element": "Read the keyboard guide",
+    "hasRealAction": true,
+    "detail": "carries a discrete role (.isButton/.isLink/.isAdjustable) and has a real tap action \u2014 confirm the chosen role matches what this hand-rolled control represents"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 38,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TOUCH_UP_ACTION",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 38,
+    "element": "Read the keyboard guide",
+    "hasRealAction": false,
+    "detail": "tap action runs when the touch is released, so it can be cancelled"
+  },
+  {
+    "check": "SWIFTUI_LINK_NOT_KEYBOARD_OPERABLE",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 38,
+    "element": "Read the keyboard guide",
+    "hasRealAction": false,
+    "detail": "link is driven only by .onTapGesture \u2014 it cannot receive keyboard focus (no .focusable())"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 48,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardLinkFail.swift",
+    "basename": "AccessibleKeyboardLinkFail.swift",
+    "line": 64,
+    "element": "Link \u2013 Keyboard",
     "hasRealAction": false,
     "detail": "the screen declares a title with .navigationTitle"
   }

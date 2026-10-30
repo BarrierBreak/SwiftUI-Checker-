@@ -107,7 +107,7 @@ final class A11yDemoScanTests: XCTestCase {
     }
     func testAccessibleKeyboardLinkFail() throws {
         expectRows(try rowCounts("AccessibleKeyboardLinkFail", family: "keyboard"),
-                   [(Title.linkNotOperable, "Fail", 2)])
+                   [(Title.linkNotOperable, "Fail", 1)])
     }
     func testAccessibleKeyboardLinkPartial() throws {
         expectRows(try rowCounts("AccessibleKeyboardLinkPartial", family: "keyboard"),
