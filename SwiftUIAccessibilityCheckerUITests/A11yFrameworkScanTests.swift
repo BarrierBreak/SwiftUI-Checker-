@@ -114,6 +114,13 @@ final class A11yDemoScanTests: XCTestCase {
                    [(Title.linkNotOperable, "Fail", 1)])
     }
 
+    // MARK: - Keyboard Control screen (BB41036)
+
+    func testAccessibleKeyboardControlFail() throws {
+        expectRows(try rowCounts("AccessibleKeyboardControlFail", family: "keyboard"),
+                   [(Title.controlNoFocus, "Fail", 2)])
+    }
+
     // MARK: - Target Size screens
 
     func testAccessibleTargetSizePass() throws {
@@ -297,6 +304,7 @@ final class A11yDemoScanTests: XCTestCase {
         static let focusOrderPass = "Screen has correct focus order"
         static let focusOrderValidate = "Check if focus order is correct on the screen"
         static let linkNotOperable = "Link not keyboard operable"
+        static let controlNoFocus = "Interactive control cannot receive keyboard focus"
         static let orientationCheck = "Check if all the content is available when the device orientation is changed to landscape or portrait mode"
         static let orientationLocked = "Screen is locked in orientation"
     }
@@ -529,7 +537,7 @@ final class A11yDemoScanTests: XCTestCase {
         let ownTitles: Set<String> = [
             Title.gestureKbPass, Title.gestureKbFail, Title.autocompletePass, Title.autocompleteFail,
             Title.modalClosePass, Title.modalNoEscape, Title.languageChangeFail,
-            Title.focusOrderPass, Title.focusOrderValidate, Title.linkNotOperable,
+            Title.focusOrderPass, Title.focusOrderValidate, Title.linkNotOperable, Title.controlNoFocus,
             Title.orientationCheck, Title.orientationLocked,
         ]
         // A source-linted finding names its file and line; a screen-level one (orientation) names

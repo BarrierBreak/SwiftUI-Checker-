@@ -59,6 +59,7 @@ enum SwiftUIA11yScan {
         A11yScreen("Keyboard Pass", AccessibleKeyboardPass()),
         A11yScreen("Keyboard Fail", AccessibleKeyboardFail()),
         A11yScreen("Keyboard Partial", AccessibleKeyboardPartial()),
+        A11yScreen("Keyboard Control Fail", AccessibleKeyboardControlFail()),
         A11yScreen("Keyboard Link Pass", AccessibleKeyboardLinkPass()),
         A11yScreen("Keyboard Link Fail", AccessibleKeyboardLinkFail()),
         A11yScreen("Keyboard Link Partial", AccessibleKeyboardLinkPartial()),

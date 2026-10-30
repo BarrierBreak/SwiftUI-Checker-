@@ -60,6 +60,7 @@ struct ContentView: View {
                     NavigationLink("AccessibleKeyboardPass") { AccessibleKeyboardPass() }
                     NavigationLink("AccessibleKeyboardFail") { AccessibleKeyboardFail() }
                     NavigationLink("AccessibleKeyboardPartial") { AccessibleKeyboardPartial() }
+                    NavigationLink("AccessibleKeyboardControlFail") { AccessibleKeyboardControlFail() }
                     NavigationLink("AccessibleKeyboardLinkPass") { AccessibleKeyboardLinkPass() }
                     NavigationLink("AccessibleKeyboardLinkFail") { AccessibleKeyboardLinkFail() }
                     NavigationLink("AccessibleKeyboardLinkPartial") { AccessibleKeyboardLinkPartial() }

@@ -9598,5 +9598,55 @@
     "element": "Keyboard Links (Pass)",
     "hasRealAction": false,
     "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardControlFail.swift",
+    "basename": "AccessibleKeyboardControlFail.swift",
+    "line": 21,
+    "element": "Quantity: \\(quantity)",
+    "hasRealAction": false,
+    "detail": "Stepper keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_CONTROL_NOT_FOCUSABLE",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardControlFail.swift",
+    "basename": "AccessibleKeyboardControlFail.swift",
+    "line": 21,
+    "element": "Volume",
+    "hasRealAction": false,
+    "detail": "control is switched off with .focusable(false), so Tab and Full Keyboard Access skip it"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardControlFail.swift",
+    "basename": "AccessibleKeyboardControlFail.swift",
+    "line": 26,
+    "element": "Volume",
+    "hasRealAction": false,
+    "detail": "Slider keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_CONTROL_NOT_FOCUSABLE",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardControlFail.swift",
+    "basename": "AccessibleKeyboardControlFail.swift",
+    "line": 26,
+    "element": "Quantity: \\(quantity)",
+    "hasRealAction": false,
+    "detail": "control is switched off with .focusable(false), so Tab and Full Keyboard Access skip it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/Keyboard/AccessibleKeyboardControlFail.swift",
+    "basename": "AccessibleKeyboardControlFail.swift",
+    "line": 30,
+    "element": "Keyboard Controls (Fail)",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
   }
 ]
