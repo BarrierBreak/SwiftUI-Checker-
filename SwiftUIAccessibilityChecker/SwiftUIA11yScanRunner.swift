@@ -178,6 +178,7 @@ enum SwiftUIA11yScan {
         A11yScreen("Focus order Pass", AccessibleFocusOrderPass()),
         A11yScreen("Focus order Fail", AccessibleFocusOrderFail()),
         A11yScreen("Focus order Partial", AccessibleFocusOrderPartial()),
+        A11yScreen("Focus order Redirect Fail", AccessibleFocusOrderRedirectFail()),
 
         // Text contrast — WCAG 1.4.3 on SOLID backgrounds. On SwiftUI the ratio comes out
         // of a screenshot rather than out of two known colours, so these screens are built

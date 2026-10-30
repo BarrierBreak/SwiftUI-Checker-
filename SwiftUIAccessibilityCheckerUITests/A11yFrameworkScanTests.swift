@@ -633,6 +633,10 @@ final class A11yDemoScanTests: XCTestCase {
         expectRows(try rowCounts("AccessibleFocusOrderFail", family: "focusOrder"),
                    [(Title.focusOrderValidate, "Validate", 1)])
     }
+    func testAccessibleFocusOrderRedirectFail() throws {
+        expectRows(try rowCounts("AccessibleFocusOrderRedirectFail", family: "focusOrder"),
+                   [(Title.focusOrderValidate, "Validate", 2)])
+    }
     func testAccessibleFocusOrderPartial() throws {
         expectRows(try rowCounts("AccessibleFocusOrderPartial", family: "focusOrder"),
                    [(Title.focusOrderPass, "Pass", 1), (Title.focusOrderValidate, "Validate", 1)])

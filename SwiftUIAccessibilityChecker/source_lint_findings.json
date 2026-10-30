@@ -9638,5 +9638,145 @@
     "element": "Link \u2013 Keyboard",
     "hasRealAction": false,
     "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 86,
+    "element": "Focus Order",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 100,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 100,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 100,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 100,
+    "element": "Full name",
+    "hasRealAction": false,
+    "detail": "TextField keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_PLACEHOLDER_ONLY_FIELD",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 100,
+    "element": "Full name",
+    "hasRealAction": false,
+    "detail": "placeholder 'Full name' is the only name for this field \u2014 no visible label"
+  },
+  {
+    "check": "SWIFTUI_AUTOCOMPLETE_MISSING",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 100,
+    "element": "Full name",
+    "hasRealAction": false,
+    "detail": "field collects a name but has no .textContentType"
+  },
+  {
+    "check": "SWIFTUI_FOCUS_ORDER_CHANGED",
+    "severity": "VALIDATE",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 100,
+    "element": "keyboardField",
+    "hasRealAction": false,
+    "detail": "an .onChange of the focus state 'keyboardField' moves focus to another control, so the focus order does not follow the layout"
+  },
+  {
+    "check": "HEADERLESS_SECTION",
+    "severity": "FAIL",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 118,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "Section { ... } has no string title and no header: view \u2014 nothing for the Headings rotor to land on for this section specifically"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 164,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 164,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 164,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_FOCUS_ORDER_CHANGED",
+    "severity": "VALIDATE",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 164,
+    "element": "voiceOverFocus",
+    "hasRealAction": false,
+    "detail": "an .onChange of the focus state 'voiceOverFocus' moves focus to another control, so the focus order does not follow the layout"
+  },
+  {
+    "check": "TAP_WITHOUT_ROLE",
+    "severity": "WARN",
+    "file": "SwiftUIAccessibilityChecker/FocusOrder/AccessibleFocusOrderRedirectFail.swift",
+    "basename": "AccessibleFocusOrderRedirectFail.swift",
+    "line": 260,
+    "element": "Signed out",
+    "hasRealAction": true,
+    "detail": "no .isButton / .isLink / .isAdjustable trait anywhere in its modifier chain"
   }
 ]

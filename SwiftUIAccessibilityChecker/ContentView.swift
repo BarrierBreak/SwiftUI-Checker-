@@ -187,6 +187,7 @@ struct ContentView: View {
                     NavigationLink("AccessibleFocusOrderPass") { AccessibleFocusOrderPass() }
                     NavigationLink("AccessibleFocusOrderFail") { AccessibleFocusOrderFail() }
                     NavigationLink("AccessibleFocusOrderPartial") { AccessibleFocusOrderPartial() }
+                    NavigationLink("AccessibleFocusOrderRedirectFail") { AccessibleFocusOrderRedirectFail() }
                 }
 
                 Section("Text Contrast") {
