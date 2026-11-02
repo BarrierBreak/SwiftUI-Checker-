@@ -2,6 +2,1440 @@
   "version": 1,
   "types": [
     {
+      "type": "AccessibleAdjustableValueFail",
+      "file": "AccessibleAdjustableValueFail.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Settings",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 28,
+          "kind": "Image",
+          "label": "star.fill",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleAdjustableValuePartial",
+      "file": "AccessibleAdjustableValuePartial.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Settings",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "Slider",
+          "label": "Brightness",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "Image",
+          "label": "star.fill",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleAdjustableValuePass",
+      "file": "AccessibleAdjustableValuePass.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Settings",
+          "ordinal": 0
+        },
+        {
+          "line": 23,
+          "kind": "Slider",
+          "label": "Brightness",
+          "ordinal": 0
+        },
+        {
+          "line": 26,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 1
+        },
+        {
+          "line": 32,
+          "kind": "Image",
+          "label": "star.fill",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleAutocompleteFail",
+      "file": "AccessibleAutocompleteFail.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "TextField",
+          "label": "Email address",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "TextField",
+          "label": "Phone number",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleAutocompletePartial",
+      "file": "AccessibleAutocompletePartial.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "TextField",
+          "label": "Email address",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "TextField",
+          "label": "Phone number",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleAutocompletePass",
+      "file": "AccessibleAutocompletePass.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "TextField",
+          "label": "Email address",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "SecureField",
+          "label": "Password",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleButtonFail",
+      "file": "AccessibleButtonFail.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Button",
+          "label": "Share",
+          "ordinal": 1
+        },
+        {
+          "line": 29,
+          "kind": "Button",
+          "label": "Delete",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleButtonPartial",
+      "file": "AccessibleButtonPartial.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "Button",
+          "label": "Share",
+          "ordinal": 1
+        },
+        {
+          "line": 25,
+          "kind": "Button",
+          "label": "Delete",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleButtonPass",
+      "file": "AccessibleButtonPass.swift",
+      "elements": [
+        {
+          "line": 18,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "Button",
+          "label": "Share",
+          "ordinal": 1
+        },
+        {
+          "line": 26,
+          "kind": "Button",
+          "label": "Delete",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleCustomActionFail",
+      "file": "AccessibleCustomActionFail.swift",
+      "elements": [
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Slide to dismiss",
+          "ordinal": 0
+        },
+        {
+          "line": 32,
+          "kind": "Text",
+          "label": "Pinch to zoom",
+          "ordinal": 1
+        },
+        {
+          "line": 42,
+          "kind": "Text",
+          "label": "Rotate photo",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleCustomActionPartial",
+      "file": "AccessibleCustomActionPartial.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Slide to dismiss",
+          "ordinal": 0
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Pinch to zoom",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleCustomActionPass",
+      "file": "AccessibleCustomActionPass.swift",
+      "elements": [
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Slide to dismiss",
+          "ordinal": 0
+        },
+        {
+          "line": 35,
+          "kind": "Text",
+          "label": "Pinch to zoom",
+          "ordinal": 1
+        },
+        {
+          "line": 48,
+          "kind": "Text",
+          "label": "Rotate photo",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleErrorMessageFail",
+      "file": "AccessibleErrorMessageFail.swift",
+      "elements": [
+        {
+          "line": 25,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 0
+        },
+        {
+          "line": 30,
+          "kind": "Text",
+          "label": "Invalid email address",
+          "ordinal": 1
+        },
+        {
+          "line": 38,
+          "kind": "Text",
+          "label": "Password",
+          "ordinal": 2
+        },
+        {
+          "line": 40,
+          "kind": "TextField",
+          "label": "At least 8 characters",
+          "ordinal": 1
+        },
+        {
+          "line": 43,
+          "kind": "Text",
+          "label": "Password required",
+          "ordinal": 3
+        },
+        {
+          "line": 51,
+          "kind": "Text",
+          "label": "Phone",
+          "ordinal": 4
+        },
+        {
+          "line": 53,
+          "kind": "TextField",
+          "label": "10 digits",
+          "ordinal": 2
+        },
+        {
+          "line": 56,
+          "kind": "Text",
+          "label": "Phone number is incorrect",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "type": "AccessibleErrorMessagePartial",
+      "file": "AccessibleErrorMessagePartial.swift",
+      "elements": [
+        {
+          "line": 18,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 0
+        },
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Invalid email address \u2014 enter a valid address",
+          "ordinal": 1
+        },
+        {
+          "line": 30,
+          "kind": "Text",
+          "label": "Password",
+          "ordinal": 2
+        },
+        {
+          "line": 32,
+          "kind": "TextField",
+          "label": "At least 8 characters",
+          "ordinal": 1
+        },
+        {
+          "line": 35,
+          "kind": "Text",
+          "label": "Password required",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleErrorMessagePass",
+      "file": "AccessibleErrorMessagePass.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Invalid email address \u2014 enter a valid address",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Text",
+          "label": "Password",
+          "ordinal": 2
+        },
+        {
+          "line": 33,
+          "kind": "TextField",
+          "label": "At least 8 characters",
+          "ordinal": 1
+        },
+        {
+          "line": 36,
+          "kind": "Text",
+          "label": "Password required \u2014 enter at least 8 characters",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleErrorSuggestionFail",
+      "file": "AccessibleErrorSuggestionFail.swift",
+      "elements": [
+        {
+          "line": 22,
+          "kind": "Text",
+          "label": "Password",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "TextField",
+          "label": "At least 8 characters",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "Text",
+          "label": "Password is required",
+          "ordinal": 1
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Card number",
+          "ordinal": 2
+        },
+        {
+          "line": 35,
+          "kind": "TextField",
+          "label": "16 digits",
+          "ordinal": 1
+        },
+        {
+          "line": 38,
+          "kind": "Text",
+          "label": "Card number is incorrect",
+          "ordinal": 3
+        },
+        {
+          "line": 44,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 4
+        },
+        {
+          "line": 46,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 2
+        },
+        {
+          "line": 49,
+          "kind": "Text",
+          "label": "Invalid email address. Please check for a typo.",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "type": "AccessibleErrorSuggestionPartial",
+      "file": "AccessibleErrorSuggestionPartial.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "Text",
+          "label": "Invalid email address. Please enter an address like name@example.com",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Text",
+          "label": "Password",
+          "ordinal": 2
+        },
+        {
+          "line": 33,
+          "kind": "TextField",
+          "label": "At least 8 characters",
+          "ordinal": 1
+        },
+        {
+          "line": 36,
+          "kind": "Text",
+          "label": "Password is required",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleErrorSuggestionPass",
+      "file": "AccessibleErrorSuggestionPass.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "Text",
+          "label": "Invalid email address. Please enter an address like name@example.com",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Text",
+          "label": "Password",
+          "ordinal": 2
+        },
+        {
+          "line": 33,
+          "kind": "TextField",
+          "label": "At least 8 characters",
+          "ordinal": 1
+        },
+        {
+          "line": 36,
+          "kind": "Text",
+          "label": "Password must have 8 characters. Try adding a number.",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusFail",
+      "file": "AccessibleFocusFail.swift",
+      "elements": [
+        {
+          "line": 34,
+          "kind": "TextField",
+          "label": "Email address",
+          "ordinal": 0
+        },
+        {
+          "line": 43,
+          "kind": "TextField",
+          "label": "Phone number",
+          "ordinal": 1
+        },
+        {
+          "line": 52,
+          "kind": "TextField",
+          "label": "Postcode",
+          "ordinal": 2
+        },
+        {
+          "line": 61,
+          "kind": "TextField",
+          "label": "Company",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusObscuredFail",
+      "file": "AccessibleFocusObscuredFail.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 26,
+          "kind": "Text",
+          "label": "Chat with us \u2014 we are online",
+          "ordinal": 0
+        },
+        {
+          "line": 34,
+          "kind": "Button",
+          "label": "Next",
+          "ordinal": 1
+        },
+        {
+          "line": 37,
+          "kind": "Text",
+          "label": "Chat with us \u2014 we are online",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusObscuredPartial",
+      "file": "AccessibleFocusObscuredPartial.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Chat with us \u2014 we are online",
+          "ordinal": 0
+        },
+        {
+          "line": 28,
+          "kind": "Button",
+          "label": "Next",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Text",
+          "label": "Chat with us \u2014 we are online",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusObscuredPass",
+      "file": "AccessibleFocusObscuredPass.swift",
+      "elements": [
+        {
+          "line": 18,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Chat with us \u2014 we are online",
+          "ordinal": 0
+        },
+        {
+          "line": 28,
+          "kind": "Button",
+          "label": "Next",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Text",
+          "label": "Chat with us \u2014 we are online",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusOrderFail",
+      "file": "AccessibleFocusOrderFail.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Button",
+          "label": "First step",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Button",
+          "label": "Second step",
+          "ordinal": 1
+        },
+        {
+          "line": 21,
+          "kind": "Button",
+          "label": "Third step",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusOrderPartial",
+      "file": "AccessibleFocusOrderPartial.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Button",
+          "label": "First step",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Button",
+          "label": "Second step",
+          "ordinal": 1
+        },
+        {
+          "line": 22,
+          "kind": "Button",
+          "label": "Third step",
+          "ordinal": 2
+        },
+        {
+          "line": 27,
+          "kind": "Button",
+          "label": "Review",
+          "ordinal": 3
+        },
+        {
+          "line": 30,
+          "kind": "Button",
+          "label": "Confirm",
+          "ordinal": 4
+        },
+        {
+          "line": 33,
+          "kind": "Button",
+          "label": "Submit",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusOrderPass",
+      "file": "AccessibleFocusOrderPass.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Button",
+          "label": "First step",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Button",
+          "label": "Second step",
+          "ordinal": 1
+        },
+        {
+          "line": 21,
+          "kind": "Button",
+          "label": "Third step",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusOrderRedirectFail",
+      "file": "AccessibleFocusOrderRedirectFail.swift",
+      "elements": [
+        {
+          "line": 64,
+          "kind": "Picker",
+          "label": "Test case",
+          "ordinal": 0
+        },
+        {
+          "line": 65,
+          "kind": "Text",
+          "label": "FO-01",
+          "ordinal": 0
+        },
+        {
+          "line": 66,
+          "kind": "Text",
+          "label": "FO-02",
+          "ordinal": 1
+        },
+        {
+          "line": 67,
+          "kind": "Text",
+          "label": "FO-03",
+          "ordinal": 2
+        },
+        {
+          "line": 96,
+          "kind": "TextField",
+          "label": "Full name",
+          "ordinal": 0
+        },
+        {
+          "line": 102,
+          "kind": "TextField",
+          "label": "Address",
+          "ordinal": 1
+        },
+        {
+          "line": 107,
+          "kind": "TextField",
+          "label": "City",
+          "ordinal": 2
+        },
+        {
+          "line": 112,
+          "kind": "TextField",
+          "label": "PIN code",
+          "ordinal": 3
+        },
+        {
+          "line": 119,
+          "kind": "Button",
+          "label": "Save address",
+          "ordinal": 0
+        },
+        {
+          "line": 125,
+          "kind": "Text",
+          "label": "Address saved.",
+          "ordinal": 3
+        },
+        {
+          "line": 160,
+          "kind": "Text",
+          "label": "Sign in",
+          "ordinal": 4
+        },
+        {
+          "line": 166,
+          "kind": "TextField",
+          "label": "Email",
+          "ordinal": 4
+        },
+        {
+          "line": 174,
+          "kind": "SecureField",
+          "label": "Password",
+          "ordinal": 0
+        },
+        {
+          "line": 178,
+          "kind": "Button",
+          "label": "Sign In",
+          "ordinal": 1
+        },
+        {
+          "line": 187,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 5
+        },
+        {
+          "line": 221,
+          "kind": "Text",
+          "label": "Account settings",
+          "ordinal": 6
+        },
+        {
+          "line": 226,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 7
+        },
+        {
+          "line": 229,
+          "kind": "Button",
+          "label": "Delete account",
+          "ordinal": 2
+        },
+        {
+          "line": 240,
+          "kind": "Button",
+          "label": "Contact support",
+          "ordinal": 3
+        },
+        {
+          "line": 248,
+          "kind": "Button",
+          "label": "Sign out",
+          "ordinal": 4
+        },
+        {
+          "line": 263,
+          "kind": "Text",
+          "label": "Delete account?",
+          "ordinal": 8
+        },
+        {
+          "line": 265,
+          "kind": "Text",
+          "label": "This action cannot be undone.",
+          "ordinal": 9
+        },
+        {
+          "line": 268,
+          "kind": "Button",
+          "label": "Cancel",
+          "ordinal": 5
+        },
+        {
+          "line": 271,
+          "kind": "Button",
+          "label": "Delete",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusPartial",
+      "file": "AccessibleFocusPartial.swift",
+      "elements": [
+        {
+          "line": 31,
+          "kind": "TextField",
+          "label": "Email address",
+          "ordinal": 0
+        },
+        {
+          "line": 40,
+          "kind": "TextField",
+          "label": "Phone number",
+          "ordinal": 1
+        },
+        {
+          "line": 49,
+          "kind": "TextField",
+          "label": "Postcode",
+          "ordinal": 2
+        },
+        {
+          "line": 58,
+          "kind": "TextField",
+          "label": "Company",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFocusPass",
+      "file": "AccessibleFocusPass.swift",
+      "elements": [
+        {
+          "line": 32,
+          "kind": "TextField",
+          "label": "Email address",
+          "ordinal": 0
+        },
+        {
+          "line": 41,
+          "kind": "TextField",
+          "label": "Phone number",
+          "ordinal": 1
+        },
+        {
+          "line": 50,
+          "kind": "TextField",
+          "label": "Postcode",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFormLabelFail",
+      "file": "AccessibleFormLabelFail.swift",
+      "elements": [
+        {
+          "line": 21,
+          "kind": "TextField",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "SecureField",
+          "label": "Password",
+          "ordinal": 0
+        },
+        {
+          "line": 29,
+          "kind": "TextField",
+          "label": "Phone",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFormLabelPartial",
+      "file": "AccessibleFormLabelPartial.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "TextField",
+          "label": "Phone",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleFormLabelPass",
+      "file": "AccessibleFormLabelPass.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Email",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "TextField",
+          "label": "name@example.com",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "Text",
+          "label": "Password",
+          "ordinal": 1
+        },
+        {
+          "line": 28,
+          "kind": "SecureField",
+          "label": "At least 8 characters",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleGestureKeyboardFail",
+      "file": "AccessibleGestureKeyboardFail.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Profile",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Tap to open",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Text",
+          "label": "Settings",
+          "ordinal": 2
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Tap to open",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleGestureKeyboardPartial",
+      "file": "AccessibleGestureKeyboardPartial.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Profile",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Tap to open",
+          "ordinal": 1
+        },
+        {
+          "line": 32,
+          "kind": "Text",
+          "label": "Settings",
+          "ordinal": 2
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "Tap to open",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleGestureKeyboardPass",
+      "file": "AccessibleGestureKeyboardPass.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Profile",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Tap to open",
+          "ordinal": 1
+        },
+        {
+          "line": 32,
+          "kind": "Text",
+          "label": "Settings",
+          "ordinal": 2
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "Tap to open",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleHiddenFail",
+      "file": "AccessibleHiddenFail.swift",
+      "elements": [
+        {
+          "line": 35,
+          "kind": "Text",
+          "label": "Account",
+          "ordinal": 0
+        },
+        {
+          "line": 39,
+          "kind": "Button",
+          "label": "Pay now",
+          "ordinal": 0
+        },
+        {
+          "line": 44,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        },
+        {
+          "line": 48,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 53,
+          "kind": "Stepper",
+          "label": "Quantity: \\(quantity)",
+          "ordinal": 0
+        },
+        {
+          "line": 57,
+          "kind": "TextField",
+          "label": "Search",
+          "ordinal": 0
+        },
+        {
+          "line": 62,
+          "kind": "Link",
+          "label": "Terms of service",
+          "ordinal": 0
+        },
+        {
+          "line": 67,
+          "kind": "Button",
+          "label": "Delete account",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleHiddenPartial",
+      "file": "AccessibleHiddenPartial.swift",
+      "elements": [
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Checkout",
+          "ordinal": 0
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Order #4821 confirmed",
+          "ordinal": 1
+        },
+        {
+          "line": 37,
+          "kind": "Text",
+          "label": "Total: $42.00",
+          "ordinal": 2
+        },
+        {
+          "line": 41,
+          "kind": "Button",
+          "label": "Pay $42.00",
+          "ordinal": 0
+        },
+        {
+          "line": 45,
+          "kind": "Image",
+          "label": "exclamationmark.triangle",
+          "ordinal": 0
+        },
+        {
+          "line": 51,
+          "kind": "Text",
+          "label": "Prices include tax",
+          "ordinal": 3
+        },
+        {
+          "line": 57,
+          "kind": "Image",
+          "label": "sparkles",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleHiddenPass",
+      "file": "AccessibleHiddenPass.swift",
+      "elements": [
+        {
+          "line": 30,
+          "kind": "Text",
+          "label": "Account overview",
+          "ordinal": 0
+        },
+        {
+          "line": 34,
+          "kind": "Button",
+          "label": "Pay now",
+          "ordinal": 0
+        },
+        {
+          "line": 38,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        },
+        {
+          "line": 41,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 45,
+          "kind": "Stepper",
+          "label": "Quantity: \\(quantity)",
+          "ordinal": 0
+        },
+        {
+          "line": 48,
+          "kind": "TextField",
+          "label": "Full name",
+          "ordinal": 0
+        },
+        {
+          "line": 55,
+          "kind": "Text",
+          "label": "Balance",
+          "ordinal": 1
+        },
+        {
+          "line": 56,
+          "kind": "Text",
+          "label": "$42.00 due Friday",
+          "ordinal": 2
+        },
+        {
+          "line": 62,
+          "kind": "Image",
+          "label": "sparkles",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleImagesFail",
+      "file": "AccessibleImagesFail.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Image",
+          "label": "photo",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Image",
+          "label": "photo.fill",
+          "ordinal": 1
+        },
+        {
+          "line": 28,
+          "kind": "Image",
+          "label": "camera.fill",
+          "ordinal": 2
+        },
+        {
+          "line": 32,
+          "kind": "Image",
+          "label": "calendar",
+          "ordinal": 3
+        },
+        {
+          "line": 36,
+          "kind": "Image",
+          "label": "rectangle.fill",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleImagesPartial",
+      "file": "AccessibleImagesPartial.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Image",
+          "label": "star.fill",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Image",
+          "label": "person.crop.circle",
+          "ordinal": 1
+        },
+        {
+          "line": 29,
+          "kind": "Image",
+          "label": "photo",
+          "ordinal": 2
+        },
+        {
+          "line": 34,
+          "kind": "Image",
+          "label": "",
+          "ordinal": 3
+        },
+        {
+          "line": 39,
+          "kind": "Image",
+          "label": "photo.fill",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleImagesPass",
+      "file": "AccessibleImagesPass.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Image",
+          "label": "star.fill",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "Image",
+          "label": "cloud.sun.fill",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Image",
+          "label": "person.crop.circle",
+          "ordinal": 2
+        },
+        {
+          "line": 35,
+          "kind": "Image",
+          "label": "mappin.circle",
+          "ordinal": 3
+        },
+        {
+          "line": 39,
+          "kind": "Image",
+          "label": "sparkles",
+          "ordinal": 4
+        },
+        {
+          "line": 43,
+          "kind": "Image",
+          "label": "line.horizontal.3",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "type": "AccessibleKeyboardControlFail",
+      "file": "AccessibleKeyboardControlFail.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Stepper",
+          "label": "Quantity: \\(quantity)",
+          "ordinal": 0
+        },
+        {
+          "line": 23,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
       "type": "AccessibleKeyboardFail",
       "file": "AccessibleKeyboardFail.swift",
       "elements": [
@@ -15,6 +1449,96 @@
           "line": 33,
           "kind": "KeyboardInaccessibleChip",
           "label": "Enable notifications",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleKeyboardLinkFail",
+      "file": "AccessibleKeyboardLinkFail.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Text",
+          "label": "Learn more about keyboard accessibility in our guide.",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Read the keyboard guide",
+          "ordinal": 1
+        },
+        {
+          "line": 42,
+          "kind": "Text",
+          "label": "Fail: Link not keyboard operable",
+          "ordinal": 2
+        },
+        {
+          "line": 44,
+          "kind": "Text",
+          "label": "Tap works. VoiceOver announces \u201cLink\u201d. Keyboard focus never lands on it.",
+          "ordinal": 3
+        },
+        {
+          "line": 50,
+          "kind": "Text",
+          "label": "Learn more about keyboard accessibility in our guide.",
+          "ordinal": 4
+        },
+        {
+          "line": 53,
+          "kind": "Link",
+          "label": "Read the keyboard guide",
+          "ordinal": 0
+        },
+        {
+          "line": 59,
+          "kind": "Text",
+          "label": "Pass: Native Link",
+          "ordinal": 5
+        },
+        {
+          "line": 61,
+          "kind": "Text",
+          "label": "Reachable and activatable with Full Keyboard Access (Tab, then Space).",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "type": "AccessibleKeyboardLinkPartial",
+      "file": "AccessibleKeyboardLinkPartial.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Link",
+          "label": "Terms of service",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Help centre",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleKeyboardLinkPass",
+      "file": "AccessibleKeyboardLinkPass.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Link",
+          "label": "Terms of service",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Link",
+          "label": "Privacy policy",
           "ordinal": 1
         }
       ]
@@ -57,6 +1581,582 @@
           "line": 38,
           "kind": "KeyboardAccessibleChip",
           "label": "Enable notifications",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLanguageChangeFail",
+      "file": "AccessibleLanguageChangeFail.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Thank you for visiting our shop today, we are open every day of the week. Merci beaucoup pour votre visite aujourd'hui, nous sommes ouverts tous les jours de la semaine.",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Our friendly staff will gladly help you find everything you need today. Notre personnel sera heureux de vous aider \u00e0 trouver tout ce dont vous avez besoin aujourd'hui.",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLanguageChangePartial",
+      "file": "AccessibleLanguageChangePartial.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Thank you for visiting our shop today, we are open every day of the week. Merci beaucoup pour votre visite aujourd'hui, nous sommes ouverts tous les jours de la semaine.",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Text",
+          "label": "Thank you for visiting our shop today, we are open every day of the week.",
+          "ordinal": 1
+        },
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Merci beaucoup pour votre visite aujourd'hui, nous sommes ouverts tous les jours de la semaine.",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLanguageChangePass",
+      "file": "AccessibleLanguageChangePass.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Thank you for visiting our shop today, we are open every day of the week.",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Text",
+          "label": "Merci beaucoup pour votre visite aujourd'hui, nous sommes ouverts tous les jours de la semaine.",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLanguageFail",
+      "file": "AccessibleLanguageFail.swift",
+      "elements": [
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Welcome to the wellness dashboard where your daily progress is shown",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "Button",
+          "label": "Open the full weekly report for this month",
+          "ordinal": 0
+        },
+        {
+          "line": 30,
+          "kind": "Text",
+          "label": "Bienvenue sur le tableau de bord o\u00f9 vos progr\u00e8s quotidiens sont affich\u00e9s",
+          "ordinal": 1
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "N'oubliez pas de boire de l'eau et de faire de courtes pauses pendant la journ\u00e9e",
+          "ordinal": 2
+        },
+        {
+          "line": 38,
+          "kind": "Text",
+          "label": "All figures on this page are updated every night at midnight",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLanguagePartial",
+      "file": "AccessibleLanguagePartial.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Welcome to the wellness dashboard where your daily progress is shown",
+          "ordinal": 0
+        },
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Your weekly summary is ready and shows how many workouts you completed",
+          "ordinal": 1
+        },
+        {
+          "line": 27,
+          "kind": "Text",
+          "label": "Remember to drink water and take short walking breaks during the day",
+          "ordinal": 2
+        },
+        {
+          "line": 30,
+          "kind": "Text",
+          "label": "Bienvenue sur le tableau de bord o\u00f9 vos progr\u00e8s quotidiens sont affich\u00e9s",
+          "ordinal": 3
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "Bienvenido al panel de bienestar donde se muestra tu progreso diario",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLanguagePass",
+      "file": "AccessibleLanguagePass.swift",
+      "elements": [
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Welcome to the wellness dashboard where your daily progress is shown",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "Text",
+          "label": "Your weekly summary is ready and shows how many workouts you completed",
+          "ordinal": 1
+        },
+        {
+          "line": 29,
+          "kind": "Button",
+          "label": "Open the full weekly report for this month",
+          "ordinal": 0
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Remember to drink water and take short walking breaks during the day",
+          "ordinal": 2
+        },
+        {
+          "line": 37,
+          "kind": "Text",
+          "label": "All figures on this page are updated every night at midnight",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLinkFail",
+      "file": "AccessibleLinkFail.swift",
+      "elements": [
+        {
+          "line": 22,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 1
+        },
+        {
+          "line": 44,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 2
+        },
+        {
+          "line": 55,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLinkPartial",
+      "file": "AccessibleLinkPartial.swift",
+      "elements": [
+        {
+          "line": 35,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 38,
+          "kind": "Text",
+          "label": "We look after your data as described in our [privacy policy](https://example.com/terms) at all times.",
+          "ordinal": 1
+        },
+        {
+          "line": 41,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLinkPass",
+      "file": "AccessibleLinkPass.swift",
+      "elements": [
+        {
+          "line": 47,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 50,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 1
+        },
+        {
+          "line": 53,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleMapFail",
+      "file": "AccessibleMapFail.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Our stores",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleMapPartial",
+      "file": "AccessibleMapPartial.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Our stores",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleMapPass",
+      "file": "AccessibleMapPass.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Our stores",
+          "ordinal": 0
+        },
+        {
+          "line": 32,
+          "kind": "Text",
+          "label": "Delivery area for Pune",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalCloseFail",
+      "file": "AccessibleModalCloseFail.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Save changes",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalClosePartial",
+      "file": "AccessibleModalClosePartial.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Save changes",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        },
+        {
+          "line": 27,
+          "kind": "Text",
+          "label": "Rename item",
+          "ordinal": 1
+        },
+        {
+          "line": 29,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalClosePass",
+      "file": "AccessibleModalClosePass.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Save changes",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalFail",
+      "file": "AccessibleModalFail.swift",
+      "elements": [
+        {
+          "line": 22,
+          "kind": "Text",
+          "label": "Session expired",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Your session has expired. Please wait.",
+          "ordinal": 1
+        },
+        {
+          "line": 33,
+          "kind": "Text",
+          "label": "Remember choice",
+          "ordinal": 2
+        },
+        {
+          "line": 35,
+          "kind": "Toggle",
+          "label": "Remember my choice",
+          "ordinal": 0
+        },
+        {
+          "line": 36,
+          "kind": "Button",
+          "label": "Confirm",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalPartial",
+      "file": "AccessibleModalPartial.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Discard draft",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Discard the draft?",
+          "ordinal": 1
+        },
+        {
+          "line": 20,
+          "kind": "Button",
+          "label": "Discard",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        },
+        {
+          "line": 30,
+          "kind": "Text",
+          "label": "Remember choice",
+          "ordinal": 2
+        },
+        {
+          "line": 32,
+          "kind": "Toggle",
+          "label": "Remember my choice",
+          "ordinal": 0
+        },
+        {
+          "line": 33,
+          "kind": "Button",
+          "label": "Confirm",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalPass",
+      "file": "AccessibleModalPass.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Discard draft",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Text",
+          "label": "Discard the draft?",
+          "ordinal": 1
+        },
+        {
+          "line": 19,
+          "kind": "Button",
+          "label": "Discard",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleMotionFail",
+      "file": "AccessibleMotionFail.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Shake your phone to refresh the feed",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Done: \\(refreshed)",
+          "ordinal": 1
+        },
+        {
+          "line": 32,
+          "kind": "Text",
+          "label": "Shake your phone to shuffle the playlist",
+          "ordinal": 2
+        },
+        {
+          "line": 33,
+          "kind": "Button",
+          "label": "Shuffle",
+          "ordinal": 0
+        },
+        {
+          "line": 35,
+          "kind": "Text",
+          "label": "Done: \\(shuffled)",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleMotionPartial",
+      "file": "AccessibleMotionPartial.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Shake your phone to undo the last change",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "Button",
+          "label": "Undo last change",
+          "ordinal": 0
+        },
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Done: \\(undone)",
+          "ordinal": 1
+        },
+        {
+          "line": 31,
+          "kind": "Text",
+          "label": "Shake your phone to clear the form",
+          "ordinal": 2
+        },
+        {
+          "line": 32,
+          "kind": "Text",
+          "label": "Done: \\(cleared)",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleMotionPass",
+      "file": "AccessibleMotionPass.swift",
+      "elements": [
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 35,
+          "kind": "Button",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 37,
+          "kind": "Text",
+          "label": "Done: \\(isUndo ? undone : cleared)",
           "ordinal": 1
         }
       ]
@@ -1142,6 +3242,258 @@
       ]
     },
     {
+      "type": "AccessibleNonTextContrastFail",
+      "file": "AccessibleNonTextContrastFail.swift",
+      "elements": [
+        {
+          "line": 25,
+          "kind": "TextField",
+          "label": "Full name",
+          "ordinal": 0
+        },
+        {
+          "line": 30,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 34,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        },
+        {
+          "line": 38,
+          "kind": "Image",
+          "label": "star.fill",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleNonTextContrastPartial",
+      "file": "AccessibleNonTextContrastPartial.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "TextField",
+          "label": "Full name",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "TextField",
+          "label": "Email",
+          "ordinal": 1
+        },
+        {
+          "line": 30,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 34,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleNonTextContrastPass",
+      "file": "AccessibleNonTextContrastPass.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "TextField",
+          "label": "Full name",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 28,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleOrientationFail",
+      "file": "AccessibleOrientationFail.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Delivery details",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Your order will arrive between 9am and 5pm. You can change the address until it ships.",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleOrientationPartial",
+      "file": "AccessibleOrientationPartial.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Delivery details",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Your order will arrive between 9am and 5pm. You can change the address until it ships.",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleOrientationPass",
+      "file": "AccessibleOrientationPass.swift",
+      "elements": [
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Delivery details",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Your order will arrive between 9am and 5pm. You can change the address until it ships.",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleReadingOrderFail",
+      "file": "AccessibleReadingOrderFail.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Two items, 42 dollars",
+          "ordinal": 1
+        },
+        {
+          "line": 22,
+          "kind": "Text",
+          "label": "Estimated delivery on Friday",
+          "ordinal": 2
+        },
+        {
+          "line": 28,
+          "kind": "Text",
+          "label": "Cancel",
+          "ordinal": 3
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Save",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "type": "AccessibleReadingOrderPartial",
+      "file": "AccessibleReadingOrderPartial.swift",
+      "elements": [
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Two items, 42 dollars",
+          "ordinal": 1
+        },
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Estimated delivery on Friday",
+          "ordinal": 2
+        },
+        {
+          "line": 27,
+          "kind": "Text",
+          "label": "Shipping address",
+          "ordinal": 3
+        },
+        {
+          "line": 28,
+          "kind": "Text",
+          "label": "12 Garden Road",
+          "ordinal": 4
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Springfield",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "type": "AccessibleReadingOrderPass",
+      "file": "AccessibleReadingOrderPass.swift",
+      "elements": [
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "Text",
+          "label": "Two items, 42 dollars",
+          "ordinal": 1
+        },
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Estimated delivery on Friday",
+          "ordinal": 2
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Cancel",
+          "ordinal": 3
+        },
+        {
+          "line": 30,
+          "kind": "Text",
+          "label": "Save",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
       "type": "AccessibleRoleFail",
       "file": "AccessibleRoleFail.swift",
       "elements": [
@@ -1312,6 +3664,168 @@
           "kind": "Image",
           "label": "sparkle",
           "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleRoleTraitFail",
+      "file": "AccessibleRoleTraitFail.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 28,
+          "kind": "Toggle",
+          "label": "Wi-Fi",
+          "ordinal": 0
+        },
+        {
+          "line": 32,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 37,
+          "kind": "TextField",
+          "label": "Name",
+          "ordinal": 0
+        },
+        {
+          "line": 43,
+          "kind": "Link",
+          "label": "Terms of service",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleRoleTraitPartial",
+      "file": "AccessibleRoleTraitPartial.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Toggle",
+          "label": "Wi-Fi",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 32,
+          "kind": "Link",
+          "label": "Terms of service",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleRoleTraitPass",
+      "file": "AccessibleRoleTraitPass.swift",
+      "elements": [
+        {
+          "line": 23,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 27,
+          "kind": "Toggle",
+          "label": "Wi-Fi",
+          "ordinal": 0
+        },
+        {
+          "line": 30,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 34,
+          "kind": "Stepper",
+          "label": "Quantity: \\(quantity)",
+          "ordinal": 0
+        },
+        {
+          "line": 37,
+          "kind": "Link",
+          "label": "Terms of service",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleScreenTitleFail",
+      "file": "AccessibleScreenTitleFail.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Two items, arriving Friday",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleScreenTitlePartial",
+      "file": "AccessibleScreenTitlePartial.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Two items, arriving Friday",
+          "ordinal": 1
+        },
+        {
+          "line": 25,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleScreenTitlePass",
+      "file": "AccessibleScreenTitlePass.swift",
+      "elements": [
+        {
+          "line": 16,
+          "kind": "Text",
+          "label": "Order summary",
+          "ordinal": 0
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Two items, arriving Friday",
+          "ordinal": 1
         }
       ]
     },
@@ -1576,6 +4090,234 @@
           "kind": "Text",
           "label": "",
           "ordinal": 6
+        }
+      ]
+    },
+    {
+      "type": "AccessibleStateTraitFail",
+      "file": "AccessibleStateTraitFail.swift",
+      "elements": [
+        {
+          "line": 21,
+          "kind": "Button",
+          "label": "Submit",
+          "ordinal": 0
+        },
+        {
+          "line": 26,
+          "kind": "Text",
+          "label": "Unread",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleStateTraitPartial",
+      "file": "AccessibleStateTraitPartial.swift",
+      "elements": [
+        {
+          "line": 18,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "Button",
+          "label": "Submit",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleStateTraitPass",
+      "file": "AccessibleStateTraitPass.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        },
+        {
+          "line": 23,
+          "kind": "Button",
+          "label": "Submit",
+          "ordinal": 0
+        },
+        {
+          "line": 28,
+          "kind": "TextField",
+          "label": "Nickname",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTabControlFail",
+      "file": "AccessibleTabControlFail.swift",
+      "elements": [
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Sections",
+          "ordinal": 0
+        },
+        {
+          "line": 23,
+          "kind": "Text",
+          "label": "Account overview",
+          "ordinal": 1
+        },
+        {
+          "line": 24,
+          "kind": "Label",
+          "label": "Overview",
+          "ordinal": 0
+        },
+        {
+          "line": 25,
+          "kind": "Text",
+          "label": "Account history",
+          "ordinal": 2
+        },
+        {
+          "line": 26,
+          "kind": "Label",
+          "label": "History",
+          "ordinal": 1
+        },
+        {
+          "line": 34,
+          "kind": "Text",
+          "label": "Orders overview",
+          "ordinal": 3
+        },
+        {
+          "line": 35,
+          "kind": "Label",
+          "label": "Overview",
+          "ordinal": 2
+        },
+        {
+          "line": 36,
+          "kind": "Text",
+          "label": "Orders history",
+          "ordinal": 4
+        },
+        {
+          "line": 37,
+          "kind": "Label",
+          "label": "History",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTabControlPartial",
+      "file": "AccessibleTabControlPartial.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Account overview",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Label",
+          "label": "Overview",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Account history",
+          "ordinal": 1
+        },
+        {
+          "line": 20,
+          "kind": "Label",
+          "label": "History",
+          "ordinal": 1
+        },
+        {
+          "line": 27,
+          "kind": "Text",
+          "label": "Orders overview",
+          "ordinal": 2
+        },
+        {
+          "line": 28,
+          "kind": "Label",
+          "label": "Overview",
+          "ordinal": 2
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Orders history",
+          "ordinal": 3
+        },
+        {
+          "line": 30,
+          "kind": "Label",
+          "label": "History",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTabControlPass",
+      "file": "AccessibleTabControlPass.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Account overview",
+          "ordinal": 0
+        },
+        {
+          "line": 18,
+          "kind": "Label",
+          "label": "Overview",
+          "ordinal": 0
+        },
+        {
+          "line": 19,
+          "kind": "Text",
+          "label": "Account history",
+          "ordinal": 1
+        },
+        {
+          "line": 20,
+          "kind": "Label",
+          "label": "History",
+          "ordinal": 1
+        },
+        {
+          "line": 27,
+          "kind": "Text",
+          "label": "Orders overview",
+          "ordinal": 2
+        },
+        {
+          "line": 28,
+          "kind": "Label",
+          "label": "Overview",
+          "ordinal": 2
+        },
+        {
+          "line": 29,
+          "kind": "Text",
+          "label": "Orders history",
+          "ordinal": 3
+        },
+        {
+          "line": 30,
+          "kind": "Label",
+          "label": "History",
+          "ordinal": 3
         }
       ]
     },
@@ -2138,6 +4880,60 @@
       ]
     },
     {
+      "type": "AccessibleTouchEventFail",
+      "file": "AccessibleTouchEventFail.swift",
+      "elements": [
+        {
+          "line": 18,
+          "kind": "Text",
+          "label": "Buy now",
+          "ordinal": 0
+        },
+        {
+          "line": 24,
+          "kind": "Text",
+          "label": "Send",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTouchEventPartial",
+      "file": "AccessibleTouchEventPartial.swift",
+      "elements": [
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Add",
+          "ordinal": 0
+        },
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Buy now",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleTouchEventPass",
+      "file": "AccessibleTouchEventPass.swift",
+      "elements": [
+        {
+          "line": 18,
+          "kind": "Button",
+          "label": "Add",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "Text",
+          "label": "Counter: \\(count)",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
       "type": "ContentView",
       "file": "ContentView.swift",
       "elements": [
@@ -2250,94 +5046,574 @@
           "ordinal": 17
         },
         {
-          "line": 66,
+          "line": 63,
           "kind": "NavigationLink",
-          "label": "AccessibleTextResizePass",
+          "label": "AccessibleKeyboardControlFail",
           "ordinal": 18
         },
         {
-          "line": 67,
+          "line": 64,
           "kind": "NavigationLink",
-          "label": "AccessibleTextResizeFail",
+          "label": "AccessibleKeyboardLinkPass",
           "ordinal": 19
         },
         {
-          "line": 68,
+          "line": 65,
           "kind": "NavigationLink",
-          "label": "AccessibleTextResizePartial",
+          "label": "AccessibleKeyboardLinkFail",
           "ordinal": 20
         },
         {
-          "line": 69,
+          "line": 66,
           "kind": "NavigationLink",
-          "label": "AccessibleTextClippingPass",
+          "label": "AccessibleKeyboardLinkPartial",
           "ordinal": 21
         },
         {
           "line": 70,
           "kind": "NavigationLink",
-          "label": "AccessibleTextClippingFail",
+          "label": "AccessibleTextResizePass",
           "ordinal": 22
         },
         {
           "line": 71,
           "kind": "NavigationLink",
-          "label": "AccessibleTextClippingPartial",
+          "label": "AccessibleTextResizeFail",
           "ordinal": 23
         },
         {
           "line": 72,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizePass",
+          "label": "AccessibleTextResizePartial",
           "ordinal": 24
         },
         {
           "line": 73,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizeFail",
+          "label": "AccessibleTextClippingPass",
           "ordinal": 25
         },
         {
           "line": 74,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizePartial",
+          "label": "AccessibleTextClippingFail",
           "ordinal": 26
+        },
+        {
+          "line": 75,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextClippingPartial",
+          "ordinal": 27
+        },
+        {
+          "line": 76,
+          "kind": "NavigationLink",
+          "label": "AccessibleTargetSizePass",
+          "ordinal": 28
+        },
+        {
+          "line": 77,
+          "kind": "NavigationLink",
+          "label": "AccessibleTargetSizeFail",
+          "ordinal": 29
         },
         {
           "line": 78,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPass",
-          "ordinal": 27
+          "label": "AccessibleTargetSizePartial",
+          "ordinal": 30
         },
         {
           "line": 79,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastFail",
-          "ordinal": 28
+          "label": "AccessibleHiddenPass",
+          "ordinal": 31
         },
         {
           "line": 80,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPartial",
-          "ordinal": 29
+          "label": "AccessibleHiddenFail",
+          "ordinal": 32
+        },
+        {
+          "line": 81,
+          "kind": "NavigationLink",
+          "label": "AccessibleHiddenPartial",
+          "ordinal": 33
+        },
+        {
+          "line": 82,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguagePass",
+          "ordinal": 34
+        },
+        {
+          "line": 83,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageFail",
+          "ordinal": 35
         },
         {
           "line": 84,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedPass",
-          "ordinal": 30
+          "label": "AccessibleLanguagePartial",
+          "ordinal": 36
         },
         {
           "line": 85,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedFail",
-          "ordinal": 31
+          "label": "AccessibleMotionPass",
+          "ordinal": 37
         },
         {
           "line": 86,
           "kind": "NavigationLink",
+          "label": "AccessibleMotionFail",
+          "ordinal": 38
+        },
+        {
+          "line": 87,
+          "kind": "NavigationLink",
+          "label": "AccessibleMotionPartial",
+          "ordinal": 39
+        },
+        {
+          "line": 88,
+          "kind": "NavigationLink",
+          "label": "AccessibleImagesPass",
+          "ordinal": 40
+        },
+        {
+          "line": 89,
+          "kind": "NavigationLink",
+          "label": "AccessibleImagesFail",
+          "ordinal": 41
+        },
+        {
+          "line": 90,
+          "kind": "NavigationLink",
+          "label": "AccessibleImagesPartial",
+          "ordinal": 42
+        },
+        {
+          "line": 91,
+          "kind": "NavigationLink",
+          "label": "AccessibleReadingOrderPass",
+          "ordinal": 43
+        },
+        {
+          "line": 92,
+          "kind": "NavigationLink",
+          "label": "AccessibleReadingOrderFail",
+          "ordinal": 44
+        },
+        {
+          "line": 93,
+          "kind": "NavigationLink",
+          "label": "AccessibleReadingOrderPartial",
+          "ordinal": 45
+        },
+        {
+          "line": 94,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusPass",
+          "ordinal": 46
+        },
+        {
+          "line": 95,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusFail",
+          "ordinal": 47
+        },
+        {
+          "line": 96,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusPartial",
+          "ordinal": 48
+        },
+        {
+          "line": 97,
+          "kind": "NavigationLink",
+          "label": "AccessibleLinkPass",
+          "ordinal": 49
+        },
+        {
+          "line": 98,
+          "kind": "NavigationLink",
+          "label": "AccessibleLinkFail",
+          "ordinal": 50
+        },
+        {
+          "line": 99,
+          "kind": "NavigationLink",
+          "label": "AccessibleLinkPartial",
+          "ordinal": 51
+        },
+        {
+          "line": 100,
+          "kind": "NavigationLink",
+          "label": "AccessibleRoleTraitPass",
+          "ordinal": 52
+        },
+        {
+          "line": 101,
+          "kind": "NavigationLink",
+          "label": "AccessibleRoleTraitFail",
+          "ordinal": 53
+        },
+        {
+          "line": 102,
+          "kind": "NavigationLink",
+          "label": "AccessibleRoleTraitPartial",
+          "ordinal": 54
+        },
+        {
+          "line": 103,
+          "kind": "NavigationLink",
+          "label": "AccessibleStateTraitPass",
+          "ordinal": 55
+        },
+        {
+          "line": 104,
+          "kind": "NavigationLink",
+          "label": "AccessibleStateTraitFail",
+          "ordinal": 56
+        },
+        {
+          "line": 105,
+          "kind": "NavigationLink",
+          "label": "AccessibleStateTraitPartial",
+          "ordinal": 57
+        },
+        {
+          "line": 106,
+          "kind": "NavigationLink",
+          "label": "AccessibleButtonPass",
+          "ordinal": 58
+        },
+        {
+          "line": 107,
+          "kind": "NavigationLink",
+          "label": "AccessibleButtonFail",
+          "ordinal": 59
+        },
+        {
+          "line": 108,
+          "kind": "NavigationLink",
+          "label": "AccessibleButtonPartial",
+          "ordinal": 60
+        },
+        {
+          "line": 109,
+          "kind": "NavigationLink",
+          "label": "AccessibleFormLabelPass",
+          "ordinal": 61
+        },
+        {
+          "line": 110,
+          "kind": "NavigationLink",
+          "label": "AccessibleFormLabelFail",
+          "ordinal": 62
+        },
+        {
+          "line": 111,
+          "kind": "NavigationLink",
+          "label": "AccessibleFormLabelPartial",
+          "ordinal": 63
+        },
+        {
+          "line": 112,
+          "kind": "NavigationLink",
+          "label": "AccessibleCustomActionPass",
+          "ordinal": 64
+        },
+        {
+          "line": 113,
+          "kind": "NavigationLink",
+          "label": "AccessibleCustomActionFail",
+          "ordinal": 65
+        },
+        {
+          "line": 114,
+          "kind": "NavigationLink",
+          "label": "AccessibleCustomActionPartial",
+          "ordinal": 66
+        },
+        {
+          "line": 115,
+          "kind": "NavigationLink",
+          "label": "AccessibleTouchEventPass",
+          "ordinal": 67
+        },
+        {
+          "line": 116,
+          "kind": "NavigationLink",
+          "label": "AccessibleTouchEventFail",
+          "ordinal": 68
+        },
+        {
+          "line": 117,
+          "kind": "NavigationLink",
+          "label": "AccessibleTouchEventPartial",
+          "ordinal": 69
+        },
+        {
+          "line": 121,
+          "kind": "NavigationLink",
+          "label": "AccessibleErrorMessagePass",
+          "ordinal": 70
+        },
+        {
+          "line": 122,
+          "kind": "NavigationLink",
+          "label": "AccessibleErrorMessageFail",
+          "ordinal": 71
+        },
+        {
+          "line": 123,
+          "kind": "NavigationLink",
+          "label": "AccessibleErrorMessagePartial",
+          "ordinal": 72
+        },
+        {
+          "line": 127,
+          "kind": "NavigationLink",
+          "label": "AccessibleNonTextContrastPass",
+          "ordinal": 73
+        },
+        {
+          "line": 128,
+          "kind": "NavigationLink",
+          "label": "AccessibleNonTextContrastFail",
+          "ordinal": 74
+        },
+        {
+          "line": 129,
+          "kind": "NavigationLink",
+          "label": "AccessibleNonTextContrastPartial",
+          "ordinal": 75
+        },
+        {
+          "line": 133,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusObscuredPass",
+          "ordinal": 76
+        },
+        {
+          "line": 134,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusObscuredFail",
+          "ordinal": 77
+        },
+        {
+          "line": 135,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusObscuredPartial",
+          "ordinal": 78
+        },
+        {
+          "line": 139,
+          "kind": "NavigationLink",
+          "label": "AccessibleModalPass",
+          "ordinal": 79
+        },
+        {
+          "line": 140,
+          "kind": "NavigationLink",
+          "label": "AccessibleModalFail",
+          "ordinal": 80
+        },
+        {
+          "line": 141,
+          "kind": "NavigationLink",
+          "label": "AccessibleModalPartial",
+          "ordinal": 81
+        },
+        {
+          "line": 145,
+          "kind": "NavigationLink",
+          "label": "AccessibleTabControlPass",
+          "ordinal": 82
+        },
+        {
+          "line": 146,
+          "kind": "NavigationLink",
+          "label": "AccessibleTabControlFail",
+          "ordinal": 83
+        },
+        {
+          "line": 147,
+          "kind": "NavigationLink",
+          "label": "AccessibleTabControlPartial",
+          "ordinal": 84
+        },
+        {
+          "line": 151,
+          "kind": "NavigationLink",
+          "label": "AccessibleScreenTitlePass",
+          "ordinal": 85
+        },
+        {
+          "line": 152,
+          "kind": "NavigationLink",
+          "label": "AccessibleScreenTitleFail",
+          "ordinal": 86
+        },
+        {
+          "line": 153,
+          "kind": "NavigationLink",
+          "label": "AccessibleScreenTitlePartial",
+          "ordinal": 87
+        },
+        {
+          "line": 157,
+          "kind": "NavigationLink",
+          "label": "AccessibleOrientationPass",
+          "ordinal": 88
+        },
+        {
+          "line": 158,
+          "kind": "NavigationLink",
+          "label": "AccessibleOrientationFail",
+          "ordinal": 89
+        },
+        {
+          "line": 159,
+          "kind": "NavigationLink",
+          "label": "AccessibleOrientationPartial",
+          "ordinal": 90
+        },
+        {
+          "line": 163,
+          "kind": "NavigationLink",
+          "label": "AccessibleGestureKeyboardPass",
+          "ordinal": 91
+        },
+        {
+          "line": 164,
+          "kind": "NavigationLink",
+          "label": "AccessibleGestureKeyboardFail",
+          "ordinal": 92
+        },
+        {
+          "line": 165,
+          "kind": "NavigationLink",
+          "label": "AccessibleGestureKeyboardPartial",
+          "ordinal": 93
+        },
+        {
+          "line": 169,
+          "kind": "NavigationLink",
+          "label": "AccessibleAutocompletePass",
+          "ordinal": 94
+        },
+        {
+          "line": 170,
+          "kind": "NavigationLink",
+          "label": "AccessibleAutocompleteFail",
+          "ordinal": 95
+        },
+        {
+          "line": 171,
+          "kind": "NavigationLink",
+          "label": "AccessibleAutocompletePartial",
+          "ordinal": 96
+        },
+        {
+          "line": 175,
+          "kind": "NavigationLink",
+          "label": "AccessibleModalClosePass",
+          "ordinal": 97
+        },
+        {
+          "line": 176,
+          "kind": "NavigationLink",
+          "label": "AccessibleModalCloseFail",
+          "ordinal": 98
+        },
+        {
+          "line": 177,
+          "kind": "NavigationLink",
+          "label": "AccessibleModalClosePartial",
+          "ordinal": 99
+        },
+        {
+          "line": 181,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageChangePass",
+          "ordinal": 100
+        },
+        {
+          "line": 182,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageChangeFail",
+          "ordinal": 101
+        },
+        {
+          "line": 183,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageChangePartial",
+          "ordinal": 102
+        },
+        {
+          "line": 187,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderPass",
+          "ordinal": 103
+        },
+        {
+          "line": 188,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderFail",
+          "ordinal": 104
+        },
+        {
+          "line": 189,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderPartial",
+          "ordinal": 105
+        },
+        {
+          "line": 190,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderRedirectFail",
+          "ordinal": 106
+        },
+        {
+          "line": 194,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastPass",
+          "ordinal": 107
+        },
+        {
+          "line": 195,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastFail",
+          "ordinal": 108
+        },
+        {
+          "line": 196,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastPartial",
+          "ordinal": 109
+        },
+        {
+          "line": 200,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedPass",
+          "ordinal": 110
+        },
+        {
+          "line": 201,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedFail",
+          "ordinal": 111
+        },
+        {
+          "line": 202,
+          "kind": "NavigationLink",
           "label": "AccessibleTextContrastCompositedPartial",
-          "ordinal": 32
+          "ordinal": 112
         }
       ]
     },
@@ -2481,6 +5757,7 @@
           "line": 33,
           "kind": "UIButton",
           "label": "",
+          "property": "button",
           "ordinal": 0
         }
       ]
@@ -2493,6 +5770,7 @@
           "line": 77,
           "kind": "UILabel",
           "label": "",
+          "property": "label",
           "ordinal": 0
         }
       ]

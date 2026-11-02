@@ -171,6 +171,24 @@ struct ContentView: View {
                     NavigationLink("AccessibleAutocompletePartial") { AccessibleAutocompletePartial() }
                 }
 
+                Section("Map text alternative") {
+                    NavigationLink("AccessibleMapPass") { AccessibleMapPass() }
+                    NavigationLink("AccessibleMapFail") { AccessibleMapFail() }
+                    NavigationLink("AccessibleMapPartial") { AccessibleMapPartial() }
+                }
+
+                Section("Adjustable value") {
+                    NavigationLink("AccessibleAdjustableValuePass") { AccessibleAdjustableValuePass() }
+                    NavigationLink("AccessibleAdjustableValueFail") { AccessibleAdjustableValueFail() }
+                    NavigationLink("AccessibleAdjustableValuePartial") { AccessibleAdjustableValuePartial() }
+                }
+
+                Section("Error suggestion") {
+                    NavigationLink("AccessibleErrorSuggestionPass") { AccessibleErrorSuggestionPass() }
+                    NavigationLink("AccessibleErrorSuggestionFail") { AccessibleErrorSuggestionFail() }
+                    NavigationLink("AccessibleErrorSuggestionPartial") { AccessibleErrorSuggestionPartial() }
+                }
+
                 Section("Modal close") {
                     NavigationLink("AccessibleModalClosePass") { AccessibleModalClosePass() }
                     NavigationLink("AccessibleModalCloseFail") { AccessibleModalCloseFail() }

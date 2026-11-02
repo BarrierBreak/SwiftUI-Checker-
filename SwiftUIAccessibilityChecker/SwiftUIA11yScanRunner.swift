@@ -167,6 +167,18 @@ enum SwiftUIA11yScan {
         A11yScreen("Autocomplete Fail", AccessibleAutocompleteFail()),
         A11yScreen("Autocomplete Partial", AccessibleAutocompletePartial()),
 
+        // Batch 4 — map text alternative (BB40140/41), adjustable value (BB40278/79),
+        // error suggestion (BB40097).
+        A11yScreen("Map Pass", AccessibleMapPass()),
+        A11yScreen("Map Fail", AccessibleMapFail()),
+        A11yScreen("Map Partial", AccessibleMapPartial()),
+        A11yScreen("Adjustable value Pass", AccessibleAdjustableValuePass()),
+        A11yScreen("Adjustable value Fail", AccessibleAdjustableValueFail()),
+        A11yScreen("Adjustable value Partial", AccessibleAdjustableValuePartial()),
+        A11yScreen("Error suggestion Pass", AccessibleErrorSuggestionPass()),
+        A11yScreen("Error suggestion Fail", AccessibleErrorSuggestionFail()),
+        A11yScreen("Error suggestion Partial", AccessibleErrorSuggestionPartial()),
+
         A11yScreen("Modal close Pass", AccessibleModalClosePass()),
         A11yScreen("Modal close Fail", AccessibleModalCloseFail()),
         A11yScreen("Modal close Partial", AccessibleModalClosePartial()),

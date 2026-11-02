@@ -307,6 +307,11 @@ final class A11yDemoScanTests: XCTestCase {
         static let controlNoFocus = "Interactive control cannot receive keyboard focus"
         static let orientationCheck = "Check if all the content is available when the device orientation is changed to landscape or portrait mode"
         static let orientationLocked = "Screen is locked in orientation"
+        static let mapPass = "Map view has a text alternative"
+        static let mapFail = "Missing textual description for map"
+        static let adjustablePass = "Adjustable element exposes accessibilityValue"
+        static let adjustableFail = "Adjustable element missing accessibilityValue"
+        static let errorSuggestion = "Error message is accessible and includes a suggestion to fix it"
     }
 
     /// Scans `screen` and returns how many rows of each title the screen's own source produced.
@@ -539,6 +544,7 @@ final class A11yDemoScanTests: XCTestCase {
             Title.modalClosePass, Title.modalNoEscape, Title.languageChangeFail,
             Title.focusOrderPass, Title.focusOrderValidate, Title.linkNotOperable, Title.controlNoFocus,
             Title.orientationCheck, Title.orientationLocked,
+            Title.mapPass, Title.mapFail, Title.adjustablePass, Title.adjustableFail, Title.errorSuggestion,
         ]
         // A source-linted finding names its file and line; a screen-level one (orientation) names
         // the hosting controller of the screen.
@@ -555,6 +561,47 @@ final class A11yDemoScanTests: XCTestCase {
         var want: [String: Int] = [:]
         for (t, s, n) in expected { want["\(t)|\(s)"] = n }
         XCTAssertEqual(c, want, file: file, line: line)
+    }
+
+    // MARK: - Batch 4: map text alternative, adjustable value, error suggestion
+
+    func testAccessibleMapPass() throws {
+        expectRows(try rowCounts("AccessibleMapPass", family: "map"),
+                   [(Title.mapPass, "Pass", 2)])
+    }
+    func testAccessibleMapFail() throws {
+        expectRows(try rowCounts("AccessibleMapFail", family: "map"),
+                   [(Title.mapFail, "Fail", 2)])
+    }
+    func testAccessibleMapPartial() throws {
+        expectRows(try rowCounts("AccessibleMapPartial", family: "map"),
+                   [(Title.mapPass, "Pass", 1), (Title.mapFail, "Fail", 1)])
+    }
+
+    func testAccessibleAdjustableValuePass() throws {
+        expectRows(try rowCounts("AccessibleAdjustableValuePass", family: "adjustableValue"),
+                   [(Title.adjustablePass, "Pass", 3)])
+    }
+    func testAccessibleAdjustableValueFail() throws {
+        expectRows(try rowCounts("AccessibleAdjustableValueFail", family: "adjustableValue"),
+                   [(Title.adjustableFail, "Fail", 2)])
+    }
+    func testAccessibleAdjustableValuePartial() throws {
+        expectRows(try rowCounts("AccessibleAdjustableValuePartial", family: "adjustableValue"),
+                   [(Title.adjustablePass, "Pass", 1), (Title.adjustableFail, "Fail", 1)])
+    }
+
+    func testAccessibleErrorSuggestionPass() throws {
+        expectRows(try rowCounts("AccessibleErrorSuggestionPass", family: "errorSuggestion"),
+                   [(Title.errorSuggestion, "Pass", 2)])
+    }
+    func testAccessibleErrorSuggestionFail() throws {
+        // BB40097 is Pass-only: none of these errors both reaches VoiceOver and suggests a fix.
+        expectRows(try rowCounts("AccessibleErrorSuggestionFail", family: "errorSuggestion"), [])
+    }
+    func testAccessibleErrorSuggestionPartial() throws {
+        expectRows(try rowCounts("AccessibleErrorSuggestionPartial", family: "errorSuggestion"),
+                   [(Title.errorSuggestion, "Pass", 1)])
     }
 
     func testAccessibleOrientationPass() throws {
