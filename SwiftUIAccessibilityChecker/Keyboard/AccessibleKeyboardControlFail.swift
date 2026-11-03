@@ -3,7 +3,7 @@ import SwiftUI
 /// KEYBOARD CONTROLS — Fail tier.
 ///
 /// Both controls work by touch, but each is taken out of the keyboard focus order with
-/// `.focusable(false)`, so Tab and Full Keyboard Access skip them. Each reports BB41036
+/// `.focusable(false)`, so Tab and Full Keyboard Access skip them. Each reports BB40066 (was BB41036)
 /// "Interactive control cannot receive keyboard focus".
 ///
 /// Elements covered (2) — every one fails:

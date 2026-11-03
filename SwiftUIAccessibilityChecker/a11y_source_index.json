@@ -276,58 +276,64 @@
       "file": "AccessibleErrorMessageFail.swift",
       "elements": [
         {
-          "line": 25,
+          "line": 105,
           "kind": "Text",
           "label": "Email",
           "ordinal": 0
         },
         {
-          "line": 27,
+          "line": 107,
           "kind": "TextField",
           "label": "name@example.com",
           "ordinal": 0
         },
         {
-          "line": 30,
+          "line": 113,
           "kind": "Text",
-          "label": "Invalid email address",
+          "label": "",
           "ordinal": 1
         },
         {
-          "line": 38,
+          "line": 121,
           "kind": "Text",
           "label": "Password",
           "ordinal": 2
         },
         {
-          "line": 40,
+          "line": 123,
           "kind": "TextField",
           "label": "At least 8 characters",
           "ordinal": 1
         },
         {
-          "line": 43,
+          "line": 126,
           "kind": "Text",
-          "label": "Password required",
+          "label": "",
           "ordinal": 3
         },
         {
-          "line": 51,
+          "line": 134,
           "kind": "Text",
           "label": "Phone",
           "ordinal": 4
         },
         {
-          "line": 53,
+          "line": 136,
           "kind": "TextField",
           "label": "10 digits",
           "ordinal": 2
         },
         {
-          "line": 56,
+          "line": 140,
           "kind": "Text",
-          "label": "Phone number is incorrect",
+          "label": "",
           "ordinal": 5
+        },
+        {
+          "line": 150,
+          "kind": "Text",
+          "label": "Submit",
+          "ordinal": 6
         }
       ]
     },
@@ -1436,6 +1442,60 @@
       ]
     },
     {
+      "type": "AccessibleKeyboardControlPartial",
+      "file": "AccessibleKeyboardControlPartial.swift",
+      "elements": [
+        {
+          "line": 18,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 22,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleKeyboardControlPass",
+      "file": "AccessibleKeyboardControlPass.swift",
+      "elements": [
+        {
+          "line": 25,
+          "kind": "Stepper",
+          "label": "Quantity: \\(quantity)",
+          "ordinal": 0
+        },
+        {
+          "line": 28,
+          "kind": "Slider",
+          "label": "Volume",
+          "ordinal": 0
+        },
+        {
+          "line": 32,
+          "kind": "Toggle",
+          "label": "Notifications",
+          "ordinal": 0
+        },
+        {
+          "line": 35,
+          "kind": "TextField",
+          "label": "Promo code",
+          "ordinal": 0
+        },
+        {
+          "line": 39,
+          "kind": "Toggle",
+          "label": "Express delivery",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
       "type": "AccessibleKeyboardFail",
       "file": "AccessibleKeyboardFail.swift",
       "elements": [
@@ -1650,31 +1710,31 @@
       "file": "AccessibleLanguageFail.swift",
       "elements": [
         {
-          "line": 24,
+          "line": 25,
           "kind": "Text",
           "label": "Welcome to the wellness dashboard where your daily progress is shown",
           "ordinal": 0
         },
         {
-          "line": 27,
+          "line": 28,
           "kind": "Button",
           "label": "Open the full weekly report for this month",
           "ordinal": 0
         },
         {
-          "line": 30,
+          "line": 31,
           "kind": "Text",
           "label": "Bienvenue sur le tableau de bord o\u00f9 vos progr\u00e8s quotidiens sont affich\u00e9s",
           "ordinal": 1
         },
         {
-          "line": 34,
+          "line": 35,
           "kind": "Text",
           "label": "N'oubliez pas de boire de l'eau et de faire de courtes pauses pendant la journ\u00e9e",
           "ordinal": 2
         },
         {
-          "line": 38,
+          "line": 39,
           "kind": "Text",
           "label": "All figures on this page are updated every night at midnight",
           "ordinal": 3
@@ -5048,572 +5108,638 @@
         {
           "line": 63,
           "kind": "NavigationLink",
-          "label": "AccessibleKeyboardControlFail",
+          "label": "AccessibleKeyboardControlPass",
           "ordinal": 18
         },
         {
           "line": 64,
           "kind": "NavigationLink",
-          "label": "AccessibleKeyboardLinkPass",
+          "label": "AccessibleKeyboardControlPartial",
           "ordinal": 19
         },
         {
           "line": 65,
           "kind": "NavigationLink",
-          "label": "AccessibleKeyboardLinkFail",
+          "label": "AccessibleKeyboardControlFail",
           "ordinal": 20
         },
         {
           "line": 66,
           "kind": "NavigationLink",
-          "label": "AccessibleKeyboardLinkPartial",
+          "label": "AccessibleKeyboardLinkPass",
           "ordinal": 21
         },
         {
-          "line": 70,
+          "line": 67,
           "kind": "NavigationLink",
-          "label": "AccessibleTextResizePass",
+          "label": "AccessibleKeyboardLinkFail",
           "ordinal": 22
         },
         {
-          "line": 71,
+          "line": 68,
           "kind": "NavigationLink",
-          "label": "AccessibleTextResizeFail",
+          "label": "AccessibleKeyboardLinkPartial",
           "ordinal": 23
         },
         {
           "line": 72,
           "kind": "NavigationLink",
-          "label": "AccessibleTextResizePartial",
+          "label": "AccessibleTextResizePass",
           "ordinal": 24
         },
         {
           "line": 73,
           "kind": "NavigationLink",
-          "label": "AccessibleTextClippingPass",
+          "label": "AccessibleTextResizeFail",
           "ordinal": 25
         },
         {
           "line": 74,
           "kind": "NavigationLink",
-          "label": "AccessibleTextClippingFail",
+          "label": "AccessibleTextResizePartial",
           "ordinal": 26
         },
         {
           "line": 75,
           "kind": "NavigationLink",
-          "label": "AccessibleTextClippingPartial",
+          "label": "AccessibleTextClippingPass",
           "ordinal": 27
         },
         {
           "line": 76,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizePass",
+          "label": "AccessibleTextClippingFail",
           "ordinal": 28
         },
         {
           "line": 77,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizeFail",
+          "label": "AccessibleTextClippingPartial",
           "ordinal": 29
         },
         {
           "line": 78,
           "kind": "NavigationLink",
-          "label": "AccessibleTargetSizePartial",
+          "label": "AccessibleTargetSizePass",
           "ordinal": 30
         },
         {
           "line": 79,
           "kind": "NavigationLink",
-          "label": "AccessibleHiddenPass",
+          "label": "AccessibleTargetSizeFail",
           "ordinal": 31
         },
         {
           "line": 80,
           "kind": "NavigationLink",
-          "label": "AccessibleHiddenFail",
+          "label": "AccessibleTargetSizePartial",
           "ordinal": 32
         },
         {
           "line": 81,
           "kind": "NavigationLink",
-          "label": "AccessibleHiddenPartial",
+          "label": "AccessibleHiddenPass",
           "ordinal": 33
         },
         {
           "line": 82,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguagePass",
+          "label": "AccessibleHiddenFail",
           "ordinal": 34
         },
         {
           "line": 83,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguageFail",
+          "label": "AccessibleHiddenPartial",
           "ordinal": 35
         },
         {
           "line": 84,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguagePartial",
+          "label": "AccessibleLanguagePass",
           "ordinal": 36
         },
         {
           "line": 85,
           "kind": "NavigationLink",
-          "label": "AccessibleMotionPass",
+          "label": "AccessibleLanguageFail",
           "ordinal": 37
         },
         {
           "line": 86,
           "kind": "NavigationLink",
-          "label": "AccessibleMotionFail",
+          "label": "AccessibleLanguagePartial",
           "ordinal": 38
         },
         {
           "line": 87,
           "kind": "NavigationLink",
-          "label": "AccessibleMotionPartial",
+          "label": "AccessibleMotionPass",
           "ordinal": 39
         },
         {
           "line": 88,
           "kind": "NavigationLink",
-          "label": "AccessibleImagesPass",
+          "label": "AccessibleMotionFail",
           "ordinal": 40
         },
         {
           "line": 89,
           "kind": "NavigationLink",
-          "label": "AccessibleImagesFail",
+          "label": "AccessibleMotionPartial",
           "ordinal": 41
         },
         {
           "line": 90,
           "kind": "NavigationLink",
-          "label": "AccessibleImagesPartial",
+          "label": "AccessibleImagesPass",
           "ordinal": 42
         },
         {
           "line": 91,
           "kind": "NavigationLink",
-          "label": "AccessibleReadingOrderPass",
+          "label": "AccessibleImagesFail",
           "ordinal": 43
         },
         {
           "line": 92,
           "kind": "NavigationLink",
-          "label": "AccessibleReadingOrderFail",
+          "label": "AccessibleImagesPartial",
           "ordinal": 44
         },
         {
           "line": 93,
           "kind": "NavigationLink",
-          "label": "AccessibleReadingOrderPartial",
+          "label": "AccessibleReadingOrderPass",
           "ordinal": 45
         },
         {
           "line": 94,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusPass",
+          "label": "AccessibleReadingOrderFail",
           "ordinal": 46
         },
         {
           "line": 95,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusFail",
+          "label": "AccessibleReadingOrderPartial",
           "ordinal": 47
         },
         {
           "line": 96,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusPartial",
+          "label": "AccessibleFocusPass",
           "ordinal": 48
         },
         {
           "line": 97,
           "kind": "NavigationLink",
-          "label": "AccessibleLinkPass",
+          "label": "AccessibleFocusFail",
           "ordinal": 49
         },
         {
           "line": 98,
           "kind": "NavigationLink",
-          "label": "AccessibleLinkFail",
+          "label": "AccessibleFocusPartial",
           "ordinal": 50
         },
         {
           "line": 99,
           "kind": "NavigationLink",
-          "label": "AccessibleLinkPartial",
+          "label": "AccessibleLinkPass",
           "ordinal": 51
         },
         {
           "line": 100,
           "kind": "NavigationLink",
-          "label": "AccessibleRoleTraitPass",
+          "label": "AccessibleLinkFail",
           "ordinal": 52
         },
         {
           "line": 101,
           "kind": "NavigationLink",
-          "label": "AccessibleRoleTraitFail",
+          "label": "AccessibleLinkPartial",
           "ordinal": 53
         },
         {
           "line": 102,
           "kind": "NavigationLink",
-          "label": "AccessibleRoleTraitPartial",
+          "label": "AccessibleRoleTraitPass",
           "ordinal": 54
         },
         {
           "line": 103,
           "kind": "NavigationLink",
-          "label": "AccessibleStateTraitPass",
+          "label": "AccessibleRoleTraitFail",
           "ordinal": 55
         },
         {
           "line": 104,
           "kind": "NavigationLink",
-          "label": "AccessibleStateTraitFail",
+          "label": "AccessibleRoleTraitPartial",
           "ordinal": 56
         },
         {
           "line": 105,
           "kind": "NavigationLink",
-          "label": "AccessibleStateTraitPartial",
+          "label": "AccessibleStateTraitPass",
           "ordinal": 57
         },
         {
           "line": 106,
           "kind": "NavigationLink",
-          "label": "AccessibleButtonPass",
+          "label": "AccessibleStateTraitFail",
           "ordinal": 58
         },
         {
           "line": 107,
           "kind": "NavigationLink",
-          "label": "AccessibleButtonFail",
+          "label": "AccessibleStateTraitPartial",
           "ordinal": 59
         },
         {
           "line": 108,
           "kind": "NavigationLink",
-          "label": "AccessibleButtonPartial",
+          "label": "AccessibleButtonPass",
           "ordinal": 60
         },
         {
           "line": 109,
           "kind": "NavigationLink",
-          "label": "AccessibleFormLabelPass",
+          "label": "AccessibleButtonFail",
           "ordinal": 61
         },
         {
           "line": 110,
           "kind": "NavigationLink",
-          "label": "AccessibleFormLabelFail",
+          "label": "AccessibleButtonPartial",
           "ordinal": 62
         },
         {
           "line": 111,
           "kind": "NavigationLink",
-          "label": "AccessibleFormLabelPartial",
+          "label": "AccessibleFormLabelPass",
           "ordinal": 63
         },
         {
           "line": 112,
           "kind": "NavigationLink",
-          "label": "AccessibleCustomActionPass",
+          "label": "AccessibleFormLabelFail",
           "ordinal": 64
         },
         {
           "line": 113,
           "kind": "NavigationLink",
-          "label": "AccessibleCustomActionFail",
+          "label": "AccessibleFormLabelPartial",
           "ordinal": 65
         },
         {
           "line": 114,
           "kind": "NavigationLink",
-          "label": "AccessibleCustomActionPartial",
+          "label": "AccessibleCustomActionPass",
           "ordinal": 66
         },
         {
           "line": 115,
           "kind": "NavigationLink",
-          "label": "AccessibleTouchEventPass",
+          "label": "AccessibleCustomActionFail",
           "ordinal": 67
         },
         {
           "line": 116,
           "kind": "NavigationLink",
-          "label": "AccessibleTouchEventFail",
+          "label": "AccessibleCustomActionPartial",
           "ordinal": 68
         },
         {
           "line": 117,
           "kind": "NavigationLink",
-          "label": "AccessibleTouchEventPartial",
+          "label": "AccessibleTouchEventPass",
           "ordinal": 69
         },
         {
-          "line": 121,
+          "line": 118,
           "kind": "NavigationLink",
-          "label": "AccessibleErrorMessagePass",
+          "label": "AccessibleTouchEventFail",
           "ordinal": 70
         },
         {
-          "line": 122,
+          "line": 119,
           "kind": "NavigationLink",
-          "label": "AccessibleErrorMessageFail",
+          "label": "AccessibleTouchEventPartial",
           "ordinal": 71
         },
         {
           "line": 123,
           "kind": "NavigationLink",
-          "label": "AccessibleErrorMessagePartial",
+          "label": "AccessibleErrorMessagePass",
           "ordinal": 72
         },
         {
-          "line": 127,
+          "line": 124,
           "kind": "NavigationLink",
-          "label": "AccessibleNonTextContrastPass",
+          "label": "AccessibleErrorMessageFail",
           "ordinal": 73
         },
         {
-          "line": 128,
+          "line": 125,
           "kind": "NavigationLink",
-          "label": "AccessibleNonTextContrastFail",
+          "label": "AccessibleErrorMessagePartial",
           "ordinal": 74
         },
         {
           "line": 129,
           "kind": "NavigationLink",
-          "label": "AccessibleNonTextContrastPartial",
+          "label": "AccessibleNonTextContrastPass",
           "ordinal": 75
         },
         {
-          "line": 133,
+          "line": 130,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusObscuredPass",
+          "label": "AccessibleNonTextContrastFail",
           "ordinal": 76
         },
         {
-          "line": 134,
+          "line": 131,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusObscuredFail",
+          "label": "AccessibleNonTextContrastPartial",
           "ordinal": 77
         },
         {
           "line": 135,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusObscuredPartial",
+          "label": "AccessibleFocusObscuredPass",
           "ordinal": 78
         },
         {
-          "line": 139,
+          "line": 136,
           "kind": "NavigationLink",
-          "label": "AccessibleModalPass",
+          "label": "AccessibleFocusObscuredFail",
           "ordinal": 79
         },
         {
-          "line": 140,
+          "line": 137,
           "kind": "NavigationLink",
-          "label": "AccessibleModalFail",
+          "label": "AccessibleFocusObscuredPartial",
           "ordinal": 80
         },
         {
           "line": 141,
           "kind": "NavigationLink",
-          "label": "AccessibleModalPartial",
+          "label": "AccessibleModalPass",
           "ordinal": 81
         },
         {
-          "line": 145,
+          "line": 142,
           "kind": "NavigationLink",
-          "label": "AccessibleTabControlPass",
+          "label": "AccessibleModalFail",
           "ordinal": 82
         },
         {
-          "line": 146,
+          "line": 143,
           "kind": "NavigationLink",
-          "label": "AccessibleTabControlFail",
+          "label": "AccessibleModalPartial",
           "ordinal": 83
         },
         {
           "line": 147,
           "kind": "NavigationLink",
-          "label": "AccessibleTabControlPartial",
+          "label": "AccessibleTabControlPass",
           "ordinal": 84
         },
         {
-          "line": 151,
+          "line": 148,
           "kind": "NavigationLink",
-          "label": "AccessibleScreenTitlePass",
+          "label": "AccessibleTabControlFail",
           "ordinal": 85
         },
         {
-          "line": 152,
+          "line": 149,
           "kind": "NavigationLink",
-          "label": "AccessibleScreenTitleFail",
+          "label": "AccessibleTabControlPartial",
           "ordinal": 86
         },
         {
           "line": 153,
           "kind": "NavigationLink",
-          "label": "AccessibleScreenTitlePartial",
+          "label": "AccessibleScreenTitlePass",
           "ordinal": 87
         },
         {
-          "line": 157,
+          "line": 154,
           "kind": "NavigationLink",
-          "label": "AccessibleOrientationPass",
+          "label": "AccessibleScreenTitleFail",
           "ordinal": 88
         },
         {
-          "line": 158,
+          "line": 155,
           "kind": "NavigationLink",
-          "label": "AccessibleOrientationFail",
+          "label": "AccessibleScreenTitlePartial",
           "ordinal": 89
         },
         {
           "line": 159,
           "kind": "NavigationLink",
-          "label": "AccessibleOrientationPartial",
+          "label": "AccessibleOrientationPass",
           "ordinal": 90
         },
         {
-          "line": 163,
+          "line": 160,
           "kind": "NavigationLink",
-          "label": "AccessibleGestureKeyboardPass",
+          "label": "AccessibleOrientationFail",
           "ordinal": 91
         },
         {
-          "line": 164,
+          "line": 161,
           "kind": "NavigationLink",
-          "label": "AccessibleGestureKeyboardFail",
+          "label": "AccessibleOrientationPartial",
           "ordinal": 92
         },
         {
           "line": 165,
           "kind": "NavigationLink",
-          "label": "AccessibleGestureKeyboardPartial",
+          "label": "AccessibleGestureKeyboardPass",
           "ordinal": 93
         },
         {
-          "line": 169,
+          "line": 166,
           "kind": "NavigationLink",
-          "label": "AccessibleAutocompletePass",
+          "label": "AccessibleGestureKeyboardFail",
           "ordinal": 94
         },
         {
-          "line": 170,
+          "line": 167,
           "kind": "NavigationLink",
-          "label": "AccessibleAutocompleteFail",
+          "label": "AccessibleGestureKeyboardPartial",
           "ordinal": 95
         },
         {
           "line": 171,
           "kind": "NavigationLink",
-          "label": "AccessibleAutocompletePartial",
+          "label": "AccessibleAutocompletePass",
           "ordinal": 96
         },
         {
-          "line": 175,
+          "line": 172,
           "kind": "NavigationLink",
-          "label": "AccessibleModalClosePass",
+          "label": "AccessibleAutocompleteFail",
           "ordinal": 97
         },
         {
-          "line": 176,
+          "line": 173,
           "kind": "NavigationLink",
-          "label": "AccessibleModalCloseFail",
+          "label": "AccessibleAutocompletePartial",
           "ordinal": 98
         },
         {
           "line": 177,
           "kind": "NavigationLink",
-          "label": "AccessibleModalClosePartial",
+          "label": "AccessibleMapPass",
           "ordinal": 99
         },
         {
-          "line": 181,
+          "line": 178,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguageChangePass",
+          "label": "AccessibleMapFail",
           "ordinal": 100
         },
         {
-          "line": 182,
+          "line": 179,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguageChangeFail",
+          "label": "AccessibleMapPartial",
           "ordinal": 101
         },
         {
           "line": 183,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguageChangePartial",
+          "label": "AccessibleAdjustableValuePass",
           "ordinal": 102
         },
         {
-          "line": 187,
+          "line": 184,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderPass",
+          "label": "AccessibleAdjustableValueFail",
           "ordinal": 103
         },
         {
-          "line": 188,
+          "line": 185,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderFail",
+          "label": "AccessibleAdjustableValuePartial",
           "ordinal": 104
         },
         {
           "line": 189,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderPartial",
+          "label": "AccessibleErrorSuggestionPass",
           "ordinal": 105
         },
         {
           "line": 190,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderRedirectFail",
+          "label": "AccessibleErrorSuggestionFail",
           "ordinal": 106
         },
         {
-          "line": 194,
+          "line": 191,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPass",
+          "label": "AccessibleErrorSuggestionPartial",
           "ordinal": 107
         },
         {
           "line": 195,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastFail",
+          "label": "AccessibleModalClosePass",
           "ordinal": 108
         },
         {
           "line": 196,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPartial",
+          "label": "AccessibleModalCloseFail",
           "ordinal": 109
         },
         {
-          "line": 200,
+          "line": 197,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedPass",
+          "label": "AccessibleModalClosePartial",
           "ordinal": 110
         },
         {
           "line": 201,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedFail",
+          "label": "AccessibleLanguageChangePass",
           "ordinal": 111
         },
         {
           "line": 202,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedPartial",
+          "label": "AccessibleLanguageChangeFail",
           "ordinal": 112
+        },
+        {
+          "line": 203,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageChangePartial",
+          "ordinal": 113
+        },
+        {
+          "line": 207,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderPass",
+          "ordinal": 114
+        },
+        {
+          "line": 208,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderFail",
+          "ordinal": 115
+        },
+        {
+          "line": 209,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderPartial",
+          "ordinal": 116
+        },
+        {
+          "line": 210,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderRedirectFail",
+          "ordinal": 117
+        },
+        {
+          "line": 214,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastPass",
+          "ordinal": 118
+        },
+        {
+          "line": 215,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastFail",
+          "ordinal": 119
+        },
+        {
+          "line": 216,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastPartial",
+          "ordinal": 120
+        },
+        {
+          "line": 220,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedPass",
+          "ordinal": 121
+        },
+        {
+          "line": 221,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedFail",
+          "ordinal": 122
+        },
+        {
+          "line": 222,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedPartial",
+          "ordinal": 123
         }
       ]
     },

@@ -114,7 +114,16 @@ final class A11yDemoScanTests: XCTestCase {
                    [(Title.linkNotOperable, "Fail", 1)])
     }
 
-    // MARK: - Keyboard Control screen (BB41036)
+    // MARK: - Keyboard Control screens (BB40066, was BB41036)
+
+    func testAccessibleKeyboardControlPass() throws {
+        expectRows(try rowCounts("AccessibleKeyboardControlPass", family: "keyboard"), [])
+    }
+
+    func testAccessibleKeyboardControlPartial() throws {
+        expectRows(try rowCounts("AccessibleKeyboardControlPartial", family: "keyboard"),
+                   [(Title.controlNoFocus, "Fail", 1)])
+    }
 
     func testAccessibleKeyboardControlFail() throws {
         expectRows(try rowCounts("AccessibleKeyboardControlFail", family: "keyboard"),
@@ -439,8 +448,10 @@ final class A11yDemoScanTests: XCTestCase {
     }
 
     func testAccessibleErrorMessageFail() throws {
+        // Three errors are showing and all are hidden from VoiceOver, but the email error is
+        // announced on submit, so only the password and phone errors are reported.
         let c = try counts("AccessibleErrorMessageFail", family: "errorMessage")
-        assertCount(c, Title.errorFail, 3)
+        assertCount(c, Title.errorFail, 2)
     }
 
     func testAccessibleErrorMessagePartial() throws {
