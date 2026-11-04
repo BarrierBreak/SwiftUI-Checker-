@@ -19668,6 +19668,69 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "Array",
+      "offset": 11349,
+      "length": 134,
+      "value": "[\"disabled\", \"dimmed\", \"unavailable\", \"not available\", \"inactive\", \"greyed out\", \"grayed out\"]"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15305,
+      "length": 7,
+      "value": "0.03928"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15319,
+      "length": 5,
+      "value": "12.92"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15336,
+      "length": 5,
+      "value": "0.055"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15345,
+      "length": 5,
+      "value": "1.055"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15352,
+      "length": 3,
+      "value": "2.4"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15374,
+      "length": 6,
+      "value": "0.2126"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15394,
+      "length": 6,
+      "value": "0.7152"
+    },
+    {
+      "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIButtonAccessibilityWorkflow.swift",
+      "kind": "FloatLiteral",
+      "offset": 15414,
+      "length": 6,
+      "value": "0.0722"
+    },
+    {
       "filePath": "\/Users\/azharuddhin\/Desktop\/BB Work\/XCtestcases\/framework\/Untitled\/A11yInspectTestCases\/A11yInspectTestCases\/AccessibilityWorkflow\/UIImageViewAccessibilityWorkflow.swift",
       "kind": "Array",
       "offset": 1345,
