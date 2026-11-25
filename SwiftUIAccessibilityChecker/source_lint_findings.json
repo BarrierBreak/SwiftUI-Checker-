@@ -914,7 +914,7 @@
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ContentView.swift",
     "basename": "ContentView.swift",
-    "line": 225,
+    "line": 249,
     "element": "Accessibility Examples",
     "hasRealAction": false,
     "detail": "the screen declares a title with .navigationTitle"
@@ -5262,6 +5262,366 @@
   {
     "check": "SWIFTUI_SCALABLE_FONT",
     "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionFail.swift",
+    "basename": "AccessibleLiveRegionFail.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionFail.swift",
+    "basename": "AccessibleLiveRegionFail.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionFail.swift",
+    "basename": "AccessibleLiveRegionFail.swift",
+    "line": 18,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_LIVE_REGION_MISSING",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionFail.swift",
+    "basename": "AccessibleLiveRegionFail.swift",
+    "line": 18,
+    "element": "Upload failed",
+    "hasRealAction": false,
+    "detail": "status message has no .updatesFrequently trait and nothing posts an announcement, so VoiceOver does not speak it unless focus moves to it"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionFail.swift",
+    "basename": "AccessibleLiveRegionFail.swift",
+    "line": 21,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_LIVE_REGION_MISSING",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionFail.swift",
+    "basename": "AccessibleLiveRegionFail.swift",
+    "line": 21,
+    "element": "Changes saved",
+    "hasRealAction": false,
+    "detail": "status message has no .updatesFrequently trait and nothing posts an announcement, so VoiceOver does not speak it unless focus moves to it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionFail.swift",
+    "basename": "AccessibleLiveRegionFail.swift",
+    "line": 25,
+    "element": "LiveRegionFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPartial.swift",
+    "basename": "AccessibleLiveRegionPartial.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPartial.swift",
+    "basename": "AccessibleLiveRegionPartial.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPartial.swift",
+    "basename": "AccessibleLiveRegionPartial.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_LIVE_REGION",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPartial.swift",
+    "basename": "AccessibleLiveRegionPartial.swift",
+    "line": 19,
+    "element": "Profile saved",
+    "hasRealAction": false,
+    "detail": "status message carries .updatesFrequently, so VoiceOver announces it without focus"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPartial.swift",
+    "basename": "AccessibleLiveRegionPartial.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_LIVE_REGION_MISSING",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPartial.swift",
+    "basename": "AccessibleLiveRegionPartial.swift",
+    "line": 22,
+    "element": "Upload failed",
+    "hasRealAction": false,
+    "detail": "status message has no .updatesFrequently trait and nothing posts an announcement, so VoiceOver does not speak it unless focus moves to it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPartial.swift",
+    "basename": "AccessibleLiveRegionPartial.swift",
+    "line": 26,
+    "element": "LiveRegionPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPass.swift",
+    "basename": "AccessibleLiveRegionPass.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPass.swift",
+    "basename": "AccessibleLiveRegionPass.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPass.swift",
+    "basename": "AccessibleLiveRegionPass.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_LIVE_REGION",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPass.swift",
+    "basename": "AccessibleLiveRegionPass.swift",
+    "line": 19,
+    "element": "Profile saved",
+    "hasRealAction": false,
+    "detail": "status message carries .updatesFrequently, so VoiceOver announces it without focus"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPass.swift",
+    "basename": "AccessibleLiveRegionPass.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_LIVE_REGION",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPass.swift",
+    "basename": "AccessibleLiveRegionPass.swift",
+    "line": 23,
+    "element": "Upload complete",
+    "hasRealAction": false,
+    "detail": "status message carries .updatesFrequently, so VoiceOver announces it without focus"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LiveRegion/AccessibleLiveRegionPass.swift",
+    "basename": "AccessibleLiveRegionPass.swift",
+    "line": 27,
+    "element": "LiveRegionPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastFail.swift",
+    "basename": "AccessibleLoadingContrastFail.swift",
+    "line": 15,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "ProgressView keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastFail.swift",
+    "basename": "AccessibleLoadingContrastFail.swift",
+    "line": 15,
+    "element": "#CFE3F7",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 1.31:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastFail.swift",
+    "basename": "AccessibleLoadingContrastFail.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "ProgressView keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastFail.swift",
+    "basename": "AccessibleLoadingContrastFail.swift",
+    "line": 19,
+    "element": "#CFE3F7",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 1.31:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastFail.swift",
+    "basename": "AccessibleLoadingContrastFail.swift",
+    "line": 23,
+    "element": "LoadingContrastFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPartial.swift",
+    "basename": "AccessibleLoadingContrastPartial.swift",
+    "line": 15,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "ProgressView keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPartial.swift",
+    "basename": "AccessibleLoadingContrastPartial.swift",
+    "line": 15,
+    "element": "#CFE3F7",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 1.31:1 is below the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPartial.swift",
+    "basename": "AccessibleLoadingContrastPartial.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "ProgressView keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPartial.swift",
+    "basename": "AccessibleLoadingContrastPartial.swift",
+    "line": 19,
+    "element": "#1F2A44",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 14.26:1 meets the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPartial.swift",
+    "basename": "AccessibleLoadingContrastPartial.swift",
+    "line": 23,
+    "element": "LoadingContrastPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPass.swift",
+    "basename": "AccessibleLoadingContrastPass.swift",
+    "line": 15,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "ProgressView keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPass.swift",
+    "basename": "AccessibleLoadingContrastPass.swift",
+    "line": 15,
+    "element": "#1F2A44",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 14.26:1 meets the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_NATIVE_ROLE_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPass.swift",
+    "basename": "AccessibleLoadingContrastPass.swift",
+    "line": 19,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "ProgressView keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPass.swift",
+    "basename": "AccessibleLoadingContrastPass.swift",
+    "line": 19,
+    "element": "#1F2A44",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 14.26:1 meets the 3:1 minimum"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/LoadingContrast/AccessibleLoadingContrastPass.swift",
+    "basename": "AccessibleLoadingContrastPass.swift",
+    "line": 23,
+    "element": "LoadingContrastPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Map/AccessibleMapFail.swift",
     "basename": "AccessibleMapFail.swift",
     "line": 25,
@@ -5500,6 +5860,16 @@
     "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
   },
   {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalFail.swift",
+    "basename": "AccessibleModalFail.swift",
+    "line": 42,
+    "element": "Remember choice",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
     "check": "SWIFTUI_SCREEN_TITLE",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalFail.swift",
@@ -5550,6 +5920,26 @@
     "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
   },
   {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPartial.swift",
+    "basename": "AccessibleModalPartial.swift",
+    "line": 27,
+    "element": "Discard draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPartial.swift",
+    "basename": "AccessibleModalPartial.swift",
+    "line": 27,
+    "element": "Discard draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
     "check": "SWIFTUI_SCALABLE_FONT",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPartial.swift",
@@ -5578,6 +5968,16 @@
     "element": "Remember choice",
     "hasRealAction": false,
     "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPartial.swift",
+    "basename": "AccessibleModalPartial.swift",
+    "line": 39,
+    "element": "Remember choice",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
   },
   {
     "check": "SWIFTUI_SCREEN_TITLE",
@@ -5630,6 +6030,26 @@
     "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
   },
   {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPass.swift",
+    "basename": "AccessibleModalPass.swift",
+    "line": 26,
+    "element": "Discard draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPass.swift",
+    "basename": "AccessibleModalPass.swift",
+    "line": 26,
+    "element": "Discard draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
     "check": "SWIFTUI_SCREEN_TITLE",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/Modal/AccessibleModalPass.swift",
@@ -5668,6 +6088,16 @@
     "element": "Save changes",
     "hasRealAction": false,
     "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalCloseFail.swift",
+    "basename": "AccessibleModalCloseFail.swift",
+    "line": 23,
+    "element": "Save changes",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
   },
   {
     "check": "SWIFTUI_SCREEN_TITLE",
@@ -5710,6 +6140,26 @@
     "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
   },
   {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalClosePartial.swift",
+    "basename": "AccessibleModalClosePartial.swift",
+    "line": 25,
+    "element": "Save changes",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalClosePartial.swift",
+    "basename": "AccessibleModalClosePartial.swift",
+    "line": 25,
+    "element": "Save changes",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
     "check": "SWIFTUI_SCALABLE_FONT",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalClosePartial.swift",
@@ -5738,6 +6188,16 @@
     "element": "Rename item",
     "hasRealAction": false,
     "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalClosePartial.swift",
+    "basename": "AccessibleModalClosePartial.swift",
+    "line": 35,
+    "element": "Rename item",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
   },
   {
     "check": "SWIFTUI_SCREEN_TITLE",
@@ -5780,12 +6240,522 @@
     "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
   },
   {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalClosePass.swift",
+    "basename": "AccessibleModalClosePass.swift",
+    "line": 24,
+    "element": "Save changes",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalClosePass.swift",
+    "basename": "AccessibleModalClosePass.swift",
+    "line": 24,
+    "element": "Save changes",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
     "check": "SWIFTUI_SCREEN_TITLE",
     "severity": "PASS",
     "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalClose/AccessibleModalClosePass.swift",
     "basename": "AccessibleModalClosePass.swift",
     "line": 28,
     "element": "ModalClosePass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardFail.swift",
+    "basename": "AccessibleModalKeyboardFail.swift",
+    "line": 21,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardFail.swift",
+    "basename": "AccessibleModalKeyboardFail.swift",
+    "line": 21,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardFail.swift",
+    "basename": "AccessibleModalKeyboardFail.swift",
+    "line": 21,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_CONTROLS",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardFail.swift",
+    "basename": "AccessibleModalKeyboardFail.swift",
+    "line": 21,
+    "element": "Notice",
+    "hasRealAction": false,
+    "detail": "dialog has no control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_ESCAPE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardFail.swift",
+    "basename": "AccessibleModalKeyboardFail.swift",
+    "line": 21,
+    "element": "Notice",
+    "hasRealAction": false,
+    "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardFail.swift",
+    "basename": "AccessibleModalKeyboardFail.swift",
+    "line": 25,
+    "element": "ModalKeyboardFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_DISMISSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 34,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 34,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 34,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_CONTROLS",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 34,
+    "element": "Notice",
+    "hasRealAction": false,
+    "detail": "dialog has no control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_ESCAPE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 34,
+    "element": "Notice",
+    "hasRealAction": false,
+    "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPartial.swift",
+    "basename": "AccessibleModalKeyboardPartial.swift",
+    "line": 38,
+    "element": "ModalKeyboardPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPass.swift",
+    "basename": "AccessibleModalKeyboardPass.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPass.swift",
+    "basename": "AccessibleModalKeyboardPass.swift",
+    "line": 22,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_DISMISSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPass.swift",
+    "basename": "AccessibleModalKeyboardPass.swift",
+    "line": 22,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPass.swift",
+    "basename": "AccessibleModalKeyboardPass.swift",
+    "line": 22,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPass.swift",
+    "basename": "AccessibleModalKeyboardPass.swift",
+    "line": 22,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalKeyboard/AccessibleModalKeyboardPass.swift",
+    "basename": "AccessibleModalKeyboardPass.swift",
+    "line": 26,
+    "element": "ModalKeyboardPass",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderFail.swift",
+    "basename": "AccessibleModalScreenReaderFail.swift",
+    "line": 21,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderFail.swift",
+    "basename": "AccessibleModalScreenReaderFail.swift",
+    "line": 21,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_ESCAPE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderFail.swift",
+    "basename": "AccessibleModalScreenReaderFail.swift",
+    "line": 21,
+    "element": "Share draft",
+    "hasRealAction": false,
+    "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderFail.swift",
+    "basename": "AccessibleModalScreenReaderFail.swift",
+    "line": 21,
+    "element": "Share draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderFail.swift",
+    "basename": "AccessibleModalScreenReaderFail.swift",
+    "line": 25,
+    "element": "ModalScreenReaderFail",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_DISMISSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 34,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 34,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_NO_ESCAPE",
+    "severity": "FAIL",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 34,
+    "element": "Share draft",
+    "hasRealAction": false,
+    "detail": "dialog has no dismiss button and no escape action, so a screen-reader user cannot leave it"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 34,
+    "element": "Share draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPartial.swift",
+    "basename": "AccessibleModalScreenReaderPartial.swift",
+    "line": 38,
+    "element": "ModalScreenReaderPartial",
+    "hasRealAction": false,
+    "detail": "the screen declares a title with .navigationTitle"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 23,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_DISMISSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 23,
+    "element": "Delete draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
+    "check": "SWIFTUI_SCALABLE_FONT",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 35,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text uses a Dynamic Type text style, so it grows with the reader's text size"
+  },
+  {
+    "check": "SWIFTUI_TEXT_NOT_CLIPPED",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 35,
+    "element": "",
+    "hasRealAction": false,
+    "detail": "text is free to grow to the size it needs, so it is not cut off"
+  },
+  {
+    "check": "SWIFTUI_MODAL_DISMISSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 35,
+    "element": "Share draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so it can be closed without a touch"
+  },
+  {
+    "check": "SWIFTUI_MODAL_KEYBOARD",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 35,
+    "element": "Share draft",
+    "hasRealAction": false,
+    "detail": "dialog holds a control a keyboard or switch user can operate"
+  },
+  {
+    "check": "SWIFTUI_MODAL_ACCESSIBLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 35,
+    "element": "Share draft",
+    "hasRealAction": false,
+    "detail": "dialog has a dismiss button or an escape action, so a screen-reader user can leave it"
+  },
+  {
+    "check": "SWIFTUI_SCREEN_TITLE",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/ModalScreenReader/AccessibleModalScreenReaderPass.swift",
+    "basename": "AccessibleModalScreenReaderPass.swift",
+    "line": 39,
+    "element": "ModalScreenReaderPass",
     "hasRealAction": false,
     "detail": "the screen declares a title with .navigationTitle"
   },
@@ -7658,6 +8628,16 @@
     "element": "",
     "hasRealAction": false,
     "detail": "ProgressView keeps the role trait SwiftUI gives it"
+  },
+  {
+    "check": "SWIFTUI_LOADING_CONTRAST_OK",
+    "severity": "PASS",
+    "file": "/Users/azharuddhin/Desktop/BB Work/XCtestcases/testing application/swiftui/SwiftUIAccessibilityChecker/SwiftUIAccessibilityChecker/NonTextContrast/AccessibleNonTextContrastPass.swift",
+    "basename": "AccessibleNonTextContrastPass.swift",
+    "line": 26,
+    "element": "#0B5CAD",
+    "hasRealAction": false,
+    "detail": "loading indicator contrast ratio 6.67:1 meets the 3:1 minimum"
   },
   {
     "check": "SWIFTUI_NATIVE_ROLE_OK",

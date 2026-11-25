@@ -191,6 +191,30 @@ struct ContentView: View {
                     NavigationLink("AccessibleErrorSuggestionPartial") { AccessibleErrorSuggestionPartial() }
                 }
 
+                Section("Modal screen reader") {
+                    NavigationLink("AccessibleModalScreenReaderPass") { AccessibleModalScreenReaderPass() }
+                    NavigationLink("AccessibleModalScreenReaderPartial") { AccessibleModalScreenReaderPartial() }
+                    NavigationLink("AccessibleModalScreenReaderFail") { AccessibleModalScreenReaderFail() }
+                }
+
+                Section("Modal keyboard") {
+                    NavigationLink("AccessibleModalKeyboardPass") { AccessibleModalKeyboardPass() }
+                    NavigationLink("AccessibleModalKeyboardPartial") { AccessibleModalKeyboardPartial() }
+                    NavigationLink("AccessibleModalKeyboardFail") { AccessibleModalKeyboardFail() }
+                }
+
+                Section("Loading contrast") {
+                    NavigationLink("AccessibleLoadingContrastPass") { AccessibleLoadingContrastPass() }
+                    NavigationLink("AccessibleLoadingContrastPartial") { AccessibleLoadingContrastPartial() }
+                    NavigationLink("AccessibleLoadingContrastFail") { AccessibleLoadingContrastFail() }
+                }
+
+                Section("Live region") {
+                    NavigationLink("AccessibleLiveRegionPass") { AccessibleLiveRegionPass() }
+                    NavigationLink("AccessibleLiveRegionPartial") { AccessibleLiveRegionPartial() }
+                    NavigationLink("AccessibleLiveRegionFail") { AccessibleLiveRegionFail() }
+                }
+
                 Section("Modal close") {
                     NavigationLink("AccessibleModalClosePass") { AccessibleModalClosePass() }
                     NavigationLink("AccessibleModalCloseFail") { AccessibleModalCloseFail() }

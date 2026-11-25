@@ -1892,6 +1892,132 @@
       ]
     },
     {
+      "type": "AccessibleLiveRegionFail",
+      "file": "AccessibleLiveRegionFail.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Text",
+          "label": "Account overview",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Upload failed",
+          "ordinal": 1
+        },
+        {
+          "line": 20,
+          "kind": "Text",
+          "label": "Changes saved",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLiveRegionPartial",
+      "file": "AccessibleLiveRegionPartial.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Text",
+          "label": "Account overview",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Profile saved",
+          "ordinal": 1
+        },
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Upload failed",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLiveRegionPass",
+      "file": "AccessibleLiveRegionPass.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Text",
+          "label": "Account overview",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Text",
+          "label": "Profile saved",
+          "ordinal": 1
+        },
+        {
+          "line": 21,
+          "kind": "Text",
+          "label": "Upload complete",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLoadingContrastFail",
+      "file": "AccessibleLoadingContrastFail.swift",
+      "elements": [
+        {
+          "line": 13,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLoadingContrastPartial",
+      "file": "AccessibleLoadingContrastPartial.swift",
+      "elements": [
+        {
+          "line": 13,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleLoadingContrastPass",
+      "file": "AccessibleLoadingContrastPass.swift",
+      "elements": [
+        {
+          "line": 13,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "ProgressView",
+          "label": "",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
       "type": "AccessibleMapFail",
       "file": "AccessibleMapFail.swift",
       "elements": [
@@ -2048,6 +2174,84 @@
       ]
     },
     {
+      "type": "AccessibleModalKeyboardFail",
+      "file": "AccessibleModalKeyboardFail.swift",
+      "elements": [
+        {
+          "line": 13,
+          "kind": "Text",
+          "label": "Notice",
+          "ordinal": 0
+        },
+        {
+          "line": 15,
+          "kind": "Text",
+          "label": "Your draft was shared.",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalKeyboardPartial",
+      "file": "AccessibleModalKeyboardPartial.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Text",
+          "label": "Delete draft",
+          "ordinal": 0
+        },
+        {
+          "line": 16,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        },
+        {
+          "line": 26,
+          "kind": "Text",
+          "label": "Notice",
+          "ordinal": 1
+        },
+        {
+          "line": 28,
+          "kind": "Text",
+          "label": "Your draft was shared.",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalKeyboardPass",
+      "file": "AccessibleModalKeyboardPass.swift",
+      "elements": [
+        {
+          "line": 13,
+          "kind": "Text",
+          "label": "Delete draft",
+          "ordinal": 0
+        },
+        {
+          "line": 15,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 16,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
       "type": "AccessibleModalPartial",
       "file": "AccessibleModalPartial.swift",
       "elements": [
@@ -2122,6 +2326,96 @@
           "kind": "Button",
           "label": "Close",
           "ordinal": 1
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalScreenReaderFail",
+      "file": "AccessibleModalScreenReaderFail.swift",
+      "elements": [
+        {
+          "line": 13,
+          "kind": "Text",
+          "label": "Share draft",
+          "ordinal": 0
+        },
+        {
+          "line": 15,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalScreenReaderPartial",
+      "file": "AccessibleModalScreenReaderPartial.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Text",
+          "label": "Delete draft",
+          "ordinal": 0
+        },
+        {
+          "line": 16,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        },
+        {
+          "line": 26,
+          "kind": "Text",
+          "label": "Share draft",
+          "ordinal": 1
+        },
+        {
+          "line": 28,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "type": "AccessibleModalScreenReaderPass",
+      "file": "AccessibleModalScreenReaderPass.swift",
+      "elements": [
+        {
+          "line": 14,
+          "kind": "Text",
+          "label": "Delete draft",
+          "ordinal": 0
+        },
+        {
+          "line": 16,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 0
+        },
+        {
+          "line": 17,
+          "kind": "Button",
+          "label": "Close",
+          "ordinal": 1
+        },
+        {
+          "line": 26,
+          "kind": "Text",
+          "label": "Share draft",
+          "ordinal": 1
+        },
+        {
+          "line": 28,
+          "kind": "Button",
+          "label": "Save",
+          "ordinal": 2
         }
       ]
     },
@@ -5648,98 +5942,170 @@
         {
           "line": 195,
           "kind": "NavigationLink",
-          "label": "AccessibleModalClosePass",
+          "label": "AccessibleModalScreenReaderPass",
           "ordinal": 108
         },
         {
           "line": 196,
           "kind": "NavigationLink",
-          "label": "AccessibleModalCloseFail",
+          "label": "AccessibleModalScreenReaderPartial",
           "ordinal": 109
         },
         {
           "line": 197,
           "kind": "NavigationLink",
-          "label": "AccessibleModalClosePartial",
+          "label": "AccessibleModalScreenReaderFail",
           "ordinal": 110
         },
         {
           "line": 201,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguageChangePass",
+          "label": "AccessibleModalKeyboardPass",
           "ordinal": 111
         },
         {
           "line": 202,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguageChangeFail",
+          "label": "AccessibleModalKeyboardPartial",
           "ordinal": 112
         },
         {
           "line": 203,
           "kind": "NavigationLink",
-          "label": "AccessibleLanguageChangePartial",
+          "label": "AccessibleModalKeyboardFail",
           "ordinal": 113
         },
         {
           "line": 207,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderPass",
+          "label": "AccessibleLoadingContrastPass",
           "ordinal": 114
         },
         {
           "line": 208,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderFail",
+          "label": "AccessibleLoadingContrastPartial",
           "ordinal": 115
         },
         {
           "line": 209,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderPartial",
+          "label": "AccessibleLoadingContrastFail",
           "ordinal": 116
         },
         {
-          "line": 210,
+          "line": 213,
           "kind": "NavigationLink",
-          "label": "AccessibleFocusOrderRedirectFail",
+          "label": "AccessibleLiveRegionPass",
           "ordinal": 117
         },
         {
           "line": 214,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPass",
+          "label": "AccessibleLiveRegionPartial",
           "ordinal": 118
         },
         {
           "line": 215,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastFail",
+          "label": "AccessibleLiveRegionFail",
           "ordinal": 119
         },
         {
-          "line": 216,
+          "line": 219,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastPartial",
+          "label": "AccessibleModalClosePass",
           "ordinal": 120
         },
         {
           "line": 220,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedPass",
+          "label": "AccessibleModalCloseFail",
           "ordinal": 121
         },
         {
           "line": 221,
           "kind": "NavigationLink",
-          "label": "AccessibleTextContrastCompositedFail",
+          "label": "AccessibleModalClosePartial",
           "ordinal": 122
         },
         {
-          "line": 222,
+          "line": 225,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageChangePass",
+          "ordinal": 123
+        },
+        {
+          "line": 226,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageChangeFail",
+          "ordinal": 124
+        },
+        {
+          "line": 227,
+          "kind": "NavigationLink",
+          "label": "AccessibleLanguageChangePartial",
+          "ordinal": 125
+        },
+        {
+          "line": 231,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderPass",
+          "ordinal": 126
+        },
+        {
+          "line": 232,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderFail",
+          "ordinal": 127
+        },
+        {
+          "line": 233,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderPartial",
+          "ordinal": 128
+        },
+        {
+          "line": 234,
+          "kind": "NavigationLink",
+          "label": "AccessibleFocusOrderRedirectFail",
+          "ordinal": 129
+        },
+        {
+          "line": 238,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastPass",
+          "ordinal": 130
+        },
+        {
+          "line": 239,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastFail",
+          "ordinal": 131
+        },
+        {
+          "line": 240,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastPartial",
+          "ordinal": 132
+        },
+        {
+          "line": 244,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedPass",
+          "ordinal": 133
+        },
+        {
+          "line": 245,
+          "kind": "NavigationLink",
+          "label": "AccessibleTextContrastCompositedFail",
+          "ordinal": 134
+        },
+        {
+          "line": 246,
           "kind": "NavigationLink",
           "label": "AccessibleTextContrastCompositedPartial",
-          "ordinal": 123
+          "ordinal": 135
         }
       ]
     },

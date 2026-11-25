@@ -181,6 +181,20 @@ enum SwiftUIA11yScan {
         A11yScreen("Error suggestion Fail", AccessibleErrorSuggestionFail()),
         A11yScreen("Error suggestion Partial", AccessibleErrorSuggestionPartial()),
 
+        // Modal pass rules (BB40116 / BB40245), loading indicator pass (BB40065), live region (BB40103 / BB40104).
+        A11yScreen("Modal screen reader Pass", AccessibleModalScreenReaderPass()),
+        A11yScreen("Modal screen reader Partial", AccessibleModalScreenReaderPartial()),
+        A11yScreen("Modal screen reader Fail", AccessibleModalScreenReaderFail()),
+        A11yScreen("Modal keyboard Pass", AccessibleModalKeyboardPass()),
+        A11yScreen("Modal keyboard Partial", AccessibleModalKeyboardPartial()),
+        A11yScreen("Modal keyboard Fail", AccessibleModalKeyboardFail()),
+        A11yScreen("Loading contrast Pass", AccessibleLoadingContrastPass()),
+        A11yScreen("Loading contrast Partial", AccessibleLoadingContrastPartial()),
+        A11yScreen("Loading contrast Fail", AccessibleLoadingContrastFail()),
+        A11yScreen("Live region Pass", AccessibleLiveRegionPass()),
+        A11yScreen("Live region Partial", AccessibleLiveRegionPartial()),
+        A11yScreen("Live region Fail", AccessibleLiveRegionFail()),
+
         A11yScreen("Modal close Pass", AccessibleModalClosePass()),
         A11yScreen("Modal close Fail", AccessibleModalCloseFail()),
         A11yScreen("Modal close Partial", AccessibleModalClosePartial()),

@@ -321,6 +321,11 @@ final class A11yDemoScanTests: XCTestCase {
         static let adjustablePass = "Adjustable element exposes accessibilityValue"
         static let adjustableFail = "Adjustable element missing accessibilityValue"
         static let errorSuggestion = "Error message is accessible and includes a suggestion to fix it"
+        static let modalScreenReaderPass = "Modal dialog is accessible for screen reader users"                       // BB40116
+        static let modalKeyboardPass = "Modal contains keyboard-focusable controls — keyboard focus can be contained"  // BB40245
+        static let loadingContrastPass = "Loading indicator has sufficient contrast with its background"              // BB40065
+        static let liveRegionFail = "Live region not defined for dynamic content"                                      // BB40103
+        static let liveRegionPass = "Live region is defined for dynamic content"                                       // BB40104
     }
 
     /// Scans `screen` and returns how many rows of each title the screen's own source produced.
@@ -556,6 +561,8 @@ final class A11yDemoScanTests: XCTestCase {
             Title.focusOrderPass, Title.focusOrderValidate, Title.linkNotOperable, Title.controlNoFocus,
             Title.orientationCheck, Title.orientationLocked,
             Title.mapPass, Title.mapFail, Title.adjustablePass, Title.adjustableFail, Title.errorSuggestion,
+            Title.modalScreenReaderPass, Title.modalKeyboardPass, Title.loadingContrastPass,
+            Title.liveRegionFail, Title.liveRegionPass, Title.modalNoControls, Title.loadingFail,
         ]
         // A source-linted finding names its file and line; a screen-level one (orientation) names
         // the hosting controller of the screen.
@@ -572,6 +579,70 @@ final class A11yDemoScanTests: XCTestCase {
         var want: [String: Int] = [:]
         for (t, s, n) in expected { want["\(t)|\(s)"] = n }
         XCTAssertEqual(c, want, file: file, line: line)
+    }
+
+    // MARK: - Modal screen reader (BB40116), modal keyboard (BB40245), loading contrast (BB40065), live region (BB40103 / BB40104)
+    // Each screen is scanned in the family of the rule it demonstrates; the failing side of the two modal
+    // rules is read from family "modal".
+
+    func testAccessibleModalScreenReaderPass() throws {
+        expectRows(try rowCounts("AccessibleModalScreenReaderPass", family: "modalScreenReader"),
+                   [(Title.modalScreenReaderPass, "Pass", 2)])
+        expectRows(try rowCounts("AccessibleModalScreenReaderPass", family: "modal"), [])
+    }
+    func testAccessibleModalScreenReaderPartial() throws {
+        expectRows(try rowCounts("AccessibleModalScreenReaderPartial", family: "modalScreenReader"),
+                   [(Title.modalScreenReaderPass, "Pass", 1)])
+        expectRows(try rowCounts("AccessibleModalScreenReaderPartial", family: "modal"),
+                   [(Title.modalNoEscape, "Fail", 1)])
+    }
+    func testAccessibleModalScreenReaderFail() throws {
+        expectRows(try rowCounts("AccessibleModalScreenReaderFail", family: "modalScreenReader"), [])
+        expectRows(try rowCounts("AccessibleModalScreenReaderFail", family: "modal"),
+                   [(Title.modalNoEscape, "Fail", 1)])
+    }
+
+    func testAccessibleModalKeyboardPass() throws {
+        expectRows(try rowCounts("AccessibleModalKeyboardPass", family: "modalKeyboard"),
+                   [(Title.modalKeyboardPass, "Pass", 1)])
+        expectRows(try rowCounts("AccessibleModalKeyboardPass", family: "modal"), [])
+    }
+    func testAccessibleModalKeyboardPartial() throws {
+        expectRows(try rowCounts("AccessibleModalKeyboardPartial", family: "modalKeyboard"),
+                   [(Title.modalKeyboardPass, "Pass", 1)])
+        expectRows(try rowCounts("AccessibleModalKeyboardPartial", family: "modal"),
+                   [(Title.modalNoControls, "Fail", 1), (Title.modalNoEscape, "Fail", 1)])
+    }
+    func testAccessibleModalKeyboardFail() throws {
+        expectRows(try rowCounts("AccessibleModalKeyboardFail", family: "modalKeyboard"), [])
+        expectRows(try rowCounts("AccessibleModalKeyboardFail", family: "modal"),
+                   [(Title.modalNoControls, "Fail", 1), (Title.modalNoEscape, "Fail", 1)])
+    }
+
+    func testAccessibleLoadingContrastPass() throws {
+        expectRows(try rowCounts("AccessibleLoadingContrastPass", family: "nonTextContrast"),
+                   [(Title.loadingContrastPass, "Pass", 2)])
+    }
+    func testAccessibleLoadingContrastPartial() throws {
+        expectRows(try rowCounts("AccessibleLoadingContrastPartial", family: "nonTextContrast"),
+                   [(Title.loadingContrastPass, "Pass", 1), (Title.loadingFail, "Fail", 1)])
+    }
+    func testAccessibleLoadingContrastFail() throws {
+        expectRows(try rowCounts("AccessibleLoadingContrastFail", family: "nonTextContrast"),
+                   [(Title.loadingFail, "Fail", 2)])
+    }
+
+    func testAccessibleLiveRegionPass() throws {
+        expectRows(try rowCounts("AccessibleLiveRegionPass", family: "liveRegion"),
+                   [(Title.liveRegionPass, "Pass", 2)])
+    }
+    func testAccessibleLiveRegionPartial() throws {
+        expectRows(try rowCounts("AccessibleLiveRegionPartial", family: "liveRegion"),
+                   [(Title.liveRegionPass, "Pass", 1), (Title.liveRegionFail, "Fail", 1)])
+    }
+    func testAccessibleLiveRegionFail() throws {
+        expectRows(try rowCounts("AccessibleLiveRegionFail", family: "liveRegion"),
+                   [(Title.liveRegionFail, "Fail", 2)])
     }
 
     // MARK: - Batch 4: map text alternative, adjustable value, error suggestion
