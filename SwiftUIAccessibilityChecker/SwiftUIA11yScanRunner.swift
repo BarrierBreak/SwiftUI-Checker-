@@ -248,7 +248,7 @@ enum SwiftUIA11yScan {
     static func runIfRequested() async {
         guard A11yInspectScan.isScanRequested else { return }
 
-        await A11yInspectAuth.authenticate()
+        A11yInspectAuth.authenticate()
 
         // An unknown family name falls back to the full set rather than scanning nothing: a
         // report of zero rows and a report the argument never reached look identical from a

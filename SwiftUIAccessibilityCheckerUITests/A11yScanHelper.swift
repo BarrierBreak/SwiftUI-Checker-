@@ -71,7 +71,7 @@ extension XCTestCase {
         }
         // The framework only scans once authenticated. Forward the API key from the test
         // runner's environment (set A11Y_API_KEY in the scheme's Test action, or in CI).
-        // Without it the app falls back to its bundled A11yInspectAPIKey.plist.
+        // Without it the app uses SceneDelegate.apiKey.
         if let apiKey = ProcessInfo.processInfo.environment["A11Y_API_KEY"], !apiKey.isEmpty {
             app.launchEnvironment["A11Y_API_KEY"] = apiKey
         }
