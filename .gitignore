@@ -1,1 +1,4 @@
 xcuserdata/
+
+# A11yInspect API key - never commit. Template: A11yInspectAPIKey.example.plist
+SwiftUIAccessibilityChecker/A11yInspectAPIKey.plist

@@ -1,0 +1,15 @@
+{
+  "originHash" : "c687b735b118cb62e5fcb41966bb1132b8ad299533bc16226503346db9965b26",
+  "pins" : [
+    {
+      "identity" : "a11yinspect-ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BarrierBreak/A11yInspect-iOS-SPM",
+      "state" : {
+        "revision" : "32234773adbcc43b4916da6e017ca943255dad2d",
+        "version" : "1.2.0"
+      }
+    }
+  ],
+  "version" : 3
+}

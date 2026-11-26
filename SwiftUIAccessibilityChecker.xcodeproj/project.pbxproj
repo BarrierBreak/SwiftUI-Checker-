@@ -7,25 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB2000000000000000000002 /* A11yInspectTestCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2000000000000000000003 /* A11yInspectTestCases.framework */; };
-		BB2000000000000000000003 /* A11yInspectTestCases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC2000000000000000000003 /* A11yInspectTestCases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB2000000000000000000002 /* A11yInspectTestCases in Frameworks */ = {isa = PBXBuildFile; productRef = DD2000000000000000000002 /* A11yInspectTestCases */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CC2000000000000000000002 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC2000000000000000000001 /* A11yInspectTestCases.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AB0000000000000000000004;
-			remoteInfo = A11yInspectTestCases;
-		};
-		CC2000000000000000000005 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC2000000000000000000001 /* A11yInspectTestCases.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AB0000000000000000000002;
-			remoteInfo = A11yInspectTestCases;
-		};
 		EC6744B4301B6C640080BF16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EC67449E301B6C620080BF16 /* Project object */;
@@ -59,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BB2000000000000000000003 /* A11yInspectTestCases.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,28 +51,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CC2000000000000000000001 /* A11yInspectTestCases.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = A11yInspectTestCases.xcodeproj; path = ../accessibility-framework-ios/A11yInspectTestCases/A11yInspectTestCases.xcodeproj; sourceTree = SOURCE_ROOT; };
 		EC6744A6301B6C620080BF16 /* SwiftUIAccessibilityChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAccessibilityChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6744B3301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAccessibilityCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6744BD301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAccessibilityCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CC2000000000000000000007 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityChecker" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				A11yInspectTestCases.xcframework,
-			);
-			target = EC6744A5301B6C620080BF16 /* SwiftUIAccessibilityChecker */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EC6744A8301B6C620080BF16 /* SwiftUIAccessibilityChecker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CC2000000000000000000007 /* Exceptions for "SwiftUIAccessibilityChecker" folder in "SwiftUIAccessibilityChecker" target */,
-			);
 			path = SwiftUIAccessibilityChecker;
 			sourceTree = "<group>";
 		};
@@ -109,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2000000000000000000002 /* A11yInspectTestCases.framework in Frameworks */,
+				BB2000000000000000000002 /* A11yInspectTestCases in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,18 +100,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC2000000000000000000004 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CC2000000000000000000003 /* A11yInspectTestCases.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EC67449D301B6C620080BF16 = {
 			isa = PBXGroup;
 			children = (
-				CC2000000000000000000001 /* A11yInspectTestCases.xcodeproj */,
 				EC6744A8301B6C620080BF16 /* SwiftUIAccessibilityChecker */,
 				EC6744B6301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests */,
 				EC6744C0301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests */,
@@ -175,12 +136,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				CC2000000000000000000006 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				EC6744A8301B6C620080BF16 /* SwiftUIAccessibilityChecker */,
 			);
 			name = SwiftUIAccessibilityChecker;
+			packageProductDependencies = (
+				DD2000000000000000000002 /* A11yInspectTestCases */,
+			);
 			productName = SwiftUIAccessibilityChecker;
 			productReference = EC6744A6301B6C620080BF16 /* SwiftUIAccessibilityChecker.app */;
 			productType = "com.apple.product-type.application";
@@ -260,15 +223,12 @@
 			);
 			mainGroup = EC67449D301B6C620080BF16;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DD2000000000000000000001 /* XCRemoteSwiftPackageReference "A11yInspect-iOS-SPM" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EC6744A7301B6C620080BF16 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CC2000000000000000000004 /* Products */;
-					ProjectRef = CC2000000000000000000001 /* A11yInspectTestCases.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EC6744A5301B6C620080BF16 /* SwiftUIAccessibilityChecker */,
@@ -277,16 +237,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CC2000000000000000000003 /* A11yInspectTestCases.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = A11yInspectTestCases.framework;
-			remoteRef = CC2000000000000000000002 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EC6744A4301B6C620080BF16 /* Resources */ = {
@@ -359,11 +309,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CC2000000000000000000006 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = A11yInspectTestCases;
-			targetProxy = CC2000000000000000000005 /* PBXContainerItemProxy */;
-		};
 		EC6744B5301B6C640080BF16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EC6744A5301B6C620080BF16 /* SwiftUIAccessibilityChecker */;
@@ -508,10 +453,6 @@
 				DEVELOPMENT_TEAM = EJ5R49N3EY;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftUIAccessibilityChecker",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -545,10 +486,6 @@
 				DEVELOPMENT_TEAM = EJ5R49N3EY;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftUIAccessibilityChecker",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -579,10 +516,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EJ5R49N3EY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftUIAccessibilityChecker",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MARKETING_VERSION = 1.0;
@@ -605,10 +538,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EJ5R49N3EY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftUIAccessibilityChecker",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MARKETING_VERSION = 1.0;
@@ -630,10 +559,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EJ5R49N3EY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftUIAccessibilityChecker",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.barrierbreak.testswiftui.SwiftUIAccessibilityCheckerUITests;
@@ -654,10 +579,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EJ5R49N3EY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SwiftUIAccessibilityChecker",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.barrierbreak.testswiftui.SwiftUIAccessibilityCheckerUITests;
@@ -712,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD2000000000000000000001 /* XCRemoteSwiftPackageReference "A11yInspect-iOS-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BarrierBreak/A11yInspect-iOS-SPM";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD2000000000000000000002 /* A11yInspectTestCases */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD2000000000000000000001 /* XCRemoteSwiftPackageReference "A11yInspect-iOS-SPM" */;
+			productName = A11yInspectTestCases;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC67449E301B6C620080BF16 /* Project object */;
 }

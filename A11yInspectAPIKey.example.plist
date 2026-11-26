@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Copy to SwiftUIAccessibilityChecker/A11yInspectAPIKey.plist (gitignored) and set your key.
+  Xcode bundles it automatically; the app authenticates with it before scanning.
+-->
+<plist version="1.0">
+<dict>
+	<key>APIKey</key>
+	<string>YOUR-A11YINSPECT-API-KEY</string>
+</dict>
+</plist>
