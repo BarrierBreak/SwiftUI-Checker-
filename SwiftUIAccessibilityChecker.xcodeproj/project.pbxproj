@@ -67,7 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CC2000000000000000000001 /* A11yInspectTestCases.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = A11yInspectTestCases.xcodeproj; path = ../../../framework/Untitled/A11yInspectTestCases/A11yInspectTestCases.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CC2000000000000000000001 /* A11yInspectTestCases.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = A11yInspectTestCases.xcodeproj; path = ../accessibility-framework-ios/A11yInspectTestCases/A11yInspectTestCases.xcodeproj; sourceTree = SOURCE_ROOT; };
 		EC6744A6301B6C620080BF16 /* SwiftUIAccessibilityChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAccessibilityChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6744B3301B6C640080BF16 /* SwiftUIAccessibilityCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAccessibilityCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6744BD301B6C640080BF16 /* SwiftUIAccessibilityCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAccessibilityCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
